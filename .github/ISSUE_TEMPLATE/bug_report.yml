@@ -1,0 +1,45 @@
+name: Bug Report
+description: Report a bug, audio glitch, or UI issue in Cave Recorder (no donation expected).
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking a moment to report a bug. Every report helps make Cave Recorder more reliable in rehearsal caves and tracking rooms.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Operating System
+      options:
+        - macOS (Apple Silicon arm64)
+        - Windows (x86_64)
+        - Linux (x86_64)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Cave Recorder Version
+      placeholder: "e.g. v0.1.0-rc8"
+    validations:
+      required: true
+  - type: input
+    id: audio_interface
+    attributes:
+      label: Audio Interface & Sample Rate (Optional)
+      placeholder: "e.g. Focusrite Scarlett 18i20 + OctoPre ADAT @ 48 kHz"
+  - type: textarea
+    id: description
+    attributes:
+      label: What Happened?
+      description: Briefly describe what went wrong and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce (Optional)
+      placeholder: |
+        1. Open Session Reel (Cmd+4 / Ctrl+4)
+        2. Click ...

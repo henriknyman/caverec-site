@@ -1,0 +1,24 @@
+name: Feature Request
+description: Suggest a studio workflow improvement or feature for Cave Recorder (no donation expected).
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea that would save time during band rehearsals, tracking, or mixing? Share it below.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Rehearsal or Studio Scenario
+      description: What are you trying to do during a session, and what feels slow or missing right now?
+      placeholder: "e.g. When tracking live with 12 mics in our rehearsal space..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Feature or Workflow
+      description: How should Cave Recorder handle this?
+    validations:
+      required: true

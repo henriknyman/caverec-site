@@ -1,0 +1,21 @@
+name: Studio Feedback & Rehearsal Notes
+description: Share how Cave Recorder works in your rehearsal room or studio (completely unattached to any donation).
+title: "[Feedback]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hearing how Cave Recorder performs in real rehearsal rooms and studios is just as valuable as financial support. Whether something worked great or felt awkward, we would love to hear about it.
+  - type: input
+    id: setup
+    attributes:
+      label: Your Studio / Rehearsal Setup (Optional)
+      placeholder: "e.g. 4-piece band, macOS M2 + 16-ch USB interface"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Your Feedback
+      description: What worked well, what felt rough, or what would make your sessions smoother?
+    validations:
+      required: true
