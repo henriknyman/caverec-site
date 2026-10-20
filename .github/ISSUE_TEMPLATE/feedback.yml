@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Hearing how Cave Recorder performs in real rehearsal rooms and studios is just as valuable as financial support. Whether something worked great or felt awkward, we would love to hear about it.
+        Notes from real rehearsal rooms and studios help shape Cave Recorder. Whether something worked great or felt awkward, share how it went below.
   - type: input
     id: setup
     attributes:

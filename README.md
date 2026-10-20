@@ -28,7 +28,7 @@ A multitrack recording and mixing console built for live rehearsals and tracking
 Cave Recorder is **100% free to download and use in full** with no trial timers, no locked features, no telemetry, and no nag screens.
 
 - **Feedback, Bug Reports & Feature Requests (No Donation Expected):**
-  Bug reports, feature requests, and notes from your rehearsal room are always welcome, completely unattached to any donation:
+  Notes from your rehearsal room, bug reports, and feature ideas are always welcome, completely unattached to any donation:
   - [Report a Bug](https://github.com/henriknyman/caverec-site/issues/new?template=bug_report.yml)
   - [Request a Feature](https://github.com/henriknyman/caverec-site/issues/new?template=feature_request.yml)
   - [Share Studio Feedback](https://github.com/henriknyman/caverec-site/issues/new?template=feedback.yml)
