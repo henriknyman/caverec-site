@@ -812,6 +812,15 @@ pre.logo {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.thank-you-links a {
+  color: #6ee7b7;
+}
+
+.thank-you-links a:hover {
+  color: #ecfdf5;
+  text-decoration: underline;
+}
+
 /* ==========================================================================
    Section Headers & Studio Panels
    ========================================================================== */
@@ -1064,6 +1073,21 @@ pre.logo {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.support-card:hover {
+  border-color: var(--border-highlight);
+}
+
+#feedback-card:target {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.35), 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+#voluntary-support-card:target {
+  border-color: var(--accent-amber);
+  box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.35), 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 
 .support-card-badge {
@@ -1099,6 +1123,21 @@ pre.logo {
   align-items: center;
   gap: 0.55rem;
   flex-wrap: wrap;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.deck-btn-sponsor {
+  border-color: rgba(245, 158, 11, 0.42);
+}
+
+.deck-btn-sponsor:hover {
+  border-color: var(--accent-amber);
+  background: linear-gradient(180deg, #2d251b 0%, #201a13 100%);
+}
+
+.sponsor-heart {
+  color: var(--accent-amber);
 }
 
 /* ==========================================================================
@@ -1262,7 +1301,7 @@ pre.logo {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .top-deck {
     position: static;
   }

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Online User Manual
+    url: https://henriknyman.github.io/caverec-site/manual/
+    about: Browse the Cave Recorder User Manual (hardware setup, workflows, console controls, and shortcuts).
+  - name: Voluntary Support (GitHub Sponsors)
+    url: https://github.com/sponsors/henriknyman
+    about: Cave Recorder is 100% free and uncrippled. Optional one-time or recurring donations are available via GitHub Sponsors.
