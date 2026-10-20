@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cave Recorder (caverec) — Multitrack Studio &amp; Rehearsal Console</title>
-  <meta name="description" content="Cave Recorder (caverec) is a studio-grade multitrack digital audio workstation built for bands and engineers recording live in rehearsal caves and studios. 30-minute rolling RAM capture, sub-sample multi-mic phase alignment, console mixing, and optional Google Drive sync." />
+  <title>Cave Recorder (caverec) &middot; Multitrack Studio &amp; Rehearsal Console</title>
+  <meta name="description" content="Cave Recorder (caverec) is a multitrack recorder and mixing console built for band rehearsals and live studio sessions. Independent zero-based Takes, 30-minute rolling RAM capture, automatic multi-mic phase alignment, and optional Google Drive sync." />
   <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon-64.png" />
   <link rel="apple-touch-icon" sizes="128x128" href="assets/icons/caverec_128.png" />
   <link rel="stylesheet" href="assets/site.css" />
@@ -14,19 +14,15 @@
   <header class="top-deck">
     <div class="brand-cluster">
       <a href="index.html" aria-label="Cave Recorder Home">
-        <img src="assets/icons/caverec_128.png" alt="Cave Recorder Icon" class="brand-icon" width="34" height="34" />
+        <img src="assets/icons/caverec_128.png" alt="Cave Recorder Icon" class="brand-icon" width="32" height="32" />
       </a>
-      <a class="brand-badge" href="#download">CAVEREC</a>
-      <a class="brand-title" href="index.html">Cave Recorder (caverec)</a>
-      <span class="brand-telemetry-pill" title="No analytics, no cookies, no telemetry">ZERO TELEMETRY</span>
+      <a class="brand-title" href="index.html">Cave Recorder (<code>caverec</code>)</a>
     </div>
     <nav class="deck-actions" aria-label="Primary Navigation">
       <a class="deck-btn deck-btn-primary" href="#download">Download</a>
       <a class="deck-btn" href="#features">Features</a>
       <a class="deck-btn" href="manual/">User Manual</a>
-      <a class="deck-btn" href="manual/Cave_Recorder_User_Manual.pdf" download>PDF Manual</a>
       <a class="deck-btn" href="#feedback-support">Feedback &amp; Support</a>
-      <a class="deck-btn" href="privacy/">Privacy Policy</a>
     </nav>
   </header>
 
@@ -74,15 +70,15 @@
               src="assets/icons/caverec_512.png"
               alt="Cave Recorder (caverec) Dark Heritage Console Application Icon"
               class="hero-app-icon"
-              width="96"
-              height="96"
+              width="82"
+              height="82"
             />
 <pre class="logo" aria-label="Cave Recorder ASCII CRT Meter">╔═══════════════════════════════════════════════════════════════════════════╗
 ║   ██████╗ █████╗ ██╗   ██╗███████╗██████╗ ███████╗ ██████╗                ║
 ║  ██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗██╔════╝██╔════╝   [● REC]      ║
 ║  ██║     ███████║██║   ██║█████╗  ██████╔╝█████╗  ██║        30m RAM RING ║
 ║  ██║     ██╔══██║╚██╗ ██╔╝██╔══╝  ██╔══██╗██╔══╝  ██║        48kHz ADAT   ║
-║  ╚██████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║███████╗╚██████╗   ZERO-ALLOC   ║
+║  ╚██████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║███████╗╚██████╗   32-BIT FLOAT ║
 ║   ╚═════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝ ╚═════╝                ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
 ║  CH 01-18  [████████████████████░░░░░] -3.2 dBFS  │  PHASE: Δ 0.02 ms Ø   ║
@@ -97,10 +93,10 @@
             </div>
             <h1 id="hero-heading">Cave Recorder (<code>caverec</code>)</h1>
             <p class="hero-lead">
-              A studio-grade multitrack digital audio workstation built for bands and engineers recording live in rehearsal caves and studios. Every song or jam gets its own independent <code>00:00:00.000</code> <strong>Take</strong>, simultaneous 32-bit float stems + live stereo <strong>Print</strong>, sub-sample multi-mic phase alignment, console mixing, and optional two-way <strong>Google Drive</strong> session &amp; mixdown sync.
+              A multitrack recorder and mixing console built for live band rehearsals and studio tracking. Every song or jam gets its own independent <code>00:00:00.000</code> <strong>Take</strong>, simultaneous 32-bit float stems + live stereo <strong>Print</strong>, automatic multi-mic phase alignment, and optional <strong>Google Drive</strong> session &amp; mixdown sync.
             </p>
             <p class="hero-cave-note">
-              <strong>Rehearsal-Cave Insurance:</strong> Built for dimly lit basements where the drummer inevitably starts playing the best groove of the year five minutes before anyone remembers to press Record &mdash; which is why Cave Recorder keeps a continuous <strong>30-minute rolling RAM ring</strong> ready to rescue the jam after the last cymbal fades.
+              <strong>Rehearsal-Cave Insurance:</strong> The drummer inevitably plays the best groove of the year five minutes before anyone remembers to press Record. Cave Recorder keeps a continuous <strong>30-minute rolling RAM ring</strong> ready to save the jam after the last cymbal fades.
             </p>
           </div>
         </div>
@@ -207,7 +203,7 @@
               <span>&#x1F4D6; Read Online User Manual</span>
             </a>
             <a class="quick-bar-link" href="manual/Cave_Recorder_User_Manual.pdf" download>
-              <span>&darr; Download User Manual (120-page PDF)</span>
+              <span>&darr; Download User Manual (PDF)</span>
             </a>
           </div>
           <a class="quick-bar-checksum" href="https://github.com/henriknyman/caverec-site/releases">
@@ -222,11 +218,16 @@
               <span class="detected-dot" aria-hidden="true"></span>
               <span>Thank you for downloading Cave Recorder.</span>
             </h3>
-            <button type="button" class="thank-you-close" id="close-thank-you-btn" aria-label="Close quick start panel">
-              Dismiss &times;
-            </button>
+            <div class="thank-you-header-actions">
+              <button type="button" class="thank-you-toggle-all" id="toggle-all-os-tips-btn" aria-expanded="false">
+                Show tips for all platforms
+              </button>
+              <button type="button" class="thank-you-close" id="close-thank-you-btn" aria-label="Close quick start panel">
+                Dismiss &times;
+              </button>
+            </div>
           </div>
-          <ul class="os-tips-list">
+          <ul class="os-tips-list" id="os-tips-list">
             <li class="os-tip-item" data-os-tip="macos">
               <span class="os-tip-label">macOS First Launch</span>
               Drag <code>Cave Recorder.app</code> to Applications, then <strong>Right-click &rarr; Open</strong> on first launch.
@@ -243,7 +244,7 @@
           <div class="thank-you-links">
             <a href="manual/02-hardware-setup-and-first-session.html">Chapter 2: Hardware Setup &amp; First Session &rarr;</a>
             <a href="#feedback-support">Report a Bug / Share Feedback</a>
-            <a href="#feedback-support">Optional Voluntary Support</a>
+            <a href="#feedback-support">Voluntary Support</a>
           </div>
         </aside>
       </section>
@@ -257,7 +258,7 @@
           <h2 class="section-title" id="features-heading">Built Around Real Rehearsal &amp; Tracking Rooms</h2>
         </div>
         <p class="section-subtitle">
-          Fixed dark-chassis console ergonomics &mdash; no floating plugin mazes or multi-hour timeline scrubbing.
+          Fixed dark-chassis console ergonomics: no floating plugin mazes or multi-hour timeline scrubbing.
         </p>
       </div>
 
@@ -267,11 +268,14 @@
           <button
             type="button"
             class="tour-tab-btn active"
+            id="tour-tab-0"
             role="tab"
             aria-selected="true"
+            aria-controls="tour-stage-panel"
+            tabindex="0"
             data-tour-img="manual/assets/images/mix-console.png"
             data-tour-alt="Cave Recorder Mix Console view with 18 input strips, Upper Inspector Wells, Subgroup Buses, Aux Returns, and Master Bus"
-            data-tour-caption="MIX CONSOLE (CMD+1 / CTRL+1) — 8-slot processor rack, 12-band EQ + Dual-Trace RTA, VCA Compressor, Subgroup Buses, and Master Bus 2-TRK Print."
+            data-tour-caption="MIX CONSOLE (CMD+1 / CTRL+1): 8-slot processor rack, 12-band EQ + Dual-Trace RTA, VCA Compressor, Subgroup Buses, and Master Bus 2-TRK Print."
             data-tour-link="manual/04-mix-console-and-channel-strips.html"
           >
             1. MIX CONSOLE
@@ -279,11 +283,14 @@
           <button
             type="button"
             class="tour-tab-btn"
+            id="tour-tab-1"
             role="tab"
             aria-selected="false"
+            aria-controls="tour-stage-panel"
+            tabindex="-1"
             data-tour-img="manual/assets/images/waveform-timeline-expanded.png"
             data-tour-alt="Cave Recorder Waveform Timeline view showing independent Take 001 timeline and expanded Pass Lanes (PASS 01 and OD 02)"
-            data-tour-caption="WAVEFORM TIMELINE (CMD+2 / CTRL+2) — Independent t=0 Take timeline with expandable Pass Lanes (PASS 01 Base Pass, OD 02 Overdub Pass) and markers."
+            data-tour-caption="WAVEFORM TIMELINE (CMD+2 / CTRL+2): Independent t=0 Take timeline with expandable Pass Lanes (PASS 01 Base Pass, OD 02 Overdub Pass) and markers."
             data-tour-link="manual/06-waveform-timeline-and-markers.html"
           >
             2. WAVEFORM TIMELINE &amp; PASS LANES
@@ -291,11 +298,14 @@
           <button
             type="button"
             class="tour-tab-btn"
+            id="tour-tab-2"
             role="tab"
             aria-selected="false"
+            aria-controls="tour-stage-panel"
+            tabindex="-1"
             data-tour-img="manual/assets/images/channel-inspector-track.png"
-            data-tour-alt="Cave Recorder Channel Inspector view showing 4096-point Dual-Trace RTA, 12-band Parametric EQ, VCA Compressor transfer curve, and Phase Align controls"
-            data-tour-caption="CHANNEL INSPECTOR (CMD+3 / CTRL+3) — Full-screen 12-band SVF Parametric EQ with 4096-pt Dual-Trace RTA, VCA Compressor curve, and ALIGN Φ."
+            data-tour-alt="Cave Recorder Channel Inspector view showing Dual-Trace RTA, 12-band Parametric EQ, VCA Compressor transfer curve, and Phase Align controls"
+            data-tour-caption="CHANNEL INSPECTOR (CMD+3 / CTRL+3): Full-screen 12-band Parametric EQ with Dual-Trace RTA, VCA Compressor transfer curve, and ALIGN Φ."
             data-tour-link="manual/05-processors-phase-and-plugins.html"
           >
             3. CHANNEL INSPECTOR &amp; ALIGN Φ
@@ -303,18 +313,21 @@
           <button
             type="button"
             class="tour-tab-btn"
+            id="tour-tab-3"
             role="tab"
             aria-selected="false"
+            aria-controls="tour-stage-panel"
+            tabindex="-1"
             data-tour-img="manual/assets/images/session-reel.png"
             data-tour-alt="Cave Recorder Session Reel showing Takes Catalog, one-click FLAC Print, Snapshots & Present Stash A/B comparison, and Google Drive sync controls"
-            data-tour-caption="SESSION REEL (CMD+4 / CTRL+4) — Takes Catalog, one-click FLAC Print conversion, Snapshots with Present Stash A/B recall, and Google Drive sync."
+            data-tour-caption="SESSION REEL (CMD+4 / CTRL+4): Takes Catalog, one-click FLAC Print conversion, Snapshots with Present Stash A/B recall, and Google Drive sync."
             data-tour-link="manual/07-session-reel-snapshots-and-cloud.html"
           >
             4. SESSION REEL &amp; PRESENT STASH
           </button>
         </div>
 
-        <figure class="tour-stage-figure">
+        <figure class="tour-stage-figure" id="tour-stage-panel" role="tabpanel" aria-labelledby="tour-tab-0">
           <img
             id="tour-stage-img"
             src="manual/assets/images/mix-console.png"
@@ -324,148 +337,92 @@
           />
           <figcaption class="tour-stage-caption">
             <span id="tour-stage-text">
-              MIX CONSOLE (CMD+1 / CTRL+1) &mdash; 8-slot processor rack, 12-band EQ + Dual-Trace RTA, VCA Compressor, Subgroup Buses, and Master Bus 2-TRK Print.
+              MIX CONSOLE (CMD+1 / CTRL+1): 8-slot processor rack, 12-band EQ + Dual-Trace RTA, VCA Compressor, Subgroup Buses, and Master Bus 2-TRK Print.
             </span>
             <a id="tour-stage-link" href="manual/04-mix-console-and-channel-strips.html">Explore in User Manual &rarr;</a>
           </figcaption>
         </figure>
       </div>
 
-      <!-- 2x2 Feature Grid -->
+      <!-- 2x2 Feature Grid (Aligned 1..4 with the Studio Stage Tabs above) -->
       <div class="feature-grid-2x2">
-        <!-- Feature 1 -->
-        <article class="feature-card">
+        <!-- Feature 1 (Matches Tab 1: Mix Console) -->
+        <article class="feature-card is-active-tour" data-feature-card="0">
+          <div>
+            <div class="feature-card-eyebrow">
+              <span>12-BAND EQ &bull; VCA COMP &bull; TAPE &bull; CLAP</span>
+              <span>REAL-TIME DSP</span>
+            </div>
+            <h3>1. Hardware-Inspired Mix Console &amp; Built-In DSP</h3>
+            <p>
+              Every channel and stereo <strong>Subgroup Bus</strong> packs an 8-slot rack with 12-band parametric EQ + Dual-Trace RTA, VCA compressor, analog tape saturation, convolution reverb, tape delay, master limiter, and native <strong>CLAP plugin</strong> hosting with automatic delay compensation.
+            </p>
+          </div>
+          <div class="feature-card-footer">
+            <button type="button" class="stage-preview-btn" data-select-tour="0">
+              &#x2197; Show Mix Console in Stage
+            </button>
+            <a href="manual/04-mix-console-and-channel-strips.html">Chapter 4: Mix Console &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Feature 2 (Matches Tab 2: Waveform Timeline & Retroactive Capture) -->
+        <article class="feature-card" data-feature-card="1">
           <div>
             <div class="feature-card-eyebrow">
               <span>RAM &bull; RETRO (SHIFT + R) &bull; 2-TRK PRINT</span>
               <span>CH 01–18</span>
             </div>
-            <h3>30-Minute Retroactive RAM Capture &amp; Live Prints</h3>
+            <h3>2. 30-Minute Retroactive RAM Capture &amp; Live Prints</h3>
             <p>
-              A continuous lock-free <strong>30-minute rolling RAM ring</strong> buffers all armed channels while the transport is stopped so you can capture a spontaneous jam <em>after</em> it happens. During every <strong>Take</strong>, Cave Recorder simultaneously writes 32-bit float pre-fader multitrack stems (<code>rec/</code>) and a live stereo Master Bus <strong>Print</strong> (<code>mix/</code>) ready for immediate band listening.
+              A continuous <strong>30-minute rolling RAM ring</strong> buffers all armed channels while stopped so you can save a great jam <em>after</em> it happens. Every <strong>Take</strong> simultaneously records 32-bit float multitrack stems and a live stereo Master Bus <strong>Print</strong> ready for immediate band playback.
             </p>
           </div>
-          <div>
-            <button
-              type="button"
-              class="feature-thumb-btn"
-              data-select-tour="1"
-              aria-label="Inspect Waveform Timeline and Retroactive Capture in viewer above"
-            >
-              <img
-                src="manual/assets/images/waveform-timeline-expanded.png"
-                alt="Waveform Timeline showing independent t=0 Take and expandable Pass Lanes"
-                loading="lazy"
-                width="720"
-                height="405"
-              />
+          <div class="feature-card-footer">
+            <button type="button" class="stage-preview-btn" data-select-tour="1">
+              &#x2197; Show Timeline in Stage
             </button>
-            <div class="feature-card-footer">
-              <span>Hierarchy: <code>Project &rarr; Session &rarr; Take (t=0)</code></span>
-              <a href="manual/03-studio-and-rehearsal-workflows.html">Chapter 3: Workflows &rarr;</a>
-            </div>
+            <a href="manual/03-studio-and-rehearsal-workflows.html">Chapter 3: Workflows &rarr;</a>
           </div>
         </article>
 
-        <!-- Feature 2 -->
-        <article class="feature-card">
+        <!-- Feature 3 (Matches Tab 3: Channel Inspector & Phase Alignment) -->
+        <article class="feature-card" data-feature-card="2">
           <div>
             <div class="feature-card-eyebrow">
-              <span>GCC-PHAT &bull; POLARITY (Ø) &bull; SUB-SAMPLE DELAY</span>
+              <span>AUTO CORRELATION &bull; POLARITY (Ø) &bull; SUB-SAMPLE DELAY</span>
               <span>ALIGN Φ</span>
             </div>
-            <h3>Sub-Sample Multi-Mic Phase Alignment (<code>ALIGN Φ</code>)</h3>
+            <h3>3. Sub-Sample Multi-Mic Phase Alignment (<code>ALIGN Φ</code>)</h3>
             <p>
-              Acoustic arrival-time differences between close drum mics, overheads, room mics, and DI/cab pairs hollow out low-end punch. One click on <strong>ALIGN ALL</strong> runs GCC-PHAT cross-correlation against your chosen reference channel, automatically applying polarity inversion (<code>Ø</code>) and fractional all-pass time alignment stored in microseconds across sample rates.
+              Timing differences between close drum mics, overheads, room mics, and DI/cab pairs hollow out low-end punch. Clicking <strong>ALIGN ALL</strong> correlates arrival times against your reference mic, applying polarity inversion (<code>Ø</code>) and microsecond sub-sample alignment in one step.
             </p>
           </div>
-          <div>
-            <button
-              type="button"
-              class="feature-thumb-btn"
-              data-select-tour="2"
-              aria-label="Inspect Channel Inspector and Phase Alignment in viewer above"
-            >
-              <img
-                src="manual/assets/images/channel-inspector-track.png"
-                alt="Channel Inspector showing 12-band Parametric EQ, Dual-Trace RTA, and Phase Alignment"
-                loading="lazy"
-                width="720"
-                height="405"
-              />
+          <div class="feature-card-footer">
+            <button type="button" class="stage-preview-btn" data-select-tour="2">
+              &#x2197; Show Inspector in Stage
             </button>
-            <div class="feature-card-footer">
-              <span>Instant global A/B via <code>PHASE: ALIGN / BYP</code></span>
-              <a href="manual/05-processors-phase-and-plugins.html">Chapter 5: Phase &amp; DSP &rarr;</a>
-            </div>
+            <a href="manual/05-processors-phase-and-plugins.html">Chapter 5: Phase &amp; DSP &rarr;</a>
           </div>
         </article>
 
-        <!-- Feature 3 -->
-        <article class="feature-card">
+        <!-- Feature 4 (Matches Tab 4: Session Reel, Pass Comping & Present Stash) -->
+        <article class="feature-card" data-feature-card="3">
           <div>
             <div class="feature-card-eyebrow">
-              <span>12-BAND SVF EQ &bull; VCA COMP &bull; TAPE &bull; CLAP</span>
-              <span>0-ALLOC AUDIO</span>
-            </div>
-            <h3>Hardware-Inspired Mix Console &amp; Built-In DSP</h3>
-            <p>
-              Every input strip and stereo <strong>Subgroup Bus</strong> features a reorderable 8-slot rack with a 12-band parametric EQ + 4096-point Dual-Trace RTA, 2D VCA compressor with transfer curve, analog tape saturation, zero-latency convolution reverb, capstan tape delay, true-peak master limiter, and native <strong>CLAP plugin</strong> hosting with automatic PDC.
-            </p>
-          </div>
-          <div>
-            <button
-              type="button"
-              class="feature-thumb-btn"
-              data-select-tour="0"
-              aria-label="Inspect Mix Console in viewer above"
-            >
-              <img
-                src="manual/assets/images/mix-console.png"
-                alt="Mix Console showing 18 channels, Subgroup Buses, Aux Returns, and Master Bus"
-                loading="lazy"
-                width="720"
-                height="405"
-              />
-            </button>
-            <div class="feature-card-footer">
-              <span>Calibrated hardware loopback offset (<code>G + R</code>)</span>
-              <a href="manual/04-mix-console-and-channel-strips.html">Chapter 4: Mix Console &rarr;</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Feature 4 -->
-        <article class="feature-card">
-          <div>
-            <div class="feature-card-eyebrow">
-              <span>PASS COMPING &bull; PRESENT STASH &bull; GOOGLE DRIVE</span>
+              <span>Project &rarr; Session &rarr; Take (t=0) &rarr; Pass</span>
               <span>SESSION REEL</span>
             </div>
-            <h3>Session Reel, Expandable Pass Comping &amp; Present Stash</h3>
+            <h3>4. Session Reel, Pass Comping &amp; Present Stash</h3>
             <p>
-              Every multitrack <strong>Take</strong> starts at its own <code>00:00:00.000</code> origin. Latching Overdub Mode (<code>OD</code>) records track-level <strong>Pass</strong> lanes (<code>Rec001</code> Base Pass, <code>Rec002-OD</code> Overdub Pass) for non-destructive comping. Audition historical console <strong>Snapshots</strong> safely with <strong>Present Stash</strong> A/B recall, and optionally sync sessions or 24-bit <code>_Mixes/</code> FLACs directly to your band's <strong>Google Drive</strong>.
+              Every <strong>Take</strong> starts at <code>00:00:00.000</code> with expandable <strong>Pass</strong> lanes (<code>Rec001</code> Base Pass, <code>Rec002-OD</code> Overdub Pass) for non-destructive comping. Compare console <strong>Snapshots</strong> safely via <strong>Present Stash</strong> A/B recall, and sync sessions or FLAC mixes via <strong>Direct Google Drive sync (no middleman servers)</strong>.
             </p>
           </div>
-          <div>
-            <button
-              type="button"
-              class="feature-thumb-btn"
-              data-select-tour="3"
-              aria-label="Inspect Session Reel and Present Stash in viewer above"
-            >
-              <img
-                src="manual/assets/images/session-reel.png"
-                alt="Session Reel showing Takes Catalog, Snapshots & Present Stash, and Google Drive sync"
-                loading="lazy"
-                width="720"
-                height="405"
-              />
+          <div class="feature-card-footer">
+            <button type="button" class="stage-preview-btn" data-select-tour="3">
+              &#x2197; Show Session Reel in Stage
             </button>
-            <div class="feature-card-footer">
-              <span>Direct client-to-Google Drive OAuth sync</span>
-              <a href="manual/07-session-reel-snapshots-and-cloud.html">Chapter 7: Session Reel &rarr;</a>
-            </div>
+            <a href="manual/07-session-reel-snapshots-and-cloud.html">Chapter 7: Session Reel &rarr;</a>
           </div>
         </article>
       </div>
@@ -475,14 +432,14 @@
     <section class="studio-section" id="feedback-support" aria-labelledby="feedback-heading">
       <div class="section-header-bar">
         <div>
-          <span class="section-eyebrow">Community &amp; Stewardship</span>
+          <span class="section-eyebrow">Open Feedback &amp; Voluntary Support</span>
           <h2 class="section-title" id="feedback-heading">Feedback, Bug Reports &amp; Voluntary Support</h2>
         </div>
       </div>
 
       <div class="free-uncrippled-banner">
         <p>
-          <strong>100% Free &amp; Uncrippled.</strong> Cave Recorder is free to download and use in full &mdash; no trial timers, no locked tracks, no feature paywalls, no telemetry, and no nag screens inside the app.
+          <strong>100% Free &amp; Uncrippled.</strong> Cave Recorder is free to download and use in full: no trial timers, no locked tracks, no feature paywalls, no telemetry, and no nag screens inside the app.
         </p>
       </div>
 
@@ -493,25 +450,25 @@
             <span class="support-card-badge">No Donation Expected</span>
             <h3>Feedback, Bug Reports &amp; Feature Requests</h3>
             <p>
-              Hearing how Cave Recorder performs in real rehearsal basements and tracking rooms &mdash; which audio interfaces you patch in, which workflows feel natural, or where a rough edge tripped you up &mdash; is hugely valuable on its own.
+              Bug reports, feature requests, and notes from your rehearsal room are always welcome, completely unattached to any donation. Tell us what interfaces you patch in or where a rough edge tripped you up.
             </p>
           </div>
           <div class="support-actions">
             <a
               class="deck-btn deck-btn-primary"
-              href="https://github.com/henriknyman/caverec-site/issues/new/choose"
+              href="https://github.com/henriknyman/caverec-site/issues/new?template=bug_report.yml"
             >
               Report a Bug
             </a>
             <a
               class="deck-btn"
-              href="https://github.com/henriknyman/caverec-site/issues/new/choose"
+              href="https://github.com/henriknyman/caverec-site/issues/new?template=feature_request.yml"
             >
               Request a Feature
             </a>
             <a
               class="deck-btn"
-              href="https://github.com/henriknyman/caverec-site/issues/new/choose"
+              href="https://github.com/henriknyman/caverec-site/issues/new?template=feedback.yml"
             >
               Share Studio Feedback
             </a>
@@ -524,7 +481,7 @@
             <span class="support-card-badge">Completely Optional</span>
             <h3>Voluntary Support</h3>
             <p>
-              If Cave Recorder saves your band studio time or rescues a great late-night jam from the 30-minute RAM ring and you would like to chip in toward ongoing development (or rehearsal-cave coffee), voluntary one-time or monthly support is available via GitHub Sponsors.
+              If Cave Recorder earns its keep in your sessions and you'd like to chip in toward development (or rehearsal-cave coffee), optional support is available via GitHub Sponsors.
             </p>
           </div>
           <div class="support-actions">
@@ -593,15 +550,25 @@
         }
       }
 
-      // 2. Post-Download "Thank You & Quick Start" Panel Reveal
+      // 2. Post-Download "Thank You & Quick Start" Panel Reveal (Single OS Tip by default)
       var thankYouPanel = document.getElementById("download-thank-you");
       var closeThankYouBtn = document.getElementById("close-thank-you-btn");
+      var toggleAllOsTipsBtn = document.getElementById("toggle-all-os-tips-btn");
+      var osTipsList = document.getElementById("os-tips-list");
       var downloadButtons = document.querySelectorAll("[data-download-os]");
       var osTipItems = document.querySelectorAll("[data-os-tip]");
+
+      function setAllTipsExpanded(expanded) {
+        if (!osTipsList || !toggleAllOsTipsBtn) return;
+        osTipsList.classList.toggle("show-all-tips", expanded);
+        toggleAllOsTipsBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
+        toggleAllOsTipsBtn.textContent = expanded ? "Show only my platform" : "Show tips for all platforms";
+      }
 
       function showThankYouForOS(osKey) {
         if (!thankYouPanel) return;
         thankYouPanel.classList.add("is-open");
+        setAllTipsExpanded(false);
         for (var i = 0; i < osTipItems.length; i++) {
           var item = osTipItems[i];
           if (item.getAttribute("data-os-tip") === osKey) {
@@ -619,27 +586,48 @@
         });
       }
 
+      if (toggleAllOsTipsBtn && osTipsList) {
+        toggleAllOsTipsBtn.addEventListener("click", function () {
+          var currentlyAll = osTipsList.classList.contains("show-all-tips");
+          setAllTipsExpanded(!currentlyAll);
+        });
+      }
+
       if (closeThankYouBtn && thankYouPanel) {
         closeThankYouBtn.addEventListener("click", function () {
           thankYouPanel.classList.remove("is-open");
         });
       }
 
-      // 3. Visual Studio Tour Tab & Thumbnail Switcher
+      // 3. Visual Studio Tour Tab & Card Switcher with WAI-ARIA Keyboard Support
       var tourTabs = document.querySelectorAll(".tour-tab-btn");
-      var tourThumbs = document.querySelectorAll("[data-select-tour]");
+      var tourCards = document.querySelectorAll("[data-feature-card]");
+      var tourTriggers = document.querySelectorAll("[data-select-tour]");
+      var stagePanel = document.getElementById("tour-stage-panel");
       var stageImg = document.getElementById("tour-stage-img");
       var stageText = document.getElementById("tour-stage-text");
       var stageLink = document.getElementById("tour-stage-link");
 
-      function activateTourTab(index, scrollIntoStage) {
+      function activateTourTab(index, options) {
         if (index < 0 || index >= tourTabs.length) return;
+        var opts = options || {};
         for (var j = 0; j < tourTabs.length; j++) {
           var isSelected = j === index;
           tourTabs[j].classList.toggle("active", isSelected);
           tourTabs[j].setAttribute("aria-selected", isSelected ? "true" : "false");
+          tourTabs[j].setAttribute("tabindex", isSelected ? "0" : "-1");
+          if (isSelected && opts.focusTab) {
+            tourTabs[j].focus();
+          }
+        }
+        for (var c = 0; c < tourCards.length; c++) {
+          var cardIdx = parseInt(tourCards[c].getAttribute("data-feature-card"), 10);
+          tourCards[c].classList.toggle("is-active-tour", cardIdx === index);
         }
         var activeBtn = tourTabs[index];
+        if (stagePanel && activeBtn.id) {
+          stagePanel.setAttribute("aria-labelledby", activeBtn.id);
+        }
         if (stageImg) {
           stageImg.src = activeBtn.getAttribute("data-tour-img");
           stageImg.alt = activeBtn.getAttribute("data-tour-alt");
@@ -650,23 +638,39 @@
         if (stageLink) {
           stageLink.href = activeBtn.getAttribute("data-tour-link");
         }
-        if (scrollIntoStage && stageImg) {
-          stageImg.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        if (opts.scrollIntoStage && stagePanel) {
+          stagePanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
         }
       }
 
       for (var k = 0; k < tourTabs.length; k++) {
         (function (idx) {
           tourTabs[idx].addEventListener("click", function () {
-            activateTourTab(idx, false);
+            activateTourTab(idx, { focusTab: false, scrollIntoStage: false });
+          });
+          tourTabs[idx].addEventListener("keydown", function (ev) {
+            var nextIdx = null;
+            if (ev.key === "ArrowRight") {
+              nextIdx = (idx + 1) % tourTabs.length;
+            } else if (ev.key === "ArrowLeft") {
+              nextIdx = (idx - 1 + tourTabs.length) % tourTabs.length;
+            } else if (ev.key === "Home") {
+              nextIdx = 0;
+            } else if (ev.key === "End") {
+              nextIdx = tourTabs.length - 1;
+            }
+            if (nextIdx !== null) {
+              ev.preventDefault();
+              activateTourTab(nextIdx, { focusTab: true, scrollIntoStage: false });
+            }
           });
         })(k);
       }
 
-      for (var m = 0; m < tourThumbs.length; m++) {
-        tourThumbs[m].addEventListener("click", function () {
+      for (var m = 0; m < tourTriggers.length; m++) {
+        tourTriggers[m].addEventListener("click", function () {
           var idx = parseInt(this.getAttribute("data-select-tour"), 10);
-          activateTourTab(idx, true);
+          activateTourTab(idx, { focusTab: false, scrollIntoStage: true });
         });
       }
     })();
