@@ -450,12 +450,6 @@ pre.logo {
   margin-bottom: 0.95rem;
 }
 
-.release-update-banner.is-returning-update {
-  background: linear-gradient(90deg, rgba(245, 158, 11, 0.16) 0%, rgba(16, 185, 129, 0.12) 100%);
-  border-color: rgba(245, 158, 11, 0.55);
-  border-left-color: var(--accent-amber);
-}
-
 .release-update-main {
   display: flex;
   align-items: baseline;
@@ -483,11 +477,6 @@ pre.logo {
   padding: 0.1rem 0.46rem;
   border-radius: 3px;
   white-space: nowrap;
-}
-
-.release-update-banner.is-returning-update .release-update-pill {
-  color: #fde68a;
-  border-color: rgba(245, 158, 11, 0.55);
 }
 
 .release-update-version {

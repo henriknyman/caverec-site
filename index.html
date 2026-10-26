@@ -108,16 +108,16 @@
       <!-- Obvious Above-the-Fold Download Deck (#download) -->
       <!-- RELEASE_VERSION_MARKER: v0.2.0-rc1 -->
       <section class="download-deck" id="download" data-release-version="v0.2.0-rc1" aria-labelledby="download-heading">
-        <!-- Release Update Banner for Recurring Visitors -->
+        <!-- Static Latest Release Banner -->
         <div class="release-update-banner" id="release-update-banner" role="region" aria-label="Latest Release Update">
           <div class="release-update-main">
             <span class="release-update-pill">
               <span class="detected-dot" aria-hidden="true"></span>
-              <span id="release-banner-status">NEW RELEASE</span>
+              <span>LATEST RELEASE</span>
             </span>
             <strong class="release-update-version" id="release-banner-version">v0.2.0-rc1</strong>
             <span class="release-update-summary">
-              Native <strong>AmpRig</strong> (5 tube circuits + <code>.nam</code> Neural Amp Capture &amp; 3-step hardware trainer), <strong>Mode 1 &amp; Mode 2 Multicore Polarity/Allpass Phase Maximizer</strong>, <strong>3-Variant Context Gates</strong> (<code>AmpDynamic</code> &amp; <code>DrumBleed</code>), <strong>12-Band Dynamic EQ</strong>, <strong>VocalRider</strong>, <strong>Control Room Monitor &amp; Broadcast LUFS/dBTP Metering</strong>, <strong>Live-Take Mistake Surgery</strong>, <strong>CLAP + macOS Audio Unit (<code>AUv2</code>/<code>AUv3</code>) Hosting</strong>, <strong>Dynamic 32-Track Console</strong>, and <strong>EXPORT TAKE</strong>.
+              New in 0.2.0: Native <strong>AmpRig</strong> (5 tube circuits + <code>.nam</code> Neural Amp Capture &amp; 3-step hardware trainer), <strong>Mode 1 &amp; Mode 2 Multicore Polarity/Allpass Phase Maximizer</strong>, <strong>3-Variant Context Gates</strong> (<code>AmpDynamic</code> &amp; <code>DrumBleed</code>), <strong>12-Band Dynamic EQ</strong>, <strong>VocalRider</strong>, <strong>Control Room Monitor &amp; Broadcast LUFS/dBTP Metering</strong>, <strong>Live-Take Mistake Surgery</strong>, <strong>CLAP + macOS Audio Unit (<code>AUv2</code>/<code>AUv3</code>) Hosting</strong>, <strong>Dynamic 32-Track Console</strong>, and <strong>EXPORT TAKE</strong>.
             </span>
           </div>
           <div class="release-update-actions">
@@ -800,37 +800,7 @@
         }
       }
 
-      // 2. Recurring Visitor Release Update Highlight & Post-Download "Thank You" Panel
-      var downloadDeck = document.getElementById("download");
-      var currentReleaseVer = downloadDeck ? downloadDeck.getAttribute("data-release-version") : null;
-      var releaseBanner = document.getElementById("release-update-banner");
-      var releaseBannerStatus = document.getElementById("release-banner-status");
-      var storageKeySeen = "caverec_last_seen_release";
-      var storageKeyDownloaded = "caverec_last_downloaded_release";
-
-      if (currentReleaseVer && releaseBanner) {
-        try {
-          var prevDownloaded = window.localStorage ? window.localStorage.getItem(storageKeyDownloaded) : null;
-          var prevSeen = window.localStorage ? window.localStorage.getItem(storageKeySeen) : null;
-          if (prevDownloaded && prevDownloaded !== currentReleaseVer) {
-            releaseBanner.classList.add("is-returning-update");
-            if (releaseBannerStatus) {
-              releaseBannerStatus.textContent = "UPDATE AVAILABLE (FROM " + prevDownloaded + ")";
-            }
-          } else if (prevSeen && prevSeen !== currentReleaseVer) {
-            releaseBanner.classList.add("is-returning-update");
-            if (releaseBannerStatus) {
-              releaseBannerStatus.textContent = "UPDATED SINCE YOUR LAST VISIT";
-            }
-          }
-          if (window.localStorage) {
-            window.localStorage.setItem(storageKeySeen, currentReleaseVer);
-          }
-        } catch (_err) {
-          // Ignore storage access errors in strict private browsing modes
-        }
-      }
-
+      // 2. Post-Download "Thank You & Quick Start" Panel Reveal (Single OS Tip by default)
       var thankYouPanel = document.getElementById("download-thank-you");
       var closeThankYouBtn = document.getElementById("close-thank-you-btn");
       var toggleAllOsTipsBtn = document.getElementById("toggle-all-os-tips-btn");
@@ -863,13 +833,6 @@
         downloadButtons[i].addEventListener("click", function () {
           var osKey = this.getAttribute("data-download-os");
           showThankYouForOS(osKey);
-          if (currentReleaseVer) {
-            try {
-              if (window.localStorage) {
-                window.localStorage.setItem(storageKeyDownloaded, currentReleaseVer);
-              }
-            } catch (_err) {}
-          }
         });
       }
 
