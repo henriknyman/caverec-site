@@ -21,7 +21,9 @@
     </div>
     <nav class="deck-actions" aria-label="Primary Navigation">
       <a class="deck-btn deck-btn-primary" href="#download">Download</a>
-      <a class="deck-btn" href="#features">Features</a>
+      <a class="deck-btn" href="#manifesto">Manifesto</a>
+      <a class="deck-btn" href="#features">Studio Tour</a>
+      <a class="deck-btn" href="#console-suite">Console Suite</a>
       <a class="deck-btn" href="manual/">User Manual</a>
       <a class="deck-btn" href="#feedback-support">Feedback &amp; Support</a>
     </nav>
@@ -94,7 +96,7 @@
             </div>
             <h1 id="hero-heading">Cave Recorder (<code>caverec</code>)</h1>
             <p class="hero-lead">
-              A multitrack recorder and mixing console built for live band rehearsals and studio tracking. Every song or jam gets its own independent <code>00:00:00.000</code> <strong>Take</strong>, simultaneous 32-bit float stems + live stereo <strong>Print</strong>, automatic multi-mic phase alignment, and optional <strong>Google Drive</strong> session &amp; mixdown sync.
+              A multitrack recorder, curated analog-inspired mixing console, and multicore phase-alignment workstation built for real bands playing together in one room. Every song or jam gets its own independent <code>00:00:00.000</code> <strong>Take</strong>, simultaneous 32-bit float stems + live stereo <strong>Print</strong>, native <strong>AmpRig</strong> tube &amp; <code>.nam</code> neural amplifier capture, bleed- &amp; harmonicity-aware dynamics, non-destructive live-take mistake surgery, and optional <strong>Google Drive</strong> session &amp; mixdown sync.
             </p>
             <p class="hero-cave-note">
               <strong>Rehearsal-Cave Insurance:</strong> The drummer inevitably plays the best groove of the year five minutes before anyone remembers to press Record. Cave Recorder keeps a continuous <strong>30-minute rolling RAM ring</strong> ready to save the jam after the last cymbal fades.
@@ -104,12 +106,36 @@
       </section>
 
       <!-- Obvious Above-the-Fold Download Deck (#download) -->
-      <!-- RELEASE_VERSION_MARKER: v0.1.0 -->
-      <section class="download-deck" id="download" data-release-version="v0.1.0" aria-labelledby="download-heading">
+      <!-- RELEASE_VERSION_MARKER: v0.2.0-rc1 -->
+      <section class="download-deck" id="download" data-release-version="v0.2.0-rc1" aria-labelledby="download-heading">
+        <!-- Release Update Banner for Recurring Visitors -->
+        <div class="release-update-banner" id="release-update-banner" role="region" aria-label="Latest Release Update">
+          <div class="release-update-main">
+            <span class="release-update-pill">
+              <span class="detected-dot" aria-hidden="true"></span>
+              <span id="release-banner-status">NEW RELEASE</span>
+            </span>
+            <strong class="release-update-version" id="release-banner-version">v0.2.0-rc1</strong>
+            <span class="release-update-summary">
+              Native <strong>AmpRig</strong> (5 tube circuits + <code>.nam</code> Neural Amp Capture &amp; 3-step hardware trainer), <strong>Mode 1 &amp; Mode 2 Multicore Polarity/Allpass Phase Maximizer</strong>, <strong>3-Variant Context Gates</strong> (<code>AmpDynamic</code> &amp; <code>DrumBleed</code>), <strong>12-Band Dynamic EQ</strong>, <strong>VocalRider</strong>, <strong>Control Room Monitor &amp; Broadcast LUFS/dBTP Metering</strong>, <strong>Live-Take Mistake Surgery</strong>, <strong>CLAP + macOS Audio Unit (<code>AUv2</code>/<code>AUv3</code>) Hosting</strong>, <strong>Dynamic 32-Track Console</strong>, and <strong>EXPORT TAKE</strong>.
+            </span>
+          </div>
+          <div class="release-update-actions">
+            <a class="release-update-link" href="#console-suite">What's New &darr;</a>
+            <a
+              class="release-update-link"
+              id="release-notes-link"
+              href="https://github.com/henriknyman/caverec-site/releases/tag/v0.2.0-rc1"
+            >
+              Release Notes &rarr;
+            </a>
+          </div>
+        </div>
+
         <div class="download-deck-header">
           <div class="download-deck-title-group">
             <h2 class="download-deck-title" id="download-heading">Download Cave Recorder</h2>
-            <span class="version-badge" id="release-version-badge" data-version="v0.1.0">v0.1.0</span>
+            <span class="version-badge" id="release-version-badge" data-version="v0.2.0-rc1">v0.2.0-rc1</span>
           </div>
           <div class="download-deck-meta">
             100% Free &amp; Uncrippled &bull; Portable Archive &bull; <a href="privacy/">Privacy Policy</a>
@@ -136,8 +162,8 @@
               class="download-cta-btn"
               id="download-macos"
               data-download-os="macos"
-              data-release-asset="caverec-v0.1.0-macos-arm64.zip"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.1.0/caverec-v0.1.0-macos-arm64.zip"
+              data-release-asset="caverec-v0.2.0-rc1-macos-arm64.zip"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.2.0-rc1/caverec-v0.2.0-rc1-macos-arm64.zip"
             >
               <span>&darr; Download macOS (arm64)</span>
               <span class="download-cta-ext">.zip</span>
@@ -162,8 +188,8 @@
               class="download-cta-btn"
               id="download-windows"
               data-download-os="windows"
-              data-release-asset="caverec-v0.1.0-windows-x86_64.zip"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.1.0/caverec-v0.1.0-windows-x86_64.zip"
+              data-release-asset="caverec-v0.2.0-rc1-windows-x86_64.zip"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.2.0-rc1/caverec-v0.2.0-rc1-windows-x86_64.zip"
             >
               <span>&darr; Download Windows (x86_64)</span>
               <span class="download-cta-ext">.zip</span>
@@ -188,8 +214,8 @@
               class="download-cta-btn"
               id="download-linux"
               data-download-os="linux"
-              data-release-asset="caverec-v0.1.0-linux-x86_64.zip"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.1.0/caverec-v0.1.0-linux-x86_64.zip"
+              data-release-asset="caverec-v0.2.0-rc1-linux-x86_64.zip"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.2.0-rc1/caverec-v0.2.0-rc1-linux-x86_64.zip"
             >
               <span>&darr; Download Linux (x86_64)</span>
               <span class="download-cta-ext">.zip</span>
@@ -251,6 +277,79 @@
       </section>
     </div>
 
+    <!-- Why Cave Recorder? — The Human Musicianship Manifesto (#manifesto) -->
+    <section class="studio-section" id="manifesto" aria-labelledby="manifesto-heading">
+      <div class="section-header-bar">
+        <div>
+          <span class="section-eyebrow">Why Cave Recorder? &middot; The Human Musicianship Manifesto</span>
+          <h2 class="section-title" id="manifesto-heading">Capturing Real Human Moments in the Age of AI &amp; Grid-Locked Pop</h2>
+        </div>
+        <p class="section-subtitle">
+          Technology as an invisible studio engineer &bull; Zero beat-grid or pitch-correction bloat.
+        </p>
+      </div>
+
+      <div class="manifesto-lead-box">
+        <p>
+          Modern music production has drifted toward sterile isolation: musicians recorded one at a time to a rigid click track, snapped to a mathematical bar/beat grid, and scrubbed of every pitch and timing micro-variation. That pipeline serves synthetic programmed pop, but it destroys the soul of music that lives in <strong>shared eye contact, collective improvisation, natural tempo push-and-pull, and loud amplifiers breathing in the same room</strong>.
+        </p>
+        <p>
+          Historically, capturing a full band live in one room with the punch, separation, and warmth of classic analog records required an isolated control room, a dedicated recording engineer, and two days spent moving microphone stands by millimeters to fight phase cancellation and amplifier buzz. <strong>Cave Recorder democratizes that analog-era studio quality for self-recording bands in rehearsal caves, basements, and project studios</strong> who want to plug in, play together, and capture lightning in a bottle without technical friction.
+        </p>
+        <div class="manifesto-genre-bar" aria-label="Musical Genres Built for Live-Room Capture">
+          <span class="manifesto-genre-label">Built For Live-Room Energy:</span>
+          <span class="genre-pill">Stoner &amp; Doom</span>
+          <span class="genre-pill">Psychedelic &amp; Space Rock</span>
+          <span class="genre-pill">Krautrock</span>
+          <span class="genre-pill">Jazz &amp; Improv</span>
+          <span class="genre-pill">Folk &amp; Americana</span>
+          <span class="genre-pill">Blues &amp; Soul</span>
+          <span class="genre-pill">Punk &amp; Garage</span>
+        </div>
+      </div>
+
+      <div class="manifesto-grid-3col">
+        <article class="manifesto-pillar">
+          <div>
+            <span class="manifesto-pillar-tag">Pillar I &middot; Human Time</span>
+            <h3>1. Zero Beat Grids, Zero Pitch Correction</h3>
+            <p>
+              Cave Recorder intentionally omits MIDI sequencers, piano rolls, elastic tempo-warping grids, and robotic vocal tuning. Time is measured in real physical seconds, milliseconds, and samples (<code>00:00:00.000</code>) inside independent <strong>Takes</strong> so your rhythm section's natural tempo fluctuations and live groove breathe unquantized.
+            </p>
+          </div>
+          <div class="suite-card-footer">
+            <a href="manual/01-overview-and-philosophy.html">Chapter 1: Studio Philosophy &rarr;</a>
+          </div>
+        </article>
+
+        <article class="manifesto-pillar">
+          <div>
+            <span class="manifesto-pillar-tag">Pillar II &middot; Invisible Assistant</span>
+            <h3>2. The Invisible Studio Engineer</h3>
+            <p>
+              When all four band members are holding instruments, nobody is sitting at the desk riding faders. Cave Recorder handles rolling <strong>30-minute RAM capture</strong>, one-click <code>-18 dBFS</code> <strong>CALIBRATE ALL TRIMS</strong>, multicore <strong>Polarity &amp; Allpass Phase Maximization</strong>, and bleed-frozen <strong>VocalRider</strong> leveling automatically.
+            </p>
+          </div>
+          <div class="suite-card-footer">
+            <a href="manual/03-studio-and-rehearsal-workflows.html">Chapter 3: Studio Workflows &rarr;</a>
+          </div>
+        </article>
+
+        <article class="manifesto-pillar">
+          <div>
+            <span class="manifesto-pillar-tag">Pillar III &middot; Anti-Bloat Design</span>
+            <h3>3. Curated Console vs. 90 Confusing Plugins</h3>
+            <p>
+              Instead of overwhelming you with 90 overlapping legacy plugins and floating window mazes, Cave Recorder integrates a complete, zero-compromise <strong>Native Console &amp; Rack Suite</strong>. Every processor opens on an immediate musical sweet spot while exposing deep surgical controls underneath.
+            </p>
+          </div>
+          <div class="suite-card-footer">
+            <a href="#console-suite">Explore the Native Console Suite &darr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- Concise Visual Studio Tour (#features) -->
     <section class="studio-section" id="features" aria-labelledby="features-heading">
       <div class="section-header-bar">
@@ -259,7 +358,7 @@
           <h2 class="section-title" id="features-heading">Built Around Real Rehearsal &amp; Tracking Rooms</h2>
         </div>
         <p class="section-subtitle">
-          Fixed dark-chassis console ergonomics: no floating plugin mazes or multi-hour timeline scrubbing.
+          Fixed dark-chassis console layout: no floating plugin mazes or multi-hour timeline scrubbing.
         </p>
       </div>
 
@@ -351,12 +450,12 @@
         <article class="feature-card is-active-tour" data-feature-card="0">
           <div>
             <div class="feature-card-eyebrow">
-              <span>12-BAND EQ &bull; VCA COMP &bull; TAPE &bull; 8-SLOT RACK</span>
+              <span>DYNAMIC 32-TRK / 16-SUB / 8-AUX &bull; 8-SLOT RACK &bull; CLAP &amp; AU</span>
               <span>REAL-TIME DSP</span>
             </div>
-            <h3>1. Hardware-Inspired Mix Console &amp; Built-In DSP</h3>
+            <h3>1. Dynamic Mix Console, Built-In DSP &amp; CLAP / AU Hosting</h3>
             <p>
-              Every channel and stereo <strong>Subgroup Bus</strong> packs a reorderable 8-slot rack (12-band parametric EQ + Dual-Trace RTA, VCA compressor, analog tape saturation, and Aux Send tap), feeding dedicated stereo <strong>AUX 1</strong> convolution reverb and <strong>AUX 2</strong> tape delay returns, a <strong>Master Bus</strong> brickwall limiter, and automatic <strong>PDC</strong> with <strong>Low-Latency Monitoring</strong>.
+              Scale your console on the fly from a 2-channel acoustic duo up to 32 mono or stereo-linked tracks, 16 stereo <strong>Subgroup Buses</strong>, and 8 stereo <strong>Aux Returns</strong>. Every strip packs a reorderable 8-slot rack (12-band dynamic EQ + Dual-Trace RTA, VCA/FET/Opto compressor, analog tape saturation, Guitar &amp; Bass <strong>AmpRig</strong>, and external <code>.clap</code> + macOS Audio Unit <code>AUv2</code>/<code>AUv3</code> plugins with Ghost Slot recovery) plus a <strong>Master Bus</strong> brickwall limiter and automatic <strong>PDC</strong>.
             </p>
           </div>
           <div class="feature-card-footer">
@@ -411,12 +510,12 @@
         <article class="feature-card" data-feature-card="3">
           <div>
             <div class="feature-card-eyebrow">
-              <span>Project &rarr; Session &rarr; Take (t=0) &rarr; Pass</span>
+              <span>Project &rarr; Session &rarr; Take (t=0) &rarr; Pass &bull; EXPORT TAKE</span>
               <span>SESSION REEL</span>
             </div>
-            <h3>4. Session Reel, Pass Comping &amp; Present Stash</h3>
+            <h3>4. Session Reel, Pass Comping, Present Stash &amp; Export Take</h3>
             <p>
-              Start tracking immediately with built-in session templates (<code>MicAndGuitar001</code> and <code>GuitarBassDrumTrio001</code>) plus custom <code>SAVE TEMPLATE</code> studio layouts up to 18 channels. Every <strong>Take</strong> starts at <code>00:00:00.000</code> with expandable <strong>Pass</strong> lanes (<code>Rec001</code> Base Pass, <code>Rec002-OD</code> Overdub Pass), <strong>Present Stash</strong> A/B <strong>Snapshot</strong> recall, and <strong>Direct Google Drive sync</strong> for sessions plus 24-bit <code>.flac</code> and 320 kbps <code>.mp3</code> prints/mixdowns (for native Drive web browser playback).
+              Start tracking immediately with built-in session templates (<code>MicAndGuitar001</code> and <code>GuitarBassDrumTrio001</code>) plus custom <code>SAVE TEMPLATE</code> studio layouts. Every <strong>Take</strong> starts at <code>00:00:00.000</code> with expandable <strong>Pass</strong> lanes (<code>Rec001</code> Base Pass, <code>Rec002-OD</code> Overdub Pass), <strong>Present Stash</strong> A/B <strong>Snapshot</strong> recall, one-click <strong>EXPORT TAKE</strong> interchange (<code>.rpp</code>, <code>.als</code>, Session XML, <code>.dawproject</code>, <code>.fcpxml</code> v1.9, and BWF/iXML/MIDI/IR bundles), and <strong>Direct Google Drive sync</strong> for sessions plus 24-bit <code>.flac</code> and 320 kbps <code>.mp3</code> mixes.
             </p>
           </div>
           <div class="feature-card-footer">
@@ -424,6 +523,156 @@
               &#x2197; Show Session Reel in Stage
             </button>
             <a href="manual/07-session-reel-snapshots-and-cloud.html">Chapter 7: Session Reel &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Curated Native Console & Live-Room Mixing Suite (#console-suite) -->
+    <section class="studio-section" id="console-suite" aria-labelledby="suite-heading">
+      <div class="section-header-bar">
+        <div>
+          <span class="section-eyebrow">Curated Native Console &amp; Live-Room Mixing Suite</span>
+          <h2 class="section-title" id="suite-heading">Engineered for Untreated Rooms, Bleed, High-Gain Sustain &amp; Live Takes</h2>
+        </div>
+        <p class="section-subtitle">
+          Sweet-spot musical defaults on top &bull; Deep physical and spectral DSP underneath.
+        </p>
+      </div>
+
+      <div class="suite-grid-2x3">
+        <!-- Module 1: Multicore Polarity & Phase Maximizer -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>ZERO-SLOT 5-STAGE ALLPASS &bull; MODE 1 (&lt;50 ms) &bull; MODE 2 MULTICORE</span>
+              <span class="suite-card-badge">ALIGN Φ + Ø</span>
+            </div>
+            <h3>1. Zero-Slot Phase Network &amp; Multicore Polarity Maximizer</h3>
+            <p>
+              Multi-mic arrival delays and ported cabinet phase dispersion steal <strong>6 to 12 dB of low-end punch</strong> on drum kits and <code>BassDi</code> + <code>BassAmp</code> pairs. Every channel strip includes a built-in, zero-slot 5-stage allpass <strong>PhaseAlignNetwork</strong> (<code>10 ms</code> click-free crossfade) alongside sub-sample delay (<code>Φ</code>) and polarity (<code>Ø</code>):
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong>Mode 1: Instant Binary Polarity Maximizer (&lt;50 ms):</strong> Partitions channels into connected acoustic cliques and solves exact 2<sup>N-1</sup> Gray-code polarity combinations across <em>Low-End Weight (30&ndash;200 Hz Punch)</em>, <em>Broadband Loudness (ITU-R BS.1770-4 K-Weighted LUFS)</em>, <em>Transient Crest &amp; Impact (60 Hz&ndash;6 kHz + Top-K Crest Re-Scoring)</em>, and <em>Anti-Comb Spectral Smoothness</em> criteria with <code>PolarityAuditionStash</code> protection.</li>
+              <li><strong>Mode 2: Deep Multicore Spectral Phase &amp; Allpass Solver (30 s .. 30 min):</strong> Condenses active performance audio into a 256-bin log-spaced Hermitian Cross-Spectral Density (CSD) tensor (<code>20 Hz&ndash;20 kHz</code>) and fires all CPU cores across Complex Torus SDP relaxation (with live <em>Coherence Efficiency %</em> ceiling), Viterbi DP, Lang-Laakso WLS, and Parallel Tempering with Topological Tunneling Moves (<code>T1</code>, <code>T2a</code>, <code>T2b</code>, <code>T3</code>, <code>T4</code>) to populate loudness-matched <strong>Candidates A, B, C, D</strong> (<code>A: Pure &Oslash; Zero Dispersion</code>, <code>B: Tight Low-End Lock</code>, <code>C: Deep Multi-Band Allpass</code>, <code>D: Full Wavefront + Allpass</code>) with <code>[GAIN-MATCH AUDITION]</code>.</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>Zero insert slots consumed</span>
+            <a href="manual/05-processors-phase-and-plugins.html#5-6-automatic-multi-mic-phase-polarity-alignment-align-all">Chapter 5.6: Polarity &amp; Phase Maximizer &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Module 2: Context-Aware 3-Variant Noise Gate & Guitar/Bass AmpRig + .nam Capture -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>[CIR] TUBE + [NAM] NEURAL CAPTURE &bull; PITCH HARMONICITY (H) &bull; [LRN]</span>
+              <span class="suite-card-badge">AMPRIG &amp; GATES</span>
+            </div>
+            <h3>2. Guitar &amp; Bass <code>AmpRig</code> (<code>.nam</code> Capture) &amp; Context Gates</h3>
+            <p>
+              Track direct guitar/bass or clone your own tube heads and fuzz pedals in the room while context-aware gates keep sustain and clean intros intact:
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong><code>AmpRig</code> (<code>[CIR]</code> Tube Models &amp; <code>[NAM]</code> Neural Amp Capture):</strong> Switch between five <code>4x</code>-oversampled physical tube preamp/power-amp circuits (<code>AmericanClean</code>, <code>BritishCrunch</code>, <code>ModernHighGain</code>, <code>DoomFuzzStack</code>, <code>StudioBassTube</code>) and open <code>.nam</code> Neural Amp Modeler files (WaveNet, LSTM, Linear) with 6 factory captures, 6 matched speaker cabinets, and a guided 3-step <strong>Hardware Amp &amp; Pedal Capture Wizard (<code>CAP</code>)</strong> that sweeps, aligns, and trains <code>.nam</code> models (<code>Nano ~15 s</code>, <code>Feather ~35 s</code>, <code>Standard ~90 s</code>) with live ESR telemetry.</li>
+              <li><strong><code>AmpDynamic</code> &amp; <code>DrumBleed</code> Context Gates:</strong> Autocorrelation pitch periodicity (<em>H</em> &isin; [0, 1]) and Wiener spectral flatness keep <code>-34 dBFS</code> fingerpicking (<em>Whisper Clean Lock</em>) and <code>1.5&ndash;5.0 s</code> harmonic feedback swells (<em>Feedback Bloom Lock</em>) open while clamping palm-mute hum in <code>18&ndash;22 ms</code>, alongside differential <code>DrumBleed</code> tom isolation with <strong>[LRN]</strong> fundamental lock and dynamic decay low-pass filtering.</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>AmpRig ([CIR] + [NAM]) &bull; Expander &bull; DrumBleed &bull; AmpDynamic</span>
+            <a href="manual/05-processors-phase-and-plugins.html#5-4-6-guitar-bass-amprig-cir-tube-circuit-models-nam-neural-amp-capture">Chapter 5.4.5 &amp; 5.4.6: Gates &amp; AmpRig &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Module 3: Non-Destructive Live-Take Salvage & Mistake Surgery -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>BURG AR DE-CLIPPER &bull; 12-H HUM COMB &bull; BAR GRAFT &bull; SPOT-HEAL</span>
+              <span class="suite-card-badge">TAKE SALVAGE</span>
+            </div>
+            <h3>3. Non-Destructive Live-Take Salvage &amp; Mistake Surgery</h3>
+            <p>
+              When a band captures an unrepeatable live groove in <code>Take 001</code>, you should never have to scrap it because one snare hit clipped the preamp ADC, an old amp buzzed at <code>60 Hz</code>, or someone flubbed a chord in bar 42:
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong><code>[REPAIR CLIPPING]</code> &amp; 12-Harmonic Hum Canceller:</strong> Reconstructs flat-topped ADC converter clips using <em>C</em><sup>2</sup> Quintic Hermite Splines (<code>1&ndash;8 smp</code>) and 16th-order Burg Autoregressive Linear Prediction (<code>9&ndash;256 smp</code>, <code>512-smp</code> context), while a 12-harmonic <em>Q</em> = 20&ndash;100 (default 60) comb notch array strips <code>45&ndash;65 Hz</code> mains buzz without dulling guitar tone.</li>
+              <li><strong>Range Comping, Pre-Insert Clip Gain, <code>[PATCH FROM SOURCE...]</code> &amp; <code>[SMOOTH OVER ARTIFACT]</code>:</strong> Punch an Overdub Pass into a single phrase (<code>[USE OD 02 IN RANGE]</code>), level a hot solo before the rack with <strong>Clip Gain</strong>, graft a clean chord from another bar with <code>&plusmn;50 ms</code> phase-locked crossfades, or erase a mic stand bump (<code>5&ndash;150 ms</code>) via spectral/AR spot-healing.</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>100% non-destructive on 32-bit float stems</span>
+            <a href="manual/06-waveform-timeline-and-markers.html#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Chapter 6.5: Mistake Surgery &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Module 4: 12-Band Dynamic EQ, VCA/FET/Opto Comp, VocalRider & DeEsser -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>12B DYNAMIC EQ &bull; VCA / FET / OPTO &bull; VOCAL RIDER &bull; DE-ESSER</span>
+              <span class="suite-card-badge">CHANNEL &amp; BUS</span>
+            </div>
+            <h3>4. 12-Band Dynamic EQ, 3-Topology Comp &amp; Vocal Conditioning</h3>
+            <p>
+              Every channel and Subgroup Bus provides a complete vocal, drum, and instrument sculpting chain with zero internal latency:
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong>12-Band Parametric Dynamic EQ &amp; 4096-Pt Dual-Trace RTA:</strong> Any band (<code>B1..B12</code>) activates threshold-driven dynamic attenuation or boost to clamp <code>165 Hz</code> palm-mute cabinet boom or <code>3.2 kHz</code> vocal harshness only when it pokes out.</li>
+              <li><strong>3-Topology Compressor (<code>VCA</code> / <code>FET</code> / <code>Opto</code>) &amp; Differential <code>TransientShaper</code>:</strong> Switch between feed-forward RMS bus glue (<code>VCA</code>), ultra-fast <code>0.02 ms</code> discrete transistor snap (<code>FET</code>), and program-dependent optical leveling (<code>Opto</code>), plus level-independent attack/sustain transient shaping.</li>
+              <li><strong><code>VocalRider</code> (with Bleed Freeze), <code>DeEsser</code> &amp; <code>MicroPitchDoubler</code>:</strong> Zero-latency <code>&plusmn;6 dB</code> vocal leveler that freezes during pauses so drum bleed is never boosted, paired with a <code>120 Hz</code> dynamic low-shelf Plosive Arrestor, split-band sibilance compressor, and Haas-free stereo pitch doubler.</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>Zero-latency 64-bit internal signal path</span>
+            <a href="manual/05-processors-phase-and-plugins.html#5-3-12-band-parametric-eq-dual-trace-spectrum-analyzer-eq-rta">Chapter 5.3 &amp; 5.4: EQ &amp; Dynamics &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Module 5: 3-Mode Delay, 4-Pole Ladder Filter, Studio Plate & 4-Mode Modulation -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>CAPSTAN / BBD / DIGITAL &bull; 24 dB/OCT LADDER &bull; FDN PLATE &bull; 4-MOD</span>
+              <span class="suite-card-badge">SPACE &amp; TONE</span>
+            </div>
+            <h3>5. 3-Mode Delay, 4-Pole Ladder Filter, Plate Reverb &amp; Modulation</h3>
+            <p>
+              Authentic analog-modeled space, echo, and resonant filter movement built directly into the console without hunting for external stompbox plugins:
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong>3-Mode Delay (<code>Capstan Tape</code>, <code>BBD Analog</code>, <code>Pristine Digital</code>):</strong> Saturating magnetic tape echo with wow/flutter, dark 4096-stage bucket-brigade charge-transfer analog delay with compander breathe and clock-linked low-pass filtering (<code>4.8 kHz</code> down to <code>1.6 kHz</code>), and clean digital delay with built-in <strong>Dynamic Ducking</strong>.</li>
+              <li><strong>4-Pole Non-Linear Resonant <code>LadderFilter</code>:</strong> Classic <code>12 dB/oct</code> (<code>2P</code>) and <code>24 dB/oct</code> (<code>4P</code>) transistor ladder (<code>20 Hz&ndash;16 kHz</code>) with Class-A drive, sub-bass resonance compensation (<code>Bass Comp</code>), bi-directional dynamic envelope follower (<code>&plusmn;5 octaves</code>, <code>Fast</code>/<code>Smooth</code> auto-wah), and external kick sidechain.</li>
+              <li><strong><code>StudioPlateReverb</code> &amp; 4-Mode <code>Modulation</code>:</strong> Zero-latency <code>EMT 140</code> convolution + 8-line Hadamard FDN plate reverb, alongside <code>ThroughZeroFlanger</code>, motionless 3D <code>DimensionChorus</code>, 4/6/8/12-stage <code>OpticalPhaser</code>, and dual-band crossover <code>HarmonicTremolo</code>.</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>Dedicated Aux Returns + Per-Slot Insertable</span>
+            <a href="manual/05-processors-phase-and-plugins.html#5-5-stereo-convolution-reverb-aux-1-reverb-stereo-tape-delay-aux-2-tape-dly">Chapter 5.5: Delay, Ladder &amp; Reverb &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Module 6: Control Room Monitor Bar, AUTO-LVL & Broadcast Metering -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>CALIBRATE TRIMS &bull; LR4 BAND SOLO &bull; LUFS / 4x dBTP / PSR &bull; JELLYFISH</span>
+              <span class="suite-card-badge">MONITOR &amp; METER</span>
+            </div>
+            <h3>6. Control Room Monitor Bar, <code>AUTO-LVL</code> &amp; Broadcast Metering</h3>
+            <p>
+              Verify mix translation across any speaker system and hit exact streaming/mastering targets while keeping your live Master Bus <code>2-TRK Print</code> 100% untouched:
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong>One-Click <code>CALIBRATE ALL TRIMS</code> &amp; Elliptical Bass-Mono:</strong> Normalizes all active channels to <code>-18 dBFS</code> RMS (<code>-6 dBFS</code> ceiling) in one click and folds stereo sub-bass (<code>20&ndash;500 Hz</code>) to phase-solid center mono.</li>
+              <li><strong>Post-Print Control Room Monitor Bar &amp; <code>AUTO-LVL</code>:</strong> Wired strictly downstream of <code>2-TRK Print</code> and <code>BOUNCE</code>. Solo 4th-order Linkwitz-Riley bands (<code>SUB &lt;90 Hz</code>, <code>LOW 90&ndash;350 Hz</code>, <code>MID 350 Hz&ndash;3.5 kHz</code>, <code>HIGH &gt;3.5 kHz</code>), check <code>MONO (M&oplus;)</code>, <code>DIFF (L&minus;R)</code>, or <code>DIM (-20 dB)</code>, and A/B any plugin or rack with loudness-matched <strong>AUTO-LVL</strong> bypass.</li>
+              <li><strong>Broadcast &amp; Spectral Phase Metering (<code>MeterProbe</code>):</strong> ITU-R BS.1770-4 <code>LUFS</code> (<code>M</code>, <code>S</code>, <code>I</code>, <code>LRA</code>), <code>4x</code> oversampled True-Peak (<code>dBTP</code>), <code>PSR</code>/<code>PLR</code> crest-factor ballistics guide, Lissajous + 32-band <strong>Jellyfish Spectral Phase Scope</strong>, and 31-band 1/3-octave RTA (<code>-4.5 dB/oct</code> Studio tilt).</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>Strictly downstream of 2-TRK Print &amp; Bounce</span>
+            <a href="manual/04-mix-console-and-channel-strips.html#4-3-4-control-room-monitor-bar-auto-lvl-loudness-matched-bypass">Chapter 4.3.4 &amp; 4.3.5: Monitor &amp; Metering &rarr;</a>
           </div>
         </article>
       </div>
@@ -551,7 +800,37 @@
         }
       }
 
-      // 2. Post-Download "Thank You & Quick Start" Panel Reveal (Single OS Tip by default)
+      // 2. Recurring Visitor Release Update Highlight & Post-Download "Thank You" Panel
+      var downloadDeck = document.getElementById("download");
+      var currentReleaseVer = downloadDeck ? downloadDeck.getAttribute("data-release-version") : null;
+      var releaseBanner = document.getElementById("release-update-banner");
+      var releaseBannerStatus = document.getElementById("release-banner-status");
+      var storageKeySeen = "caverec_last_seen_release";
+      var storageKeyDownloaded = "caverec_last_downloaded_release";
+
+      if (currentReleaseVer && releaseBanner) {
+        try {
+          var prevDownloaded = window.localStorage ? window.localStorage.getItem(storageKeyDownloaded) : null;
+          var prevSeen = window.localStorage ? window.localStorage.getItem(storageKeySeen) : null;
+          if (prevDownloaded && prevDownloaded !== currentReleaseVer) {
+            releaseBanner.classList.add("is-returning-update");
+            if (releaseBannerStatus) {
+              releaseBannerStatus.textContent = "UPDATE AVAILABLE (FROM " + prevDownloaded + ")";
+            }
+          } else if (prevSeen && prevSeen !== currentReleaseVer) {
+            releaseBanner.classList.add("is-returning-update");
+            if (releaseBannerStatus) {
+              releaseBannerStatus.textContent = "UPDATED SINCE YOUR LAST VISIT";
+            }
+          }
+          if (window.localStorage) {
+            window.localStorage.setItem(storageKeySeen, currentReleaseVer);
+          }
+        } catch (_err) {
+          // Ignore storage access errors in strict private browsing modes
+        }
+      }
+
       var thankYouPanel = document.getElementById("download-thank-you");
       var closeThankYouBtn = document.getElementById("close-thank-you-btn");
       var toggleAllOsTipsBtn = document.getElementById("toggle-all-os-tips-btn");
@@ -584,6 +863,13 @@
         downloadButtons[i].addEventListener("click", function () {
           var osKey = this.getAttribute("data-download-os");
           showThankYouForOS(osKey);
+          if (currentReleaseVer) {
+            try {
+              if (window.localStorage) {
+                window.localStorage.setItem(storageKeyDownloaded, currentReleaseVer);
+              }
+            } catch (_err) {}
+          }
         });
       }
 

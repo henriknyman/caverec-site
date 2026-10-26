@@ -428,12 +428,107 @@ pre.logo {
 }
 
 /* ==========================================================================
-   Above-the-Fold Download Deck (#download)
+   Above-the-Fold Download Deck (#download) & Release Update Banner
    ========================================================================== */
 
 .download-deck {
   padding: 1.15rem 1.6rem 1.3rem;
   background-color: var(--bg-deck);
+}
+
+.release-update-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  flex-wrap: wrap;
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.12) 0%, rgba(245, 158, 11, 0.08) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.42);
+  border-left: 4px solid var(--accent-emerald);
+  border-radius: 6px;
+  padding: 0.62rem 0.9rem;
+  margin-bottom: 0.95rem;
+}
+
+.release-update-banner.is-returning-update {
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.16) 0%, rgba(16, 185, 129, 0.12) 100%);
+  border-color: rgba(245, 158, 11, 0.55);
+  border-left-color: var(--accent-amber);
+}
+
+.release-update-main {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem 0.6rem;
+  flex-wrap: wrap;
+  min-width: 0;
+  flex: 1 1 520px;
+  font-size: 0.84rem;
+  line-height: 1.48;
+  color: var(--text-secondary);
+}
+
+.release-update-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.34rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6ee7b7;
+  background: rgba(10, 12, 16, 0.72);
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  padding: 0.1rem 0.46rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.release-update-banner.is-returning-update .release-update-pill {
+  color: #fde68a;
+  border-color: rgba(245, 158, 11, 0.55);
+}
+
+.release-update-version {
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.release-update-summary {
+  color: var(--text-secondary);
+}
+
+.release-update-summary strong {
+  color: var(--text-primary);
+}
+
+.release-update-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.release-update-link {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #f8fafc;
+  background: rgba(10, 12, 16, 0.72);
+  border: 1px solid var(--border-highlight);
+  border-radius: 4px;
+  padding: 0.24rem 0.58rem;
+  white-space: nowrap;
+}
+
+.release-update-link:hover {
+  border-color: var(--accent-emerald);
+  color: #ffffff;
 }
 
 .download-deck-header {
@@ -1031,6 +1126,211 @@ pre.logo {
 }
 
 /* ==========================================================================
+   Why Cave Recorder? — The Human Musicianship Manifesto (#manifesto)
+   ========================================================================== */
+
+.manifesto-lead-box {
+  background: linear-gradient(180deg, #1d212a 0%, #151820 100%);
+  border: 1px solid var(--border-highlight);
+  border-left: 5px solid var(--accent-burgundy-bright);
+  border-radius: 8px;
+  padding: 1.25rem 1.4rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.manifesto-lead-box p {
+  margin: 0 0 0.75rem;
+  font-size: 0.96rem;
+  color: var(--text-secondary);
+  line-height: 1.58;
+}
+
+.manifesto-lead-box p:last-of-type {
+  margin-bottom: 0;
+}
+
+.manifesto-lead-box strong {
+  color: #ffffff;
+}
+
+.manifesto-genre-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.manifesto-genre-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--accent-amber);
+  margin-right: 0.25rem;
+}
+
+.genre-pill {
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-well);
+  border: 1px solid var(--border-outer);
+  border-radius: 4px;
+  padding: 0.16rem 0.52rem;
+}
+
+.manifesto-grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.manifesto-pillar {
+  background: linear-gradient(180deg, #1b1f27 0%, #15181f 100%);
+  border: 1px solid var(--border-outer);
+  border-radius: 8px;
+  padding: 1.15rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.manifesto-pillar:hover {
+  border-color: var(--border-highlight);
+}
+
+.manifesto-pillar-tag {
+  font-family: var(--font-mono);
+  font-size: 0.71rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-amber);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.manifesto-pillar h3 {
+  font-size: 1.02rem;
+  color: #ffffff;
+  margin: 0 0 0.45rem;
+}
+
+.manifesto-pillar p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.52;
+}
+
+.manifesto-pillar p strong {
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Curated Native Console & Live-Room Mixing Suite (#console-suite)
+   ========================================================================== */
+
+.suite-grid-2x3 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.suite-card {
+  background: linear-gradient(180deg, #1c2028 0%, #151820 100%);
+  border: 1px solid var(--border-outer);
+  border-radius: 8px;
+  padding: 1.2rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.85rem;
+  transition: border-color 0.15s ease;
+}
+
+.suite-card:hover {
+  border-color: var(--border-highlight);
+}
+
+.suite-card-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.71rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-cyan);
+}
+
+.suite-card-badge {
+  color: var(--accent-emerald);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.32);
+  border-radius: 3px;
+  padding: 0.08rem 0.4rem;
+}
+
+.suite-card h3 {
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin: 0.25rem 0 0.45rem;
+}
+
+.suite-card p {
+  margin: 0 0 0.65rem;
+  font-size: 0.89rem;
+  color: var(--text-secondary);
+  line-height: 1.52;
+}
+
+.suite-card p strong {
+  color: var(--text-primary);
+}
+
+.suite-spec-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.48;
+}
+
+.suite-spec-list li {
+  margin-bottom: 0.32rem;
+}
+
+.suite-spec-list li:last-child {
+  margin-bottom: 0;
+}
+
+.suite-spec-list strong {
+  color: var(--text-primary);
+}
+
+.suite-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ==========================================================================
    Feedback, Bug Reports & Voluntary Support (#feedback-support)
    ========================================================================== */
 
@@ -1263,6 +1563,8 @@ pre.logo {
   }
 
   .feature-grid-2x2,
+  .manifesto-grid-3col,
+  .suite-grid-2x3,
   .support-grid-2col {
     grid-template-columns: 1fr;
   }

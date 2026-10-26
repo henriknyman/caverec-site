@@ -28,7 +28,7 @@ body:
     id: audio_interface
     attributes:
       label: Audio Interface & Sample Rate (Optional)
-      placeholder: "e.g. Focusrite Scarlett 18i20 + OctoPre ADAT @ 48 kHz"
+      placeholder: "e.g. 18-in/20-out USB Audio Interface + 8-ch ADAT Preamp Expander @ 48 kHz"
   - type: textarea
     id: description
     attributes:
