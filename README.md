@@ -1,4 +1,4 @@
-# Cave Recorder (`caverec`): Release v0.2.0-rc2
+# Cave Recorder (`caverec`): Release v0.2.0
 
 ```text
 ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -13,7 +13,7 @@
 ╚═══════════════════════════════════════════════════════════════════════════╝
 ```
 
-Official binary release archive metadata for **Cave Recorder (`caverec`) v0.2.0-rc2**.
+Official binary release archive metadata for **Cave Recorder (`caverec`) v0.2.0**.
 
 - **Website & Downloads:** https://caverec.app/
 - **Online User Manual:** https://caverec.app/manual/
