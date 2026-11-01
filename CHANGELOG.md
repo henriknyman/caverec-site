@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-01
+
+### Added
+
+- **Standalone & Integrated Speaker Cabinet & Impulse Response Processor (`CabIr` — `dev-znx.1..3`):** 8 modeled guitar and bass speaker cabinets (`bypass`, `british_4x12_greenback`, `vintage_4x12_v30`, `american_1x12_open`, `boutique_2x12_alnico`, `bass_8x10_sealed`, `bass_1x15_ported`, `doom_4x15_sludge`) paired with zero-latency partitioned FFT `.wav` and linear `.nam` Impulse Response (`IR`) convolution, a 3-tier self-contained `CabIrLibrary` (`Factory` built-in IRs, `<LibraryRoot>/.caverec/cab_irs/` User Library, and portable `<SessionFolder>/irs/` + `<TakeFolder>/irs/` storage), an integrated `AmpRig` Cabinet/IR selector active in both `[CIR]` tube and `[NAM]` neural capture modes with `HEAD ON` / `HEAD BYP` amp-head bypass, and a standalone reorderable `CabIr` processor slot for placing modulation, delay, or external stompboxes between the amp head and speaker cabinet.
+- **Multi-Instance Slot-Indexed 8-Slot Channel Strip Rack (`dev-8r5.1..3`):** Full multi-instance processor support across all 8 rack slots (`rack_slots: [PersistedRackSlot; 8]`) on every Input Track and `Subgroup` Bus, allowing multiple instances of any built-in processor (`EQ`, `Compressor`, `Gate`, `TapeSaturation`, `AmpRig`, `CabIr`, `Modulation`, `LadderFilter`, etc.) on the same strip with independent per-slot atomic gain-reduction/telemetry readouts, active-slot `Channel Inspector` focus routing (`active_inspector_slot`), and lossless `v1 -> v2` schema migration across every `Project`, `Session`, `Take`, `Pass`, `Snapshot`, `Present Stash`, and studio template.
+- **Channel Inspector Large Native Processor & Plugin UI Suite (`dev-hwz.1..16`):** Dedicated full-height interactive graphical views in the `Channel Inspector` (`CMD/CTRL+3`) across all 15 built-in console, rack, `Aux Return`, and `Master Bus` processors plus hosted `CLAP` / macOS `Audio Unit` (`AUv2`/`AUv3`) and `! MISSING` `Ghost Slot` inserts:
+  - **Shared `InteractiveXYPadCanvas` & Real-Time Diagnostic Canvases (`dev-hwz.0-pre`):** Geared-down 2D XY controller (`Shift` fine-adjust, `Double-Click`/`Alt+Click` unity reset, and `Tab` axis cycling) paired with 60 fps transfer-curve, envelope, and spectrum visualizers.
+  - **Tone, Saturation, Dynamics & Pitch Views (`dev-hwz.1..8`):** Interactive views for `LadderFilter` (frequency response + `Cutoff × Resonance` XY pad), `TapeSaturation` (odd/even harmonic curve + `Drive × Bias` XY pad), `TransientShaper` (split Attack/Sustain differential envelope + `Attack × Sustain` XY pad), `MicroPitchDoubler` (stereo L/R pitch-detune and delay field + `Detune × Delay` XY pad), `Modulation` (mode-specific LFO/phase scope + `Rate × Depth` XY pad), 3-variant `Gate` (`Expander`, `DrumBleed` `[LRN]` filter band, and `AmpDynamic` `H × SFM` state monitor), `DeEsser` (`120 Hz` plosive shelf + `2–16 kHz` split-band sibilance suppressor), and `VocalRider` (`±6 dB` rolling gain trace with `Breath & Bleed Freeze` indicator).
+  - **Live-Take `Repair`, `GainUtility`, `AmpRig & CabIr`, `Aux Return` & `Master Bus` Views (`dev-hwz.9..14`):** Full-height `Repair` dashboard (12-harmonic `50/60 Hz` `HumCanceller` notch comb + ADC de-clipper history), `GainUtility` phase/correlation & `-18 dBFS` RMS trim calibrator, unified `AmpRig & CabIr` dual head/cabinet studio deck (`Drive × Presence` and `Mic Position × Air` XY pads), `Aux Return Reverb` decay spectrogram + `Pre-Delay × Decay` XY pad, `Aux Return Stereo Delay` (`Capstan Tape`, `BBD Analog`, `Pristine Digital`) echo tap visualizer + `Time × Feedback` XY pad, and `Master Bus` Brickwall Limiter (`Ceiling × Drive` transfer curve + `LUFS` / `4x` `dBTP` / `PSR` histogram).
+  - **Hosted `CLAP` / `Audio Unit` & `Ghost Slot` Inspector Card (`dev-hwz.15`) & Collapsible Mini-Timeline (`dev-hwz.16`):** Floating `[OPEN GUI]` launcher, scrollable parameter bank, external sidechain tap selector, and one-click `LOCATE...` `Ghost Slot` relinking, plus a `[TIMELINE ▾]` toggleable Mini-Timeline giving full vertical room to the active processor canvas.
+- **Live Loopback End-to-End Smoke Verification (`--live-smoke-test` — `dev-eey`):** Built-in automated end-to-end smoke test mode (`./scripts/live-smoke-test.sh`) exercising startup session creation, live multi-channel recording, BWF `.wav` stem finalization, and real-time mixer playback telemetry with zero buffer underruns.
+
+### Changed
+
+- **Unified `Iosevka Term SS14` (`500 UPM`) Console Typography (`dev-aov`):** Embedded official unmodified `Iosevka Term SS14` (`Regular`, `Medium`, `Bold`) with authentic `500 UPM` box-drawing geometry and center-dotted zero (`0`) across all console meters, readouts, scribble strips, and modal tables.
+- **Deep-Module Workspace Architecture & Production/Test Separation (`dev-pvp.1..9`):** Extracted focused deep submodules across `daw_ui`, `session_store`, `engine_graph`, and `dsp_core`, and separated all unit tests (`unit_tests/`), shared test builders (`test_support/`), and integration suites (`tests/`) from production source files (`src/`).
+
+### Fixed
+
+- **Decoupled Library & Preferences Schema Versioning (`dev-89x`):** Isolated `ProjectRegistryFile` (`projects.json`), `StartupPreferences` (`preferences.json`), `KeymapFileManifest` (`keymap.json`), and `ClapPluginCatalog` (`clap_plugin_index.json`) onto independent `v1` schema constants so a `session.json` schema bump never triggers a false fallback that resets the user's `library_root` or preferences on startup.
+- **macOS CoreAudio Input Stream Recovery & TCC Microphone Diagnostics (`dev-2yf`):** Added automatic channel-count retry and explicit macOS TCC Microphone permission status detection (`tccutil reset Microphone com.caverec.daw`) when CoreAudio returns zeroed input buffers or refuses hardware stream initialization.
+
 ## [0.2.0] - 2026-10-29
 
 ### Added
