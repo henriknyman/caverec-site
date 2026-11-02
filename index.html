@@ -106,8 +106,8 @@
       </section>
 
       <!-- Obvious Above-the-Fold Download Deck (#download) -->
-      <!-- RELEASE_VERSION_MARKER: v0.3.0 -->
-      <section class="download-deck" id="download" data-release-version="v0.3.0" aria-labelledby="download-heading">
+      <!-- RELEASE_VERSION_MARKER: v0.3.1 -->
+      <section class="download-deck" id="download" data-release-version="v0.3.1" aria-labelledby="download-heading">
         <!-- Static Latest Release Banner -->
         <div class="release-update-banner" id="release-update-banner" role="region" aria-label="Latest Release Update">
           <div class="release-update-main">
@@ -115,9 +115,9 @@
               <span class="detected-dot" aria-hidden="true"></span>
               <span>LATEST RELEASE</span>
             </span>
-            <strong class="release-update-version" id="release-banner-version">v0.3.0</strong>
+            <strong class="release-update-version" id="release-banner-version">v0.3.1</strong>
             <span class="release-update-summary">
-              New in 0.3.0: <strong>Channel Inspector Large Native Processor &amp; Plugin UI Suite</strong> (15 full-height interactive graphical views with 2D XY pads &amp; 60 fps visualizers), <strong>Standalone &amp; Integrated <code>CabIr</code> Speaker Cabinet &amp; Linear IR Convolution</strong> (8 modeled cabinets + <code>.wav</code>/<code>.nam</code> IR browser &amp; <code>HEAD ON/BYP</code>), <strong>Multi-Instance 8-Slot Channel Strip Rack</strong>, <strong>Collapsible Mini-Timeline</strong>, and unified <strong><code>Iosevka Term SS14</code> Console Typography</strong>.
+              New in 0.3.1: <strong>Mastering <code>A2</code> <code>.nam</code> Neural Amp Trainer Mode</strong> (<code>PRESET: MST A2</code> up to 1,000 epochs with held-out validation checkpointing, adaptive <code>ReduceLROnPlateau</code> learning-rate scheduling, early stopping &amp; <code>[STOP &amp; KEEP BEST]</code>), <strong><code>2x</code>/<code>4x</code> Polyphase Half-Band Oversampling</strong> for <code>AmpRig</code> &amp; <code>.nam</code> inference, <strong>Cached 60 fps Large Inspector Canvases</strong>, and <strong>117-Parameter Range Sanitization</strong>, building on 0.3.0's <strong>Large Interactive Processor Suite</strong>, <strong>Standalone &amp; Integrated <code>CabIr</code> Convolution</strong>, and <strong>Multi-Instance 8-Slot Rack</strong>.
             </span>
           </div>
           <div class="release-update-actions">
@@ -125,7 +125,7 @@
             <a
               class="release-update-link"
               id="release-notes-link"
-              href="https://github.com/henriknyman/caverec-site/releases/tag/v0.3.0"
+              href="https://github.com/henriknyman/caverec-site/releases/tag/v0.3.1"
             >
               Release Notes &rarr;
             </a>
@@ -135,7 +135,7 @@
         <div class="download-deck-header">
           <div class="download-deck-title-group">
             <h2 class="download-deck-title" id="download-heading">Download Cave Recorder</h2>
-            <span class="version-badge" id="release-version-badge" data-version="v0.3.0">v0.3.0</span>
+            <span class="version-badge" id="release-version-badge" data-version="v0.3.1">v0.3.1</span>
           </div>
           <div class="download-deck-meta">
             100% Free &amp; Uncrippled &bull; Portable Archive &bull; <a href="privacy/">Privacy Policy</a>
@@ -162,8 +162,8 @@
               class="download-cta-btn"
               id="download-macos"
               data-download-os="macos"
-              data-release-asset="caverec-v0.3.0-macos-arm64.zip"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.3.0/caverec-v0.3.0-macos-arm64.zip"
+              data-release-asset="caverec-v0.3.1-macos-arm64.zip"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.3.1/caverec-v0.3.1-macos-arm64.zip"
             >
               <span>&darr; Download macOS (arm64)</span>
               <span class="download-cta-ext">.zip</span>
@@ -188,8 +188,8 @@
               class="download-cta-btn"
               id="download-windows"
               data-download-os="windows"
-              data-release-asset="caverec-v0.3.0-windows-x86_64.zip"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.3.0/caverec-v0.3.0-windows-x86_64.zip"
+              data-release-asset="caverec-v0.3.1-windows-x86_64.zip"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.3.1/caverec-v0.3.1-windows-x86_64.zip"
             >
               <span>&darr; Download Windows (x86_64)</span>
               <span class="download-cta-ext">.zip</span>
@@ -214,8 +214,8 @@
               class="download-cta-btn"
               id="download-linux"
               data-download-os="linux"
-              data-release-asset="caverec-v0.3.0-linux-x86_64.zip"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.3.0/caverec-v0.3.0-linux-x86_64.zip"
+              data-release-asset="caverec-v0.3.1-linux-x86_64.zip"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.3.1/caverec-v0.3.1-linux-x86_64.zip"
             >
               <span>&darr; Download Linux (x86_64)</span>
               <span class="download-cta-ext">.zip</span>
@@ -575,13 +575,13 @@
               Track direct guitar/bass, load custom speaker impulse responses, or clone your own tube heads and fuzz pedals in the room with full-height interactive 2D XY processor views:
             </p>
             <ul class="suite-spec-list">
-              <li><strong><code>AmpRig</code> (<code>[CIR]</code> Tube &amp; <code>[NAM]</code> Neural Capture) + Standalone &amp; Integrated <code>CabIr</code>:</strong> Switch between physical tube preamp/power-amp circuits and <code>.nam</code> Neural Amp Modeler captures (with a guided 3-step <strong>Hardware Amp &amp; Pedal Capture Wizard (<code>CAP</code>)</strong> and <code>HEAD ON/BYP</code> toggle), paired with an integrated or standalone reorderable <strong><code>CabIr</code> Speaker Cabinet &amp; Linear IR Processor</strong> featuring 8 modeled guitar/bass cabinets, zero-latency <code>.wav</code> &amp; linear <code>.nam</code> IR convolution, a 3-tier self-contained <code>CabIrLibrary</code>, and dual <code>Drive &times; Presence</code> and <code>Mic Position &times; Air</code> 2D XY pads.</li>
+              <li><strong><code>AmpRig</code> (<code>[CIR]</code> Tube &amp; <code>[NAM]</code> Neural Capture with Mastering <code>A2</code> Trainer) + Standalone &amp; Integrated <code>CabIr</code>:</strong> Switch between <code>2x</code>/<code>4x</code> polyphase half-band oversampled physical tube preamp/power-amp circuits and <code>.nam</code> Neural Amp Modeler captures (with a guided 3-step <strong>Hardware Amp &amp; Pedal Capture Wizard (<code>CAP</code>)</strong> featuring <code>Mastering A2</code> up to 1,000 epochs with held-out validation checkpointing, adaptive <code>ReduceLROnPlateau</code> learning-rate scheduling, early stopping &amp; <code>[STOP &amp; KEEP BEST]</code> alongside <code>Standard A2</code> &amp; <code>Turbo A2</code> presets and <code>HEAD ON/BYP</code> toggle), paired with an integrated or standalone reorderable <strong><code>CabIr</code> Speaker Cabinet &amp; Linear IR Processor</strong> featuring 8 modeled guitar/bass cabinets, zero-latency <code>.wav</code> &amp; linear <code>.nam</code> IR convolution, a 3-tier self-contained <code>CabIrLibrary</code>, and dual <code>Drive &times; Presence</code> and <code>Mic Position &times; Air</code> 2D XY pads.</li>
               <li><strong><code>AmpDynamic</code> &amp; <code>DrumBleed</code> Context Gates + Interactive Inspector Views:</strong> Autocorrelation pitch periodicity (<em>H</em> &isin; [0, 1]) and Wiener spectral flatness keep <code>-34 dBFS</code> fingerpicking (<em>Whisper Clean Lock</em>) and <code>1.5&ndash;5.0 s</code> harmonic feedback swells (<em>Feedback Bloom Lock</em>) open while clamping palm-mute hum in <code>18&ndash;22 ms</code>, alongside differential <code>DrumBleed</code> tom isolation with <strong>[LRN]</strong> fundamental lock and dedicated full-height <code>Channel Inspector</code> graphical views with 2D XY controllers across all 15 built-in processors.</li>
             </ul>
           </div>
           <div class="suite-card-footer">
             <span>AmpRig ([CIR] + [NAM]) &bull; CabIr (8 Cabs + IR) &bull; Context Gates</span>
-            <a href="manual/05-processors-phase-and-plugins.html#5-4-6-guitar-bass-amprig-cir-tube-circuit-models-nam-neural-amp-capture">Chapter 5.4.5 &amp; 5.4.6: Gates &amp; AmpRig &rarr;</a>
+            <a href="manual/05-processors-phase-and-plugins.html#5-4-6-guitar-bass-amprig-cir-tube-circuit-models-head-on-byp-nam-neural-amp-capture">Chapter 5.4.5 &amp; 5.4.6: Gates &amp; AmpRig &rarr;</a>
           </div>
         </article>
 

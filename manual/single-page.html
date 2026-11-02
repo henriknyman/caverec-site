@@ -9,7 +9,7 @@
 <body>
   <header class="top-deck">
     <div class="brand-cluster">
-      <a class="brand-badge" href="index.html">CAVEREC v0.3.0</a>
+      <a class="brand-badge" href="index.html">CAVEREC v0.3.1</a>
       <a class="brand-title" href="index.html">Cave Recorder (caverec) User Manual</a>
     </div>
     <div class="deck-actions">
@@ -636,7 +636,7 @@ Kick, Snare, Toms, Overheads       Bass DI/Amp, Guitars, Keys, Vocal
 </ol>
 <aside class="callout callout-warning"><div class="callout-header">Preventing Digital Clock Clicks and Sample Rate Mismatches</div><p>Standard single-wire ADAT Lightpipe carries 8 discrete audio channels at <code>44.1 kHz</code> or <code>48.0 kHz</code>. At <code>88.2 kHz</code> or <code>96.0 kHz</code> (S/MUX mode), a single optical cable carries only 4 channels. For full 18-channel band recording with an 8-channel ADAT expander, operate both hardware units and Cave Recorder at <code>48000 Hz</code> (<code>48.0 kHz</code>) and confirm the red <code>48.0 kHz LOCKED</code> badge is lit in the console header before tracking.</p></aside>
 <h3 id="2-1-4-first-launch-setup-on-macos-gatekeeper-quarantine-microphone-permission">2.1.4 First-Launch Setup on macOS (Gatekeeper, Quarantine &amp; Microphone Permission)<a class="heading-anchor" href="#2-1-4-first-launch-setup-on-macos-gatekeeper-quarantine-microphone-permission" aria-label="Link to section">#</a></h3>
-<p>The macOS release of Cave Recorder (<code>caverec-v0.3.0-macos-arm64.zip</code> / <code>Cave Recorder.app</code>) is distributed as an ad-hoc signed application bundle. When opening an application downloaded from a web browser on macOS for the first time, macOS Gatekeeper places a quarantine flag on the bundle and displays an unverified developer prompt.</p>
+<p>The macOS release of Cave Recorder (<code>caverec-v0.3.1-macos-arm64.zip</code> / <code>Cave Recorder.app</code>) is distributed as an ad-hoc signed application bundle. When opening an application downloaded from a web browser on macOS for the first time, macOS Gatekeeper places a quarantine flag on the bundle and displays an unverified developer prompt.</p>
 <p>After dragging <strong><code>Cave Recorder.app</code></strong> into <code>/Applications</code>, clear the macOS Gatekeeper quarantine flag using either of these two methods before your first studio session:</p>
 <ol>
 <li><strong>Method A: macOS System Settings (<code>Open Anyway</code>):</strong><ul><li>Double-click <strong><code>Cave Recorder.app</code></strong> in <code>/Applications</code> and click <strong>Done</strong> (or <strong>Cancel</strong>) on the initial Gatekeeper prompt.</li><li>Open <strong>System Settings -&gt; Privacy &amp; Security</strong>, scroll down to the <strong>Security</strong> section, and click <strong>Open Anyway</strong> next to <code>&quot;Cave Recorder.app&quot; was blocked from use because it is not from an identified developer</code>.</li><li>Authenticate with Touch ID or your macOS administrator password and confirm <strong>Open</strong>.</li></ul></li>
@@ -1303,7 +1303,7 @@ Kick, Snare, Toms, Overheads       Bass DI/Amp, Guitars, Keys, Vocal
 </tr>
 </tbody></table></div>
 <aside class="callout callout-tip"><div class="callout-header">Holding SHIFT Mid-Drag for Surgical Sweet Spots</div><p>You do not need to press <kbd class="keycap">SHIFT</kbd> before clicking a control. Start dragging a fader, rotary knob, EQ node, compressor threshold, or 2D XY pad puck normally to get close to the target sound, then press and hold <kbd class="keycap">SHIFT</kbd> without releasing the mouse button to drop directly into <code>10x</code> fine-tuning mode with zero position jump.</p></aside></section>
-<section id="05-processors-phase-and-plugins" style="margin-top:3rem;padding-top:1.5rem;border-top:2px solid var(--border-highlight);"><div class="chapter-eyebrow">Part II &middot; Chapter 5</div><h1>Built-In Processors, Phase Alignment &amp; External Plugins (CLAP &amp; AU)</h1><p class="chapter-lead">Channel Inspector Large Processor Views, 2D XY control pads, and collapsible Mini-Timeline, 12-Band Dynamic EQ, VCA/FET/Opto Compressors, DrumBleed and Stoner/Doom AmpDynamic Gates, Guitar and Bass AmpRig with HEAD ON/BYP and native .nam Neural Amp Capture, standalone CabIr Speaker Cabinet and Linear IR Loader, VocalRider, DeEsser, TransientShaper, MicroPitchDoubler, 3-Mode Delay, 4-Pole Ladder Filter, Studio Plate Reverb, 4-Mode Modulation, Multicore Polarity &amp; Phase Maximizer, Audio Restoration, and CLAP and macOS Audio Unit plugins.</p><p>Every Input Track (<code>CH01</code> through <code>CH32</code>) and every stereo Subgroup Bus (<code>SUB 1</code> through <code>SUB 16</code>) in Cave Recorder includes a zero-slot top-of-strip <strong>5-Stage Allpass <code>PhaseAlignNetwork</code></strong> and a dedicated, multi-instance reorderable <strong>8-Slot Processing Rack</strong> powered by Cave Recorder&#x27;s <strong>Curated Native Console &amp; Rack Suite</strong> (<code>12-Band Dynamic EQ</code>, <code>VCA/FET/Opto Compressor</code>, <code>Tape Saturation</code>, <code>Guitar &amp; Bass AmpRig</code> with <code>HEAD ON/BYP</code> and native <code>.nam</code> Neural Amp Capture, standalone <code>CabIr</code> Speaker Cabinet &amp; Linear Impulse Response Loader, <code>Vocal De-Esser</code>, <code>Context-Aware Gate</code>, <code>Signal Repair</code>, <code>Vocal Rider</code>, <code>Transient Shaper</code>, <code>Ladder Filter</code>, <code>Studio Plate Reverb</code>, <code>4-Mode Modulation</code>, <code>Micro-Pitch Doubler</code>, <code>Gain Utility</code>, and <code>Aux Send Tap</code>) alongside cross-platform third-party <strong>CLAP (<code>.clap</code>)</strong> plugins (on macOS, Windows, and Linux), native <strong>macOS Audio Unit (<code>AUv3</code> and <code>AUv2</code>)</strong> audio effects (<code>&#x27;aufx&#x27;</code> and <code>&#x27;aumf&#x27;</code>), automatic multi-mic phase and polarity alignment, and up to eight dedicated stereo Auxiliary Returns (<code>AUX 1</code> through <code>AUX 8</code>).</p>
+<section id="05-processors-phase-and-plugins" style="margin-top:3rem;padding-top:1.5rem;border-top:2px solid var(--border-highlight);"><div class="chapter-eyebrow">Part II &middot; Chapter 5</div><h1>Built-In Processors, Phase Alignment &amp; External Plugins (CLAP &amp; AU)</h1><p class="chapter-lead">Channel Inspector Large Processor Views, 2D XY control pads, and collapsible Mini-Timeline, 12-Band Dynamic EQ, VCA/FET/Opto Compressors, DrumBleed and Stoner/Doom AmpDynamic Gates, Guitar and Bass AmpRig with 2x/4x polyphase half-band oversampling, HEAD ON/BYP, and native .nam Neural Amp Capture (Standard A2, Mastering A2, and Turbo A2 trainer modes), standalone CabIr Speaker Cabinet and Linear IR Loader, VocalRider, DeEsser, TransientShaper, MicroPitchDoubler, 3-Mode Delay, 4-Pole Ladder Filter, Studio Plate Reverb, 4-Mode Modulation, Multicore Polarity &amp; Phase Maximizer, Audio Restoration, and CLAP and macOS Audio Unit plugins.</p><p>Every Input Track (<code>CH01</code> through <code>CH32</code>) and every stereo Subgroup Bus (<code>SUB 1</code> through <code>SUB 16</code>) in Cave Recorder includes a zero-slot top-of-strip <strong>5-Stage Allpass <code>PhaseAlignNetwork</code></strong> and a dedicated, multi-instance reorderable <strong>8-Slot Processing Rack</strong> powered by Cave Recorder&#x27;s <strong>Curated Native Console &amp; Rack Suite</strong> (<code>12-Band Dynamic EQ</code>, <code>VCA/FET/Opto Compressor</code>, <code>Tape Saturation</code>, <code>Guitar &amp; Bass AmpRig</code> with <code>HEAD ON/BYP</code> and native <code>.nam</code> Neural Amp Capture, standalone <code>CabIr</code> Speaker Cabinet &amp; Linear Impulse Response Loader, <code>Vocal De-Esser</code>, <code>Context-Aware Gate</code>, <code>Signal Repair</code>, <code>Vocal Rider</code>, <code>Transient Shaper</code>, <code>Ladder Filter</code>, <code>Studio Plate Reverb</code>, <code>4-Mode Modulation</code>, <code>Micro-Pitch Doubler</code>, <code>Gain Utility</code>, and <code>Aux Send Tap</code>) alongside cross-platform third-party <strong>CLAP (<code>.clap</code>)</strong> plugins (on macOS, Windows, and Linux), native <strong>macOS Audio Unit (<code>AUv3</code> and <code>AUv2</code>)</strong> audio effects (<code>&#x27;aufx&#x27;</code> and <code>&#x27;aumf&#x27;</code>), automatic multi-mic phase and polarity alignment, and up to eight dedicated stereo Auxiliary Returns (<code>AUX 1</code> through <code>AUX 8</code>).</p>
 <p>This chapter covers the dual-view inspection workflow (Upper Console Wells vs. full-screen <code>CHANNEL INSPECTOR</code> with Large Processor Views, 2D XY Control Pads, and Collapsible Mini-Timeline), <strong>Tape Saturation (<code>TAPE</code>), <code>GainUtility</code> &amp; Differential <code>TransientShaper</code></strong>, the <strong>12-Band Dynamic Parametric EQ &amp; Dual-Trace Spectrum Analyzer (<code>EQ &amp; RTA</code>)</strong>, <strong><code>VocalRider</code>, Split-Band <code>DeEsser</code> &amp; <code>MicroPitchDoubler</code></strong>, <strong>Multi-Topology <code>VCA</code> / <code>FET</code> / <code>Opto</code> Compressors (with External Sidechain Key Routing), the Context-Aware 3-Variant Noise Gate (<code>Expander</code>, <code>DrumBleed</code>, <code>AmpDynamic</code>), Guitar/Bass <code>AmpRig</code> (<code>[CIR]</code> Tube Models, <code>HEAD ON/BYP</code> &amp; <code>[NAM]</code> Neural Amp Capture) &amp; Standalone <code>CabIr</code> Speaker Cabinet / Linear IR Loader</strong>, <strong>Stereo Convolution Reverb (<code>AUX 1 REVERB</code>), 3-Mode Delay (<code>Capstan Tape</code>, <code>BBD Analog</code>, <code>Pristine Digital</code>), 4-Pole Non-Linear <code>LadderFilter</code>, <code>StudioPlateReverb</code> &amp; 4-Mode <code>Modulation</code></strong>, <strong>Automatic Multi-Mic Phase Alignment (<code>ALIGN ALL</code>) &amp; the Two-Mode Multicore Polarity &amp; Phase Maximizer (<code>Mode 1</code> &amp; <code>Mode 2</code>)</strong>, <strong>CLAP &amp; macOS Audio Unit Plugin Hosting (<code>1:CLAP</code>, <code>PLUGINS</code> Manager, <code>PLUGIN GUI</code>, Ghost Slots, <code>PDC</code> &amp; <code>Low-Latency Monitoring</code>)</strong>, and <strong>Non-Destructive Audio Restoration (ADC De-Clipper &amp; 12-Harmonic Hum Canceller)</strong>.</p>
 <hr style="border:none;border-top:1px solid var(--border-outer);margin:2rem 0;" />
 <h2 id="5-1-upper-console-wells-vs-dedicated-channel-inspector-view">5.1 Upper Console Wells vs. Dedicated <code>CHANNEL INSPECTOR</code> View<a class="heading-anchor" href="#5-1-upper-console-wells-vs-dedicated-channel-inspector-view" aria-label="Link to section">#</a></h2>
@@ -1933,10 +1933,10 @@ Kick, Snare, Toms, Overheads       Bass DI/Amp, Guitars, Keys, Vocal
 <p>Recording a direct instrument (<code>DI</code>) feed alongside (or instead of) a loud stage amplifier gives a band complete freedom to re-voice guitar and bass tones after rehearsal, track late at night on headphones, or bring their exact personal tube heads and fuzz pedals inside the console without carrying heavy cabinets to every session.</p>
 <p>Cave Recorder&#x27;s <strong><code>AmpRig</code></strong> processor combines an <code>InputCalibrator</code> (<code>dBu</code>-referenced headroom Trim, <code>INST</code>/<code>LINE</code> pad, and one-click <code>AUTO-CAL</code>), an overdrive/fuzz stompbox boost stage (<code>BOOST</code> + <code>DRV</code>), two selectable amplifier engines (<strong><code>[CIR]</code> Physical Tube Circuit Models</strong> vs. <strong><code>[NAM]</code> Native <code>.nam</code> Neural Amp Models</strong>), a 4-control passive tone stack (<code>BASS</code>, <code>MID</code>, <code>TREBLE</code>, <code>PRESENCE</code>), power-amp transformer <code>SAG</code>, an independent <strong><code>HEAD ON</code> / <code>HEAD BYP</code></strong> amplifier head bypass toggle, and an integrated <strong><code>CabinetMicProcessor</code></strong> (8 modeled speaker cabinets plus external <code>.wav</code>/<code>.nam</code> linear impulse responses, 5 studio microphone capsules, continuous <code>POS</code> and <code>AIR</code>, and a <code>CAB BYP</code> toggle):</p>
 <ol>
-<li><strong><code>[CIR]</code> Mode (8 Physical Vacuum-Tube Amplifier Topologies):</strong><ul><li>Models triode/pentode grid conduction, cathode bias shift, power-supply RC sag, and output transformer core hysteresis across 8 classic guitar and bass amplifier voicings: <code>CLN65</code> (<code>65 CLEAN 2x6L6 VIBRATO</code>), <code>JMP59</code> (<code>59 JUMPED 4xEL34 LEAD</code>), <code>BRT80</code> (<code>80 BRIT 3x12AX7 MASTER</code>), <code>CTR100</code> (<code>CITRUS 4x12AX7 DIRTY</code>), <code>5STG</code> (<code>5-STAGE 6L6 HIGH-GAIN</code>), <code>D-REC</code> (<code>MODERN OPEN-LOOP 5U4G</code>), <code>DM150</code> (<code>73 ULTRALINEAR 4x6550</code>), and <code>BS300</code> (<code>69 BAXANDALL 6x6550 BASS</code>).</li></ul></li>
+<li><strong><code>[CIR]</code> Mode (8 Physical Vacuum-Tube Amplifier Topologies with <code>2x</code> / <code>4x</code> Polyphase Half-Band Oversampling):</strong><ul><li>Models triode/pentode grid conduction, cathode bias shift, power-supply RC sag, and output transformer core hysteresis across 8 classic guitar and bass amplifier voicings: <code>CLN65</code> (<code>65 CLEAN 2x6L6 VIBRATO</code>), <code>JMP59</code> (<code>59 JUMPED 4xEL34 LEAD</code>), <code>BRT80</code> (<code>80 BRIT 3x12AX7 MASTER</code>), <code>CTR100</code> (<code>CITRUS 4x12AX7 DIRTY</code>), <code>5STG</code> (<code>5-STAGE 6L6 HIGH-GAIN</code>), <code>D-REC</code> (<code>MODERN OPEN-LOOP 5U4G</code>), <code>DM150</code> (<code>73 ULTRALINEAR 4x6550</code>), and <code>BS300</code> (<code>69 BAXANDALL 6x6550 BASS</code>).</li><li>Nonlinear tube and overdrive saturation stages run through a zero-allocation <strong><code>2x</code> / <code>4x</code> polyphase half-band allpass IIR oversampling cascade</strong> (<code>8th-order</code> steep <code>1x &lt;-&gt; 2x</code> stage cascaded with a <code>4th-order</code> <code>2x &lt;-&gt; 4x</code> stage) so high-gain harmonics stay free of aliasing foldback across <code>44.1 kHz</code>, <code>48.0 kHz</code>, <code>88.2 kHz</code>, and <code>96.0 kHz</code> sessions.</li></ul></li>
 <li><strong><code>HEAD ON</code> / <code>HEAD BYP</code> &amp; <code>CAB BYP</code> (Independent Head and Cabinet Bypass):</strong><ul><li>Toggling <strong><code>HEAD BYP</code></strong> bypasses the preamp, overdrive boost, tone stack, and power-amp stages while keeping <code>AmpRig</code>&#x27;s speaker cabinet and microphone section active (ideal when tracking a physical tube head&#x27;s load-box line out that only needs speaker cabinet voicing).</li><li>Conversely, toggling <strong><code>CAB BYP</code></strong> inside <code>AmpRig</code> bypasses its internal speaker cabinet so you can insert stereo rack processors (<code>Modulation</code>, <code>3-Mode Delay</code>, or <code>StudioPlateReverb</code>) in downstream rack slots and place a standalone <strong><code>CabIr</code></strong> (<code>SPEAKER CABINET &amp; IR LOADER</code>) processor after them (<code>AmpRig [CAB BYP] -&gt; Stereo Chorus/Delay -&gt; CabIr</code>).</li></ul></li>
-<li><strong><code>[NAM]</code> Mode (Native <code>.nam</code> <code>A2</code> / <code>A1</code> WaveNet Real-Time Inference &amp; Self-Contained Library):</strong><ul><li>Loads open <strong><code>.nam</code> (Neural Amp Modeler)</strong> dilated causal WaveNet files (<code>A2</code> Nano, <code>A1</code> Standard, and Slimmable architectures) directly into the channel strip with zero-allocation SIMD real-time inference and automatic sample-rate conversion when running sessions at <code>44.1 kHz</code>, <code>48.0 kHz</code>, <code>88.2 kHz</code>, or <code>96.0 kHz</code>.</li><li><strong>Two-Tier Self-Contained <code>.nam</code> Storage:</strong> Imported or captured <code>.nam</code> profiles are indexed in your global studio library (<code>&lt;LibraryRoot&gt;/.caverec/amp_captures/</code>, along with optional <code>return_wet.flac</code> archives for later higher-epoch re-training) and are <strong>automatically copied into <code>&lt;SessionFolder&gt;/models/</code> and <code>&lt;TakeFolder&gt;/models/</code></strong> whenever assigned to a strip. Every Session and Take remains 100% self-contained when synced to Google Drive or opened on a bandmate&#x27;s laptop without broken external file paths.</li></ul></li>
-<li><strong>3-Step Guided Hardware Amp &amp; Pedal Capture Wizard (<code>CAP</code>):</strong><ul><li>Clicking <strong><code>CAP</code></strong> in the <code>AmpRig</code> inspector deck opens the <strong>3-Step Hardware Neural Capture &amp; Training Modal</strong> so you can clone your own physical tube head, preamp, or fuzz/overdrive pedalboard in minutes:</li><li><strong>Step 1 (Hardware Patch &amp; Loopback Level Check):</strong> Select the physical <code>Send Output</code> jack (feeding your amp/pedal input via a re-amp box) and <code>Return Input</code> jack (from your load box, attenuator line out, or cabinet microphone). Click <strong><code>RUN LOOPBACK CHECK</code></strong> to play a test burst through the hardware, verify return peak headroom (<code>-18</code> to <code>-3 dBFS</code>), and measure preliminary roundtrip latency while the control room monitors automatically dim by <code>-20 dB</code>.</li><li><strong>Step 2 (Conditioning Sweep &amp; Background Neural Training):</strong> Choose your training preset (<strong><code>Quick (~1 min, A2 Nano)</code></strong>, <strong><code>Standard (~3 min, A2)</code></strong>, or <strong><code>Studio Deep (~10 min, A1)</code></strong>) and click <strong><code>START CAPTURE &amp; TRAIN</code></strong>. Cave Recorder transmits the multi-frequency conditioning stimulus (<code>v1_1_1</code> sweeps, impulses, and dynamic transient bursts) out the hardware send, captures the wet return, locks sub-sample arrival offset and clock drift via GCC-PHAT cross-correlation, and launches background hardware-accelerated (Apple Silicon AMX / SIMD SGEMM) backpropagation training. A live 60 Hz convergence graph plots the <strong>Error-to-Signal Ratio (<code>ESR</code>)</strong> across epochs without blocking the console UI.</li><li><strong>Step 3 (6-Gate Quality Verification, A/B Audition &amp; Save to Library):</strong> Upon completion, Cave Recorder validates the trained <code>.nam</code> model against 6 automated studio quality gates (<code>ESR</code> accuracy threshold, DC offset guard, silence/noise-floor stability, overload recovery, phase coherence, and real-time CPU budget), lets you <strong><code>A/B AUDITION</code></strong> the trained neural model against the recorded hardware return, and saves the <code>.nam</code> file directly into your Global Library and active Session/Take <code>models/</code> folder.</li></ul></li>
+<li><strong><code>[NAM]</code> Mode (Native <code>.nam</code> <code>A2</code> / <code>A1</code> WaveNet Real-Time Inference &amp; Self-Contained Library):</strong><ul><li>Loads open <strong><code>.nam</code> (Neural Amp Modeler)</strong> dilated causal WaveNet files (<code>A2</code> 23-layer 8-channel, <code>A1</code> Standard, and Slimmable architectures) directly into the channel strip with zero-allocation SIMD real-time inference, polyphase half-band anti-aliasing oversampling, and automatic sample-rate conversion when running sessions at <code>44.1 kHz</code>, <code>48.0 kHz</code>, <code>88.2 kHz</code>, or <code>96.0 kHz</code>.</li><li><strong>Two-Tier Self-Contained <code>.nam</code> Storage:</strong> Imported or captured <code>.nam</code> profiles are indexed in your global studio library (<code>&lt;LibraryRoot&gt;/.caverec/amp_captures/</code>, along with optional <code>return_wet.flac</code> archives for later higher-epoch re-training via <strong><code>RE-TRAIN HQ (WET WAV)</code></strong>) and are <strong>automatically copied into <code>&lt;SessionFolder&gt;/models/</code> and <code>&lt;TakeFolder&gt;/models/</code></strong> whenever assigned to a strip. Every Session and Take remains 100% self-contained when synced to Google Drive or opened on a bandmate&#x27;s laptop without broken external file paths.</li></ul></li>
+<li><strong>3-Step Guided Hardware Amp &amp; Pedal Capture Wizard (<code>CAP</code>) &amp; World-Class Mastering Trainer:</strong><ul><li>Clicking <strong><code>CAP</code></strong> in the <code>AmpRig</code> inspector deck opens the <strong>3-Step Hardware Neural Capture &amp; Training Modal</strong> (<code>STEP 1: I/O &amp; LOOPBACK CHECK</code> -&gt; <code>STEP 2: SWEEP &amp; A2 TRAINER</code> -&gt; <code>STEP 3: SANITY AUDIT &amp; SAVE</code>) so you can clone your own physical tube head, preamp, or fuzz/overdrive pedalboard:</li><li><strong>Step 1 (Hardware Patch, Preset Selection &amp; Loopback Level Check):</strong> Select the physical <code>RE-AMP SEND</code> output jack (<code>OUT 01</code>..<code>18</code>, feeding your amp/pedal input via a re-amp box) and <code>MIC / DI RETURN</code> input jack (<code>IN 01</code>..<code>18</code>, from your load box, attenuator line out, or cabinet microphone). Click the header preset selector button to cycle between the three canonical 23-layer <code>A2</code> WaveNet training quality modes (<code>Standard -&gt; Mastering -&gt; Turbo -&gt; Standard</code>):</li><li><strong><code>Standard A2</code> (<code>PRESET: STD A2</code> / <code>STANDARD A2</code>, Default):</strong> Full studio capture using the complete 3-minute conditioning sweep (<code>Standard3Min</code>) and <code>150</code> cosine-annealed epochs (<code>lr: 3.5e-3 -&gt; 1.0e-4</code>).</li><li><strong><code>Mastering A2</code> (<code>PRESET: MST A2</code> / <code>MASTERING A2</code>):</strong> World-class mastering mode using the full 3-minute conditioning sweep (<code>Standard3Min</code>), up to <code>1,000</code> epochs, <strong>held-out validation checkpointing</strong> (automatically retaining the model weights from the epoch with the lowest held-out validation <code>ESR</code>), <strong><code>ReduceLROnPlateau</code> learning-rate halving</strong> (<code>0.5x</code> decay after <code>8</code> non-improving validation epochs down to a <code>1.0e-5</code> floor), and <strong>train-until-convergence automatic early stopping</strong> (<code>20</code> plateau epochs at <code>&lt; 0.2%</code> relative validation <code>ESR</code> improvement).</li><li><strong><code>Turbo A2</code> (<code>PRESET: TRB A2</code> / <code>TURBO A2</code>):</strong> Fast preview capture using the compact conditioning sweep (<code>CompactFast</code>) and <code>60</code> cosine-annealed epochs (<code>lr: 3.5e-3 -&gt; 2.0e-4</code>). Click <strong><code>TEST LOOPBACK &amp; LEVEL</code></strong> to play a test burst through the hardware, verify return peak headroom (<code>-18</code> to <code>-3 dBFS</code>) and signal-to-noise ratio (<code>&gt;= 36 dB</code>), and lock sub-sample roundtrip latency and clock drift (<code>PPM</code>) via 8-tap Blackman-Harris windowed-sinc causal time-warping.</li><li><strong>Step 2 (Conditioning Sweep, Live Convergence Telemetry &amp; <code>STOP &amp; KEEP BEST</code>):</strong> Click <strong><code>START CAPTURE &amp; TRAINING</code></strong> (with optional <strong><code>DIM MONITORS (-20dB)</code></strong>). Cave Recorder transmits the multi-frequency conditioning stimulus (<code>v1_1_1</code> sweeps, impulses, and dynamic transient bursts) out the hardware send, captures and time-aligns the wet return, and launches background hardware-accelerated (Apple Silicon Accelerate AMX / SIMD SGEMM) analytical backpropagation across all 23 dilated causal WaveNet layers. A live 60 Hz logarithmic convergence graph plots both <strong>Training <code>ESR</code></strong> and <strong>Held-Out Validation <code>ESR</code></strong> alongside the active learning rate (<code>EP cur/total (MASTERING A2) | TRAIN ESR | VAL ESR | LR</code>). At any point during training, you can click <strong><code>STOP &amp; KEEP BEST</code></strong> to finish immediately while restoring the best validated checkpoint weights and running the post-training sanity audit (or click <strong><code>CANCEL</code></strong> to abort and discard the run).</li><li><strong>Step 3 (Sanity Audit, Quality Badge, A/B Audition &amp; Save to Library):</strong> Upon completion, Cave Recorder validates the trained <code>.nam</code> model against automated studio quality gates (held-out validation <code>ESR</code> badge <code>STUDIO &lt; 1% ESR</code> / <code>GOOD 1-3% ESR</code>, steady-state silence decay <code>&lt;= -70.0 dBFS</code>, full-scale burst stability, and <code>-18 LUFS</code> calibrated output loudness metadata), lets you <strong><code>A/B AUDITION</code></strong> the trained neural model against the recorded hardware return, and saves the <code>.nam</code> file (plus the optional aligned wet <code>.wav</code> archive when <strong><code>KEEP WET WAV</code></strong> is enabled) directly into your Global Library and active Session/Take <code>models/</code> folder.</li></ul></li>
 </ol>
 <h3 id="5-4-7-standalone-speaker-cabinet-linear-impulse-response-processor-cabir-cab-ir-browser">5.4.7 Standalone Speaker Cabinet &amp; Linear Impulse Response Processor (<code>CabIr</code> &amp; <code>CAB IR</code> Browser)<a class="heading-anchor" href="#5-4-7-standalone-speaker-cabinet-linear-impulse-response-processor-cabir-cab-ir-browser" aria-label="Link to section">#</a></h3>
 <p>In addition to the cabinet stage built into <code>AmpRig</code>, Cave Recorder provides a dedicated, reorderable <strong><code>CabIr</code> (<code>SPEAKER CABINET &amp; IR LOADER</code>)</strong> rack processor (<code>6:CAB IR</code>). Inserting <code>CabIr</code> in its own rack slot allows you to place stereo modulation (<code>DimensionChorus</code>, <code>ThroughZeroFlanger</code>, <code>OpticalPhaser</code>, <code>HarmonicTremolo</code>), stereo <code>3-Mode Delay</code>, or <code>StudioPlateReverb</code> <strong>between</strong> an amplifier head (<code>AmpRig</code> with <code>CAB BYP</code> active) and the speaker cabinet, or to voice direct preamp DI tracks and external hardware load-box returns.</p>
@@ -3629,7 +3629,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <h3 id="ampdynamic-gate-ampdynamic">AmpDynamic Gate (<code>AmpDynamic</code>)<a class="heading-anchor" href="#ampdynamic-gate-ampdynamic" aria-label="Link to section">#</a></h3>
 <p>High-gain guitar and bass variant of the Context-Aware 3-Variant Noise Gate engineered for stoner rock, doom, psychedelic rock, and tube/fuzz rigs. Combines an <code>8x</code>-decimated autocorrelation pitch periodicity detector (<code>H ∈ [0, 1]</code>) with a Wiener spectral flatness detector (<code>SFM ∈ [0, 1]</code>) so whisper-quiet <code>-34 dBFS</code> clean fingerpicked notes (<code>Whisper Clean Lock</code>) and intentional <code>1.5 s</code> to <code>5.0 s</code> (default <code>2.5 s</code>) harmonic cabinet feedback swells (<code>Feedback Bloom Lock</code>) remain wide open, while <code>50/60 Hz</code> hum and fuzz hiss clamp shut in <code>15 ms</code> to <code>40 ms</code> (default <code>18 ms</code> to <code>22 ms</code>) on a palm-mute stop (<code>Palm-Mute Clamp</code>) along a click-free <code>C²</code> quintic S-curve (<code>s(t) = 10t³ - 15t⁴ + 6t⁵</code>) with split-band <code>HF Tame</code> de-hissing. See <a href="#5-4-5-context-aware-3-variant-noise-gate-expander-drumbleed-ampdynamic">Section 5.4.5</a>.</p>
 <h3 id="amprig-neural-amp-capture-cir-nam-head-on-byp-cap">AmpRig &amp; Neural Amp Capture (<code>[CIR]</code> / <code>[NAM]</code> / <code>HEAD ON/BYP</code> / <code>CAP</code>)<a class="heading-anchor" href="#amprig-neural-amp-capture-cir-nam-head-on-byp-cap" aria-label="Link to section">#</a></h3>
-<p>Zero-latency guitar and bass amplifier, cabinet, and neural capture insert processor available in any of the 8 rack slots on Input Tracks and Subgroup Buses. Operates in either <strong><code>[CIR]</code> Circuit Mode</strong> (modeling 8 vacuum-tube preamp and power-amp topologies with <code>4x</code> polyphase oversampling) or <strong><code>[NAM]</code> Neural Capture Mode</strong> (running open <code>.nam</code> WaveNet, LSTM, and Linear neural network models alongside 8 modeled speaker cabinets and custom <code>.wav</code>/<code>.nam</code> linear impulse responses), with independent <strong><code>HEAD ON/BYP</code></strong> and <strong><code>CAB BYP</code></strong> switches for pairing an amplifier head with downstream stereo effects and a standalone <code>CabIr</code> cabinet slot. Includes a guided 3-step <strong>Hardware Amp &amp; Pedal Capture Wizard (<code>CAP</code>)</strong> that sweeps a physical amplifier or pedal via hardware loopback, aligns latency via GCC-PHAT cross-correlation, trains an <code>A2 Nano</code> or <code>A1 Standard</code> <code>.nam</code> model with live ESR metering (<code>GREEN &lt; 1%</code>), and copies the trained model into <code>&lt;SessionFolder&gt;/models/</code> and <code>&lt;TakeFolder&gt;/models/</code> for portable cloud sync. See <a href="#5-4-6-guitar-bass-amprig-cir-tube-circuit-models-head-on-byp-nam-neural-amp-capture">Section 5.4.6</a>.</p>
+<p>Zero-latency guitar and bass amplifier, cabinet, and neural capture insert processor available in any of the 8 rack slots on Input Tracks and Subgroup Buses. Operates in either <strong><code>[CIR]</code> Circuit Mode</strong> (modeling 8 vacuum-tube preamp and power-amp topologies with <code>2x</code> / <code>4x</code> polyphase half-band allpass IIR oversampling) or <strong><code>[NAM]</code> Neural Capture Mode</strong> (running open <code>.nam</code> WaveNet, LSTM, and Linear neural network models alongside 8 modeled speaker cabinets and custom <code>.wav</code>/<code>.nam</code> linear impulse responses), with independent <strong><code>HEAD ON/BYP</code></strong> and <strong><code>CAB BYP</code></strong> switches for pairing an amplifier head with downstream stereo effects and a standalone <code>CabIr</code> cabinet slot. Includes a guided 3-step <strong>Hardware Amp &amp; Pedal Capture Wizard (<code>CAP</code>)</strong> supporting three canonical 23-layer <code>A2</code> WaveNet trainer presets (<strong><code>Standard A2</code></strong> <code>150</code> epochs, <strong><code>Mastering A2</code></strong> up to <code>1,000</code> epochs with held-out validation checkpointing, <code>ReduceLROnPlateau</code> learning-rate halving, automatic convergence early stopping, and interactive <strong><code>STOP &amp; KEEP BEST</code></strong>, and <strong><code>Turbo A2</code></strong> <code>60</code> epochs), live training and validation <code>ESR</code> metering (<code>STUDIO &lt; 1% ESR</code>), and automatic replication into <code>&lt;SessionFolder&gt;/models/</code> and <code>&lt;TakeFolder&gt;/models/</code> for portable cloud sync. See <a href="#5-4-6-guitar-bass-amprig-cir-tube-circuit-models-head-on-byp-nam-neural-amp-capture">Section 5.4.6</a>.</p>
 <h3 id="analog-vca-compressor-3-vca-cmp">Analog VCA Compressor (<code>3:VCA CMP</code>)<a class="heading-anchor" href="#analog-vca-compressor-3-vca-cmp" aria-label="Link to section">#</a></h3>
 <p>Zero-latency voltage-controlled amplifier dynamics processor included in every Input Track and Subgroup Bus 8-slot rack. Provides adjustable Threshold (<code>-60.0 dB</code> to <code>0.0 dB</code>), Ratio (<code>1.0:1</code> to <code>20.0:1</code> with <code>2:1</code>, <code>4:1</code>, <code>8:1</code>, and <code>20:1</code> presets), Attack (<code>0.1 ms</code> to <code>100.0 ms</code>), Release (<code>10.0 ms</code> to <code>1000.0 ms</code>), Makeup Gain (<code>0.0 dB</code> to <code>+24.0 dB</code>), a <code>90 Hz</code> Sidechain High-Pass Filter (<code>SC HPF</code>, shortcut <kbd class="keycap">H</kbd> in Channel Inspector), Stereo Link (<code>LINK</code>), New York parallel blend (<code>MIX 50%</code>), and a real-time Gain Reduction (<code>GR</code>) trace. See <a href="#5-4-analog-vca-compressor-gain-reduction-meter-vca-compressor-gr">Section 5.4</a>.</p>
 <h3 id="audio-settings-modal-audio-settings">Audio Settings Modal (<code>AUDIO SETTINGS</code>)<a class="heading-anchor" href="#audio-settings-modal-audio-settings" aria-label="Link to section">#</a></h3>
@@ -3758,7 +3758,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>2D Ruler Scrub-Zoom</dt>
 <dd>
-<a href="#6-1-4-complete-reference-of-timeline-navigation-zoom-gestures">Ch. 6: 6.1.4 Complete Reference of Timeline Navigation &amp; Zoom Gestures (p. 103)</a> &middot; <a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Mouse Gestures (p. 137)</a>
+<a href="#6-1-4-complete-reference-of-timeline-navigation-zoom-gestures">Ch. 6: 6.1.4 Complete Reference of Timeline Navigation &amp; Zoom Gestures (p. 104)</a> &middot; <a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Mouse Gestures (p. 138)</a>
 </dd>
 <dt>2D XY Control Pads</dt>
 <dd>
@@ -3766,19 +3766,19 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>3-Mode Delay</dt>
 <dd>
-<a href="#5-5-3-3-mode-delay-capstan-tape-bbd-analog-pristine-digital-dynamic-ducking">Ch. 5: Capstan Tape, BBD Analog, and Pristine Digital (p. 85)</a>
+<a href="#5-5-3-3-mode-delay-capstan-tape-bbd-analog-pristine-digital-dynamic-ducking">Ch. 5: Capstan Tape, BBD Analog, and Pristine Digital (p. 86)</a>
 </dd>
 <dt>8-Slot Processor Rack</dt>
 <dd>
-<a href="#8-slot-processor-rack">Ch. 9: Glossary definition (p. 149)</a> &middot; <a href="#5-1-1-the-four-upper-console-wells-mix-console">Ch. 5: Reordering and bypassing slots (p. 61)</a>
+<a href="#8-slot-processor-rack">Ch. 9: Glossary definition (p. 150)</a> &middot; <a href="#5-1-1-the-four-upper-console-wells-mix-console">Ch. 5: Reordering and bypassing slots (p. 61)</a>
 </dd>
 <dt>_Exports Folder Index</dt>
 <dd>
-<a href="#7-2-4-exporting-takes-to-external-workstation-project-formats-export-take">Ch. 7: 7.2.4 Exporting Takes to External Workstation Project Formats (EXPORT TAKE) (p. 119)</a>
+<a href="#7-2-4-exporting-takes-to-external-workstation-project-formats-export-take">Ch. 7: 7.2.4 Exporting Takes to External Workstation Project Formats (EXPORT TAKE) (p. 120)</a>
 </dd>
 <dt>_Mixes Folder</dt>
 <dd>
-<a href="#7-2-2-converting-live-stereo-prints-to-lossless-flac-flac-print-320-kbps-mp3-mp3-print">Ch. 7: 7.2.2 Converting Live Stereo Prints to Lossless FLAC (FLAC PRINT) &amp; 320 kbps MP3 (MP3 PRINT) (p. 118)</a> &middot; <a href="#7-4-1-complete-project-session-directory-tree-on-disk">Ch. 7: Relative Links (p. 122)</a>
+<a href="#7-2-2-converting-live-stereo-prints-to-lossless-flac-flac-print-320-kbps-mp3-mp3-print">Ch. 7: 7.2.2 Converting Live Stereo Prints to Lossless FLAC (FLAC PRINT) &amp; 320 kbps MP3 (MP3 PRINT) (p. 119)</a> &middot; <a href="#7-4-1-complete-project-session-directory-tree-on-disk">Ch. 7: Relative Links (p. 123)</a>
 </dd>
 </dl></section>
 <section class="index-letter-section" id="idx-letter-A">
@@ -3786,11 +3786,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>Actions</dt>
 <dd>
-<a href="#8-1-complete-keyboard-shortcut-reference-all-59-actions-by-scope">Ch. 8: Scoped Execution Rules (p. 129)</a>
+<a href="#8-1-complete-keyboard-shortcut-reference-all-59-actions-by-scope">Ch. 8: Scoped Execution Rules (p. 130)</a>
 </dd>
 <dt>Active Comp Lane</dt>
 <dd>
-<a href="#active-comp-lane-active-comp-lane">Ch. 9: Glossary definition (p. 150)</a>
+<a href="#active-comp-lane-active-comp-lane">Ch. 9: Glossary definition (p. 151)</a>
 </dd>
 <dt>ADAT Lightpipe</dt>
 <dd>
@@ -3802,11 +3802,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Allpass Phase Rotation</dt>
 <dd>
-<a href="#5-6-3-why-delay-alone-cannot-fix-ported-cabinets-bass-di-amp-or-dispersive-drum-kits">Ch. 5: Why Delay Alone Is Not Enough (p. 89)</a>
+<a href="#5-6-3-why-delay-alone-cannot-fix-ported-cabinets-bass-di-amp-or-dispersive-drum-kits">Ch. 5: Why Delay Alone Is Not Enough (p. 90)</a>
 </dd>
 <dt>AmpDynamic Gate</dt>
 <dd>
-<a href="#ampdynamic-gate-ampdynamic">Ch. 9: Glossary definition (p. 150)</a> &middot; <a href="#5-4-5-context-aware-3-variant-noise-gate-expander-drumbleed-ampdynamic">Ch. 5: Stoner/Doom Harmonicity and Entropy Gate (p. 77)</a>
+<a href="#ampdynamic-gate-ampdynamic">Ch. 9: Glossary definition (p. 151)</a> &middot; <a href="#5-4-5-context-aware-3-variant-noise-gate-expander-drumbleed-ampdynamic">Ch. 5: Stoner/Doom Harmonicity and Entropy Gate (p. 77)</a>
 </dd>
 <dt>AmpRig</dt>
 <dd>
@@ -3814,7 +3814,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>AmpRig &amp; Neural Amp Capture</dt>
 <dd>
-<a href="#amprig-neural-amp-capture-cir-nam-head-on-byp-cap">Ch. 9: Glossary definition (p. 150)</a>
+<a href="#amprig-neural-amp-capture-cir-nam-head-on-byp-cap">Ch. 9: Glossary definition (p. 151)</a>
 </dd>
 <dt>Audio Interfaces</dt>
 <dd>
@@ -3826,19 +3826,19 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Audio Settings Modal</dt>
 <dd>
-<a href="#8-1-2-global-navigation-modals-global-navigation-modals">Ch. 8: CMD/CTRL + , Shortcut (p. 131)</a> &middot; <a href="#2-2-configuring-audio-device-settings-audio-settings">Ch. 2: Configuration (p. 25)</a> &middot; <a href="#audio-settings-modal-audio-settings">Ch. 9: Glossary definition (p. 150)</a>
+<a href="#8-1-2-global-navigation-modals-global-navigation-modals">Ch. 8: CMD/CTRL + , Shortcut (p. 132)</a> &middot; <a href="#2-2-configuring-audio-device-settings-audio-settings">Ch. 2: Configuration (p. 25)</a> &middot; <a href="#audio-settings-modal-audio-settings">Ch. 9: Glossary definition (p. 152)</a>
 </dd>
 <dt>Audio Unit</dt>
 <dd>
-<a href="#audio-unit-auv2-auv3-on-macos">Ch. 9: Glossary definition (p. 151)</a>
+<a href="#audio-unit-auv2-auv3-on-macos">Ch. 9: Glossary definition (p. 152)</a>
 </dd>
 <dt>Audio Unit (AUv2 / AUv3)</dt>
 <dd>
-<a href="#5-7-1-scanning-loading-clap-plugins-into-the-8-slot-rack">Ch. 5: macOS Audio Component discovery and XPC sandbox protection (p. 93)</a> &middot; <a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Native macOS effect hosting (p. 92)</a>
+<a href="#5-7-1-scanning-loading-clap-plugins-into-the-8-slot-rack">Ch. 5: macOS Audio Component discovery and XPC sandbox protection (p. 93)</a> &middot; <a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Native macOS effect hosting (p. 93)</a>
 </dd>
 <dt>AUTO-FLAC ON UPLOAD</dt>
 <dd>
-<a href="#7-5-2-selective-sync-tiers-mixes-vs-full-auto-flac-on-upload-auto-mp3-on-upload">Ch. 7: 7.5.2 Selective Sync Tiers: MIXES vs. FULL, AUTO-FLAC ON UPLOAD &amp; AUTO-MP3 ON UPLOAD (p. 126)</a>
+<a href="#7-5-2-selective-sync-tiers-mixes-vs-full-auto-flac-on-upload-auto-mp3-on-upload">Ch. 7: 7.5.2 Selective Sync Tiers: MIXES vs. FULL, AUTO-FLAC ON UPLOAD &amp; AUTO-MP3 ON UPLOAD (p. 127)</a>
 </dd>
 <dt>AUTO-LVL</dt>
 <dd>
@@ -3846,15 +3846,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>AUTO-MP3 ON UPLOAD</dt>
 <dd>
-<a href="#7-5-2-selective-sync-tiers-mixes-vs-full-auto-flac-on-upload-auto-mp3-on-upload">Ch. 7: 7.5.2 Selective Sync Tiers: MIXES vs. FULL, AUTO-FLAC ON UPLOAD &amp; AUTO-MP3 ON UPLOAD (p. 126)</a>
+<a href="#7-5-2-selective-sync-tiers-mixes-vs-full-auto-flac-on-upload-auto-mp3-on-upload">Ch. 7: 7.5.2 Selective Sync Tiers: MIXES vs. FULL, AUTO-FLAC ON UPLOAD &amp; AUTO-MP3 ON UPLOAD (p. 127)</a>
 </dd>
 <dt>Auto-Scroll</dt>
 <dd>
-<a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: 6.1.3 Full-Screen WAVEFORM TIMELINE Toolbar &amp; Track Headers (p. 102)</a>
+<a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: 6.1.3 Full-Screen WAVEFORM TIMELINE Toolbar &amp; Track Headers (p. 103)</a>
 </dd>
 <dt>Auto-Wah</dt>
 <dd>
-<a href="#5-5-4-4-pole-non-linear-resonant-ladderfilter-with-envelope-follower-sidechain">Ch. 5: Envelope Follower Filter (p. 86)</a>
+<a href="#5-5-4-4-pole-non-linear-resonant-ladderfilter-with-envelope-follower-sidechain">Ch. 5: Envelope Follower Filter (p. 87)</a>
 </dd>
 <dt>AUX 1 REVERB</dt>
 <dd>
@@ -3866,11 +3866,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Aux Returns</dt>
 <dd>
-<a href="#4-3-subgroup-buses-aux-returns-master-bus">Ch. 4: AUX 1 REVERB and AUX 2 TAPE DLY (p. 51)</a> &middot; <a href="#aux-return-aux-1-reverb-aux-2-tape-dly-aux-8">Ch. 9: Glossary definition (p. 151)</a> &middot; <a href="#4-3-2-dedicated-stereo-aux-returns-aux-1-reverb-aux-2-tape-dly">Ch. 4: Quick console strip controls (p. 53)</a>
+<a href="#4-3-subgroup-buses-aux-returns-master-bus">Ch. 4: AUX 1 REVERB and AUX 2 TAPE DLY (p. 51)</a> &middot; <a href="#aux-return-aux-1-reverb-aux-2-tape-dly-aux-8">Ch. 9: Glossary definition (p. 152)</a> &middot; <a href="#4-3-2-dedicated-stereo-aux-returns-aux-1-reverb-aux-2-tape-dly">Ch. 4: Quick console strip controls (p. 53)</a>
 </dd>
 <dt>Aux Sends</dt>
 <dd>
-<a href="#aux-send-rvb-dly-pre-eq-pst">Ch. 9: Glossary definition (p. 151)</a> &middot; <a href="#4-2-3-zone-3-zone-4-multi-instance-insert-rack-summary-active-pass-badge-aux-sends">Ch. 4: PRE, EQ, and PST tap points (p. 49)</a>
+<a href="#aux-send-rvb-dly-pre-eq-pst">Ch. 9: Glossary definition (p. 152)</a> &middot; <a href="#4-2-3-zone-3-zone-4-multi-instance-insert-rack-summary-active-pass-badge-aux-sends">Ch. 4: PRE, EQ, and PST tap points (p. 49)</a>
 </dd>
 </dl></section>
 <section class="index-letter-section" id="idx-letter-B">
@@ -3878,15 +3878,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>Base Pass</dt>
 <dd>
-<a href="#base-pass-rec001-pass-01">Ch. 9: Glossary definition (p. 151)</a>
+<a href="#base-pass-rec001-pass-01">Ch. 9: Glossary definition (p. 152)</a>
 </dd>
 <dt>Base Pass vs. Overdub Pass</dt>
 <dd>
-<a href="#6-2-recording-overdubs-od-comping-in-expandable-pass-lanes-passes">Ch. 6: 6.2 Recording Overdubs (OD) &amp; Comping in Expandable Pass Lanes (PASSES) (p. 104)</a>
+<a href="#6-2-recording-overdubs-od-comping-in-expandable-pass-lanes-passes">Ch. 6: 6.2 Recording Overdubs (OD) &amp; Comping in Expandable Pass Lanes (PASSES) (p. 105)</a>
 </dd>
 <dt>BBD Analog Delay</dt>
 <dd>
-<a href="#5-5-3-3-mode-delay-capstan-tape-bbd-analog-pristine-digital-dynamic-ducking">Ch. 5: 4096-Stage Bucket-Brigade Emulation (p. 85)</a>
+<a href="#5-5-3-3-mode-delay-capstan-tape-bbd-analog-pristine-digital-dynamic-ducking">Ch. 5: 4096-Stage Bucket-Brigade Emulation (p. 86)</a>
 </dd>
 <dt>BOUNCE</dt>
 <dd>
@@ -3914,7 +3914,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>BWF and iXML Stem Bundles</dt>
 <dd>
-<a href="#7-2-4-exporting-takes-to-external-workstation-project-formats-export-take">Ch. 7: 7.2.4 Exporting Takes to External Workstation Project Formats (EXPORT TAKE) (p. 119)</a>
+<a href="#7-2-4-exporting-takes-to-external-workstation-project-formats-export-take">Ch. 7: 7.2.4 Exporting Takes to External Workstation Project Formats (EXPORT TAKE) (p. 120)</a>
 </dd>
 </dl></section>
 <section class="index-letter-section" id="idx-letter-C">
@@ -3930,7 +3930,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>CabIr</dt>
 <dd>
-<a href="#cabir-speaker-cabinet-linear-impulse-response-loader">Ch. 9: Glossary definition (p. 152)</a> &middot; <a href="#5-4-7-standalone-speaker-cabinet-linear-impulse-response-processor-cabir-cab-ir-browser">Ch. 5: Standalone Speaker Cabinet and Linear IR Loader (p. 82)</a>
+<a href="#cabir-speaker-cabinet-linear-impulse-response-loader">Ch. 9: Glossary definition (p. 153)</a> &middot; <a href="#5-4-7-standalone-speaker-cabinet-linear-impulse-response-processor-cabir-cab-ir-browser">Ch. 5: Standalone Speaker Cabinet and Linear IR Loader (p. 82)</a>
 </dd>
 <dt>CALIBRATE ALL TRIMS</dt>
 <dd>
@@ -3942,15 +3942,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Channel Inspector</dt>
 <dd>
-<a href="#5-1-upper-console-wells-vs-dedicated-channel-inspector-view">Ch. 5: Full-screen CMD/CTRL+3 view (p. 61)</a> &middot; <a href="#channel-inspector-channel-inspector">Ch. 9: Glossary definition (p. 152)</a> &middot; <a href="#8-1-6-channel-inspector-view-channel-inspector-view">Ch. 8: H, X, and E Shortcuts (p. 136)</a> &middot; <a href="#5-1-2-full-screen-channel-inspector-view-large-processor-decks-2d-xy-pads-collapsible-mini-timeline-cmd-ctrl-3">Ch. 5: Input Track inspection (p. 62)</a> &middot; <a href="#5-1-2-full-screen-channel-inspector-view-large-processor-decks-2d-xy-pads-collapsible-mini-timeline-cmd-ctrl-3">Ch. 5: Subgroup Bus inspection and multi-bus routing (p. 62)</a>
+<a href="#5-1-upper-console-wells-vs-dedicated-channel-inspector-view">Ch. 5: Full-screen CMD/CTRL+3 view (p. 61)</a> &middot; <a href="#channel-inspector-channel-inspector">Ch. 9: Glossary definition (p. 153)</a> &middot; <a href="#8-1-6-channel-inspector-view-channel-inspector-view">Ch. 8: H, X, and E Shortcuts (p. 137)</a> &middot; <a href="#5-1-2-full-screen-channel-inspector-view-large-processor-decks-2d-xy-pads-collapsible-mini-timeline-cmd-ctrl-3">Ch. 5: Input Track inspection (p. 62)</a> &middot; <a href="#5-1-2-full-screen-channel-inspector-view-large-processor-decks-2d-xy-pads-collapsible-mini-timeline-cmd-ctrl-3">Ch. 5: Subgroup Bus inspection and multi-bus routing (p. 62)</a>
 </dd>
 <dt>Channel Strips</dt>
 <dd>
-<a href="#4-2-1-input-track-control-reference-table">Ch. 4: Complete control table (p. 45)</a> &middot; <a href="#4-2-input-track-channel-strips-dynamic-console-topology-0-32-tracks">Ch. 4: Input Track zones (p. 44)</a> &middot; <a href="#4-1-console-architecture-end-to-end-signal-flow">Ch. 4: Overview (p. 42)</a> &middot; <a href="#2-1-2-recommended-18-channel-full-band-patch-list">Ch. 2: Recommended 18-Channel Patch (p. 22)</a> &middot; <a href="#8-1-4-mix-console-view-mix-console-view">Ch. 8: SHIFT + M, S, A, I, P Shortcuts (p. 134)</a>
+<a href="#4-2-1-input-track-control-reference-table">Ch. 4: Complete control table (p. 45)</a> &middot; <a href="#4-2-input-track-channel-strips-dynamic-console-topology-0-32-tracks">Ch. 4: Input Track zones (p. 44)</a> &middot; <a href="#4-1-console-architecture-end-to-end-signal-flow">Ch. 4: Overview (p. 42)</a> &middot; <a href="#2-1-2-recommended-18-channel-full-band-patch-list">Ch. 2: Recommended 18-Channel Patch (p. 22)</a> &middot; <a href="#8-1-4-mix-console-view-mix-console-view">Ch. 8: SHIFT + M, S, A, I, P Shortcuts (p. 135)</a>
 </dd>
 <dt>CLAP Plugins</dt>
 <dd>
-<a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: External .clap plugin hosting (p. 92)</a> &middot; <a href="#clap-plugin-1-clap">Ch. 9: Glossary definition (p. 152)</a> &middot; <a href="#5-7-1-scanning-loading-clap-plugins-into-the-8-slot-rack">Ch. 5: System scan directories and loading into slots (p. 93)</a>
+<a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: External .clap plugin hosting (p. 93)</a> &middot; <a href="#clap-plugin-1-clap">Ch. 9: Glossary definition (p. 153)</a> &middot; <a href="#5-7-1-scanning-loading-clap-plugins-into-the-8-slot-rack">Ch. 5: System scan directories and loading into slots (p. 93)</a>
 </dd>
 <dt>clap_plugin_index.json</dt>
 <dd>
@@ -3958,15 +3958,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Clip Gain</dt>
 <dd>
-<a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Pre-Insert Region Gain Envelope (p. 110)</a>
+<a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Pre-Insert Region Gain Envelope (p. 111)</a>
 </dd>
 <dt>CLOUD Status Badge</dt>
 <dd>
-<a href="#7-5-band-collaboration-google-drive-cloud-sync-cloud">Ch. 7: 7.5 Band Collaboration &amp; Google Drive Cloud Sync (CLOUD) (p. 125)</a>
+<a href="#7-5-band-collaboration-google-drive-cloud-sync-cloud">Ch. 7: 7.5 Band Collaboration &amp; Google Drive Cloud Sync (CLOUD) (p. 126)</a>
 </dd>
 <dt>Cloud Sync</dt>
 <dd>
-<a href="#7-5-4-exclusive-session-write-locking-read-only-preview-zero-loss-conflict-merging">Ch. 7: Conflict Resolution via Snapshots (p. 128)</a> &middot; <a href="#7-5-1-connecting-a-project-to-google-drive-reading-the-cloud-badge">Ch. 7: Connecting Google Drive (p. 125)</a> &middot; <a href="#2-4-1-configuring-the-library-root-and-cloud-sync-remote">Ch. 2: Connecting Google Drive in Project Modal (p. 29)</a> &middot; <a href="#cloud-sync-cloud">Ch. 9: Glossary definition (p. 152)</a> &middot; <a href="#7-5-band-collaboration-google-drive-cloud-sync-cloud">Ch. 7: Google Drive Collaboration (p. 125)</a> &middot; <a href="#7-5-3-sharing-a-project-with-bandmates-link-remote-project">Ch. 7: Linking Remote Projects (+ Link Remote Project) (p. 127)</a> &middot; <a href="#7-5-2-selective-sync-tiers-mixes-vs-full-auto-flac-on-upload-auto-mp3-on-upload">Ch. 7: Mixes Only vs. Full Backup Tiers (p. 126)</a> &middot; <a href="#3-5-workflow-5-mixing-non-destructive-snapshots-band-cloud-sharing">Ch. 3: Uploading Mixes and Full Sessions (p. 38)</a>
+<a href="#7-5-4-exclusive-session-write-locking-read-only-preview-zero-loss-conflict-merging">Ch. 7: Conflict Resolution via Snapshots (p. 129)</a> &middot; <a href="#7-5-1-connecting-a-project-to-google-drive-reading-the-cloud-badge">Ch. 7: Connecting Google Drive (p. 126)</a> &middot; <a href="#2-4-1-configuring-the-library-root-and-cloud-sync-remote">Ch. 2: Connecting Google Drive in Project Modal (p. 29)</a> &middot; <a href="#cloud-sync-cloud">Ch. 9: Glossary definition (p. 153)</a> &middot; <a href="#7-5-band-collaboration-google-drive-cloud-sync-cloud">Ch. 7: Google Drive Collaboration (p. 126)</a> &middot; <a href="#7-5-3-sharing-a-project-with-bandmates-link-remote-project">Ch. 7: Linking Remote Projects (+ Link Remote Project) (p. 128)</a> &middot; <a href="#7-5-2-selective-sync-tiers-mixes-vs-full-auto-flac-on-upload-auto-mp3-on-upload">Ch. 7: Mixes Only vs. Full Backup Tiers (p. 127)</a> &middot; <a href="#3-5-workflow-5-mixing-non-destructive-snapshots-band-cloud-sharing">Ch. 3: Uploading Mixes and Full Sessions (p. 38)</a>
 </dd>
 <dt>CLR CLIP</dt>
 <dd>
@@ -3978,11 +3978,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Comb Filtering</dt>
 <dd>
-<a href="#5-6-automatic-multi-mic-phase-polarity-alignment-align-all">Ch. 5: Multi-mic acoustic arrival time (p. 87)</a>
+<a href="#5-6-automatic-multi-mic-phase-polarity-alignment-align-all">Ch. 5: Multi-mic acoustic arrival time (p. 88)</a>
 </dd>
 <dt>Command-Line Interface (CLI)</dt>
 <dd>
-<a href="#8-4-1-command-line-arguments-reference">Ch. 8: Flag Reference Table (p. 144)</a> &middot; <a href="#8-4-command-line-automated-studio-verification-reference">Ch. 8: Launch Options and Automated Flags (p. 143)</a>
+<a href="#8-4-1-command-line-arguments-reference">Ch. 8: Flag Reference Table (p. 145)</a> &middot; <a href="#8-4-command-line-automated-studio-verification-reference">Ch. 8: Launch Options and Automated Flags (p. 144)</a>
 </dd>
 <dt>Comping</dt>
 <dd>
@@ -3990,7 +3990,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Comping Overdubs</dt>
 <dd>
-<a href="#6-2-2-expanding-pass-lanes-auditioning-passes-comping-phrases">Ch. 6: 6.2.2 Expanding Pass Lanes, Auditioning Passes &amp; Comping Phrases (p. 106)</a>
+<a href="#6-2-2-expanding-pass-lanes-auditioning-passes-comping-phrases">Ch. 6: 6.2.2 Expanding Pass Lanes, Auditioning Passes &amp; Comping Phrases (p. 107)</a>
 </dd>
 <dt>Compressor Topologies</dt>
 <dd>
@@ -3998,15 +3998,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Conflict Detection</dt>
 <dd>
-<a href="#8-3-3-live-scope-conflict-detection-shared-non-conflicting-scopes-os-warnings">Ch. 8: OS Shortcut Warnings (OS WARN) (p. 141)</a> &middot; <a href="#8-3-3-live-scope-conflict-detection-shared-non-conflicting-scopes-os-warnings">Ch. 8: Overlapping vs. Sibling Scopes (p. 141)</a> &middot; <a href="#8-3-customizing-shortcuts-in-the-keymap-view-cmd-ctrl-6">Ch. 8: Scope Clash and OS Warnings (p. 139)</a>
+<a href="#8-3-3-live-scope-conflict-detection-shared-non-conflicting-scopes-os-warnings">Ch. 8: OS Shortcut Warnings (OS WARN) (p. 142)</a> &middot; <a href="#8-3-3-live-scope-conflict-detection-shared-non-conflicting-scopes-os-warnings">Ch. 8: Overlapping vs. Sibling Scopes (p. 142)</a> &middot; <a href="#8-3-customizing-shortcuts-in-the-keymap-view-cmd-ctrl-6">Ch. 8: Scope Clash and OS Warnings (p. 140)</a>
 </dd>
 <dt>Control Room Monitor Bar</dt>
 <dd>
-<a href="#control-room-monitor-bar-auto-lvl">Ch. 9: Glossary definition (p. 153)</a> &middot; <a href="#1-4-5-pillar-5-strict-separation-between-master-bus-printing-and-control-room-monitoring">Ch. 1: Separation from Master Print (p. 19)</a> &middot; <a href="#4-3-4-control-room-monitor-bar-auto-lvl-loudness-matched-bypass">Ch. 4: Speaker Check and Band Isolation (p. 55)</a>
+<a href="#control-room-monitor-bar-auto-lvl">Ch. 9: Glossary definition (p. 154)</a> &middot; <a href="#1-4-5-pillar-5-strict-separation-between-master-bus-printing-and-control-room-monitoring">Ch. 1: Separation from Master Print (p. 19)</a> &middot; <a href="#4-3-4-control-room-monitor-bar-auto-lvl-loudness-matched-bypass">Ch. 4: Speaker Check and Band Isolation (p. 55)</a>
 </dd>
 <dt>Convolution Reverb</dt>
 <dd>
-<a href="#5-5-stereo-convolution-reverb-aux-1-reverb-stereo-tape-delay-aux-2-tape-dly">Ch. 5: AUX 1 REVERB parameters (p. 83)</a>
+<a href="#5-5-stereo-convolution-reverb-aux-1-reverb-stereo-tape-delay-aux-2-tape-dly">Ch. 5: AUX 1 REVERB parameters (p. 84)</a>
 </dd>
 <dt>Curated Console Philosophy</dt>
 <dd>
@@ -4022,7 +4022,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Cycle Loop Playback</dt>
 <dd>
-<a href="#6-3-2-defining-ranges-k-l-cycle-loop-playback">Ch. 6: 6.3.2 Defining Ranges (K / L) &amp; Cycle Loop Playback (⇄) (p. 108)</a> &middot; <a href="#cycle-loop">Ch. 9: Glossary definition (p. 153)</a>
+<a href="#6-3-2-defining-ranges-k-l-cycle-loop-playback">Ch. 6: 6.3.2 Defining Ranges (K / L) &amp; Cycle Loop Playback (⇄) (p. 109)</a> &middot; <a href="#cycle-loop">Ch. 9: Glossary definition (p. 154)</a>
 </dd>
 </dl></section>
 <section class="index-letter-section" id="idx-letter-D">
@@ -4050,7 +4050,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Disk Layout</dt>
 <dd>
-<a href="#7-4-1-complete-project-session-directory-tree-on-disk">Ch. 7: Directory Tree (p. 122)</a> &middot; <a href="#7-4-self-documenting-disk-folder-structure-file-naming-rules">Ch. 7: Self-Documenting Folder Structure (p. 122)</a>
+<a href="#7-4-1-complete-project-session-directory-tree-on-disk">Ch. 7: Directory Tree (p. 123)</a> &middot; <a href="#7-4-self-documenting-disk-folder-structure-file-naming-rules">Ch. 7: Self-Documenting Folder Structure (p. 123)</a>
 </dd>
 <dt>Drum Punch</dt>
 <dd>
@@ -4058,11 +4058,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>DrumBleed Gate</dt>
 <dd>
-<a href="#drumbleed-gate-drumbleed">Ch. 9: Glossary definition (p. 153)</a> &middot; <a href="#5-4-5-context-aware-3-variant-noise-gate-expander-drumbleed-ampdynamic">Ch. 5: Snare-into-Tom Spill and [LRN] Fundamental Lock (p. 77)</a>
+<a href="#drumbleed-gate-drumbleed">Ch. 9: Glossary definition (p. 154)</a> &middot; <a href="#5-4-5-context-aware-3-variant-noise-gate-expander-drumbleed-ampdynamic">Ch. 5: Snare-into-Tom Spill and [LRN] Fundamental Lock (p. 77)</a>
 </dd>
 <dt>Dual-Trace RTA</dt>
 <dd>
-<a href="#dual-trace-spectrum-analyzer-rta">Ch. 9: Glossary definition (p. 153)</a> &middot; <a href="#5-3-2-operating-interactive-eq-nodes-reading-the-dual-trace-rta">Ch. 5: Pre-EQ vs. post-EQ spectrum visualization (p. 70)</a>
+<a href="#dual-trace-spectrum-analyzer-rta">Ch. 9: Glossary definition (p. 154)</a> &middot; <a href="#5-3-2-operating-interactive-eq-nodes-reading-the-dual-trace-rta">Ch. 5: Pre-EQ vs. post-EQ spectrum visualization (p. 70)</a>
 </dd>
 <dt>Dynamic Console Topology</dt>
 <dd>
@@ -4070,7 +4070,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Dynamic Ducking</dt>
 <dd>
-<a href="#5-5-3-3-mode-delay-capstan-tape-bbd-analog-pristine-digital-dynamic-ducking">Ch. 5: Delay Ducking (p. 85)</a>
+<a href="#5-5-3-3-mode-delay-capstan-tape-bbd-analog-pristine-digital-dynamic-ducking">Ch. 5: Delay Ducking (p. 86)</a>
 </dd>
 <dt>Dynamic EQ</dt>
 <dd>
@@ -4086,11 +4086,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>EMT 140 Plate</dt>
 <dd>
-<a href="#5-5-stereo-convolution-reverb-aux-1-reverb-stereo-tape-delay-aux-2-tape-dly">Ch. 5: Reverb impulse response (p. 83)</a>
+<a href="#5-5-stereo-convolution-reverb-aux-1-reverb-stereo-tape-delay-aux-2-tape-dly">Ch. 5: Reverb impulse response (p. 84)</a>
 </dd>
 <dt>Environment Variables</dt>
 <dd>
-<a href="#8-4-command-line-automated-studio-verification-reference">Ch. 8: CLAP_PATH and GPU Configuration (p. 143)</a> &middot; <a href="#8-4-2-studio-environment-variables">Ch. 8: CLAP_PATH, CAVEREC_GPU_POWER, and Cloud Token (p. 145)</a>
+<a href="#8-4-command-line-automated-studio-verification-reference">Ch. 8: CLAP_PATH and GPU Configuration (p. 144)</a> &middot; <a href="#8-4-2-studio-environment-variables">Ch. 8: CLAP_PATH, CAVEREC_GPU_POWER, and Cloud Token (p. 146)</a>
 </dd>
 <dt>EQ Filter Shapes</dt>
 <dd>
@@ -4098,15 +4098,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>EQ Nodes</dt>
 <dd>
-<a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Mouse and Scroll Gestures (p. 137)</a> &middot; <a href="#5-3-2-operating-interactive-eq-nodes-reading-the-dual-trace-rta">Ch. 5: Mouse gestures (p. 70)</a>
+<a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Mouse and Scroll Gestures (p. 138)</a> &middot; <a href="#5-3-2-operating-interactive-eq-nodes-reading-the-dual-trace-rta">Ch. 5: Mouse gestures (p. 70)</a>
 </dd>
 <dt>Export Take</dt>
 <dd>
-<a href="#7-2-live-stereo-prints-vs-offline-mixdowns-stem-bounces">Ch. 7: External Workstation Project and Bundle Export (p. 117)</a> &middot; <a href="#7-2-4-exporting-takes-to-external-workstation-project-formats-export-take">Ch. 7: External Workstation Project Formats (.rpp, .als, Session XML, .dawproject, .fcpxml) (p. 119)</a> &middot; <a href="#export-take-export-take-exports">Ch. 9: Glossary definition (p. 153)</a>
+<a href="#7-2-live-stereo-prints-vs-offline-mixdowns-stem-bounces">Ch. 7: External Workstation Project and Bundle Export (p. 118)</a> &middot; <a href="#7-2-4-exporting-takes-to-external-workstation-project-formats-export-take">Ch. 7: External Workstation Project Formats (.rpp, .als, Session XML, .dawproject, .fcpxml) (p. 120)</a> &middot; <a href="#export-take-export-take-exports">Ch. 9: Glossary definition (p. 154)</a>
 </dd>
 <dt>Export Workflows</dt>
 <dd>
-<a href="#7-2-1-comparison-of-export-bounce-outputs">Ch. 7: Comparison Table (p. 117)</a>
+<a href="#7-2-1-comparison-of-export-bounce-outputs">Ch. 7: Comparison Table (p. 118)</a>
 </dd>
 </dl></section>
 <section class="index-letter-section" id="idx-letter-F">
@@ -4114,11 +4114,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>Faders</dt>
 <dd>
-<a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Mouse and Modifier Gestures (p. 137)</a>
+<a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Mouse and Modifier Gestures (p. 138)</a>
 </dd>
 <dt>Federated Shared Projects</dt>
 <dd>
-<a href="#7-5-band-collaboration-google-drive-cloud-sync-cloud">Ch. 7: 7.5 Band Collaboration &amp; Google Drive Cloud Sync (CLOUD) (p. 125)</a>
+<a href="#7-5-band-collaboration-google-drive-cloud-sync-cloud">Ch. 7: 7.5 Band Collaboration &amp; Google Drive Cloud Sync (CLOUD) (p. 126)</a>
 </dd>
 <dt>Feedback Bloom Lock</dt>
 <dd>
@@ -4130,7 +4130,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>File Naming Rules</dt>
 <dd>
-<a href="#7-4-self-documenting-disk-folder-structure-file-naming-rules">Ch. 7: Overview (p. 122)</a> &middot; <a href="#7-4-2-canonical-file-folder-naming-reference">Ch. 7: Pattern Reference Table (p. 123)</a>
+<a href="#7-4-self-documenting-disk-folder-structure-file-naming-rules">Ch. 7: Overview (p. 123)</a> &middot; <a href="#7-4-2-canonical-file-folder-naming-reference">Ch. 7: Pattern Reference Table (p. 124)</a>
 </dd>
 <dt>Fine Adjustment</dt>
 <dd>
@@ -4142,7 +4142,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>FLAC Compression</dt>
 <dd>
-<a href="#7-2-1-comparison-of-export-bounce-outputs">Ch. 7: 7.2.1 Comparison of Export &amp; Bounce Outputs (p. 117)</a>
+<a href="#7-2-1-comparison-of-export-bounce-outputs">Ch. 7: 7.2.1 Comparison of Export &amp; Bounce Outputs (p. 118)</a>
 </dd>
 <dt>FLAC Conversion</dt>
 <dd>
@@ -4170,7 +4170,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Ghost Slot</dt>
 <dd>
-<a href="#ghost-slot-missing-plugin-recovery">Ch. 9: Glossary definition (p. 153)</a> &middot; <a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Non-destructive missing plugin recovery (p. 92)</a> &middot; <a href="#5-7-4-preset-state-persistence-non-destructive-ghost-slot-recovery-missing">Ch. 5: Non-destructive missing plugin recovery (p. 97)</a>
+<a href="#ghost-slot-missing-plugin-recovery">Ch. 9: Glossary definition (p. 154)</a> &middot; <a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Non-destructive missing plugin recovery (p. 93)</a> &middot; <a href="#5-7-4-preset-state-persistence-non-destructive-ghost-slot-recovery-missing">Ch. 5: Non-destructive missing plugin recovery (p. 97)</a>
 </dd>
 </dl></section>
 <section class="index-letter-section" id="idx-letter-H">
@@ -4214,7 +4214,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Input Monitor</dt>
 <dd>
-<a href="#input-monitor-i">Ch. 9: Glossary definition (p. 154)</a> &middot; <a href="#4-2-4-zone-5-zone-6-zone-7-output-routing-switch-bank-fader-40-segment-meter">Ch. 4: SHIFT+I shortcut (p. 50)</a>
+<a href="#input-monitor-i">Ch. 9: Glossary definition (p. 155)</a> &middot; <a href="#4-2-4-zone-5-zone-6-zone-7-output-routing-switch-bank-fader-40-segment-meter">Ch. 4: SHIFT+I shortcut (p. 50)</a>
 </dd>
 <dt>Input Routing</dt>
 <dd>
@@ -4226,7 +4226,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Input Trim</dt>
 <dd>
-<a href="#4-2-2-zone-1-zone-2-track-header-input-routing-polarity-phase-trim">Ch. 4: Gain staging (p. 47)</a> &middot; <a href="#input-trim-trm">Ch. 9: Glossary definition (p. 154)</a>
+<a href="#4-2-2-zone-1-zone-2-track-header-input-routing-polarity-phase-trim">Ch. 4: Gain staging (p. 47)</a> &middot; <a href="#input-trim-trm">Ch. 9: Glossary definition (p. 155)</a>
 </dd>
 <dt>Insert Rack</dt>
 <dd>
@@ -4254,19 +4254,19 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>Keyboard Shortcuts</dt>
 <dd>
-<a href="#8-1-6-channel-inspector-view-channel-inspector-view">Ch. 8: Channel Inspector View (p. 136)</a> &middot; <a href="#8-1-complete-keyboard-shortcut-reference-all-59-actions-by-scope">Ch. 8: Complete 59-Action Reference (p. 129)</a> &middot; <a href="#8-1-2-global-navigation-modals-global-navigation-modals">Ch. 8: Global Navigation &amp; Modals (p. 131)</a> &middot; <a href="#8-1-1-global-transport-record-global-transport">Ch. 8: Global Transport &amp; Record (p. 130)</a> &middot; <a href="#8-1-4-mix-console-view-mix-console-view">Ch. 8: Mix Console View (p. 134)</a> &middot; <a href="#8-1-7-session-reel-view-session-reel-view">Ch. 8: Session Reel View (p. 136)</a> &middot; <a href="#8-1-3-global-undo-snapshots-markers-global-undo-snapshots-markers">Ch. 8: Undo, Snapshots &amp; Markers (p. 132)</a> &middot; <a href="#8-1-5-waveform-timeline-view-waveform-timeline-view">Ch. 8: Waveform Timeline View (p. 135)</a>
+<a href="#8-1-6-channel-inspector-view-channel-inspector-view">Ch. 8: Channel Inspector View (p. 137)</a> &middot; <a href="#8-1-complete-keyboard-shortcut-reference-all-59-actions-by-scope">Ch. 8: Complete 59-Action Reference (p. 130)</a> &middot; <a href="#8-1-2-global-navigation-modals-global-navigation-modals">Ch. 8: Global Navigation &amp; Modals (p. 132)</a> &middot; <a href="#8-1-1-global-transport-record-global-transport">Ch. 8: Global Transport &amp; Record (p. 131)</a> &middot; <a href="#8-1-4-mix-console-view-mix-console-view">Ch. 8: Mix Console View (p. 135)</a> &middot; <a href="#8-1-7-session-reel-view-session-reel-view">Ch. 8: Session Reel View (p. 137)</a> &middot; <a href="#8-1-3-global-undo-snapshots-markers-global-undo-snapshots-markers">Ch. 8: Undo, Snapshots &amp; Markers (p. 133)</a> &middot; <a href="#8-1-5-waveform-timeline-view-waveform-timeline-view">Ch. 8: Waveform Timeline View (p. 136)</a>
 </dd>
 <dt>Keymap Profiles</dt>
 <dd>
-<a href="#8-3-4-persisting-backing-up-sharing-studio-keymap-profiles-keymap-json">Ch. 8: Backing Up and Transferring Across Computers (p. 142)</a>
+<a href="#8-3-4-persisting-backing-up-sharing-studio-keymap-profiles-keymap-json">Ch. 8: Backing Up and Transferring Across Computers (p. 143)</a>
 </dd>
 <dt>Keymap View (KEYMAP)</dt>
 <dd>
-<a href="#8-3-customizing-shortcuts-in-the-keymap-view-cmd-ctrl-6">Ch. 8: Customizing Shortcuts (CMD/CTRL + 6) (p. 139)</a> &middot; <a href="#keymap-view-keymap">Ch. 9: Glossary definition (p. 154)</a> &middot; <a href="#8-3-2-recording-custom-shortcuts-unbinding-resetting-defaults">Ch. 8: Recording Custom Shortcuts (p. 141)</a> &middot; <a href="#8-3-2-recording-custom-shortcuts-unbinding-resetting-defaults">Ch. 8: Resetting to Factory Defaults (p. 141)</a> &middot; <a href="#8-3-1-searching-by-action-name-reverse-searching-by-key-chord-filtering-by-scope">Ch. 8: Text Search and Scope Filter Pills (p. 140)</a>
+<a href="#8-3-customizing-shortcuts-in-the-keymap-view-cmd-ctrl-6">Ch. 8: Customizing Shortcuts (CMD/CTRL + 6) (p. 140)</a> &middot; <a href="#keymap-view-keymap">Ch. 9: Glossary definition (p. 155)</a> &middot; <a href="#8-3-2-recording-custom-shortcuts-unbinding-resetting-defaults">Ch. 8: Recording Custom Shortcuts (p. 142)</a> &middot; <a href="#8-3-2-recording-custom-shortcuts-unbinding-resetting-defaults">Ch. 8: Resetting to Factory Defaults (p. 142)</a> &middot; <a href="#8-3-1-searching-by-action-name-reverse-searching-by-key-chord-filtering-by-scope">Ch. 8: Text Search and Scope Filter Pills (p. 141)</a>
 </dd>
 <dt>keymap.json</dt>
 <dd>
-<a href="#8-3-4-persisting-backing-up-sharing-studio-keymap-profiles-keymap-json">Ch. 8: Configuration File Locations (p. 142)</a> &middot; <a href="#8-3-customizing-shortcuts-in-the-keymap-view-cmd-ctrl-6">Ch. 8: Persisting and Sharing Keymaps (p. 139)</a>
+<a href="#8-3-4-persisting-backing-up-sharing-studio-keymap-profiles-keymap-json">Ch. 8: Configuration File Locations (p. 143)</a> &middot; <a href="#8-3-customizing-shortcuts-in-the-keymap-view-cmd-ctrl-6">Ch. 8: Persisting and Sharing Keymaps (p. 140)</a>
 </dd>
 </dl></section>
 <section class="index-letter-section" id="idx-letter-L">
@@ -4274,7 +4274,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>LadderFilter</dt>
 <dd>
-<a href="#5-5-4-4-pole-non-linear-resonant-ladderfilter-with-envelope-follower-sidechain">Ch. 5: 4-Pole 24 dB/oct Non-Linear Resonant Filter (p. 86)</a>
+<a href="#5-5-4-4-pole-non-linear-resonant-ladderfilter-with-envelope-follower-sidechain">Ch. 5: 4-Pole 24 dB/oct Non-Linear Resonant Filter (p. 87)</a>
 </dd>
 <dt>Large Processor Views</dt>
 <dd>
@@ -4298,7 +4298,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Live Stereo Print</dt>
 <dd>
-<a href="#live-stereo-print-2-trk-print001">Ch. 9: Glossary definition (p. 154)</a> &middot; <a href="#7-2-live-stereo-prints-vs-offline-mixdowns-stem-bounces">Ch. 7: Print-to-FLAC and Print-to-MP3 Conversion (p. 117)</a> &middot; <a href="#4-1-1-dual-path-capture-raw-pre-insert-stems-plus-live-processed-prints">Ch. 4: Rehearsal workflow (p. 44)</a> &middot; <a href="#7-2-2-converting-live-stereo-prints-to-lossless-flac-flac-print-320-kbps-mp3-mp3-print">Ch. 7: Step-by-Step FLAC and MP3 Conversion (p. 118)</a>
+<a href="#live-stereo-print-2-trk-print001">Ch. 9: Glossary definition (p. 155)</a> &middot; <a href="#7-2-live-stereo-prints-vs-offline-mixdowns-stem-bounces">Ch. 7: Print-to-FLAC and Print-to-MP3 Conversion (p. 118)</a> &middot; <a href="#4-1-1-dual-path-capture-raw-pre-insert-stems-plus-live-processed-prints">Ch. 4: Rehearsal workflow (p. 44)</a> &middot; <a href="#7-2-2-converting-live-stereo-prints-to-lossless-flac-flac-print-320-kbps-mp3-mp3-print">Ch. 7: Step-by-Step FLAC and MP3 Conversion (p. 119)</a>
 </dd>
 <dt>Live-Room Mixing</dt>
 <dd>
@@ -4310,7 +4310,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Live-Take Salvage</dt>
 <dd>
-<a href="#1-4-4-pillar-4-non-destructive-live-take-salvage-and-mistake-surgery">Ch. 1: Non-Destructive Repair (p. 19)</a> &middot; <a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Non-Destructive Timeline Mistake Surgery (p. 110)</a>
+<a href="#1-4-4-pillar-4-non-destructive-live-take-salvage-and-mistake-surgery">Ch. 1: Non-Destructive Repair (p. 19)</a> &middot; <a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Non-Destructive Timeline Mistake Surgery (p. 111)</a>
 </dd>
 <dt>LOCATE...</dt>
 <dd>
@@ -4318,11 +4318,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Loopback Calibration</dt>
 <dd>
-<a href="#roundtrip-loopback-calibration-measure-latency">Ch. 9: Glossary definition (p. 158)</a> &middot; <a href="#2-3-calibrating-roundtrip-loopback-latency-measure-latency">Ch. 2: Hardware Roundtrip Measurement (p. 27)</a>
+<a href="#roundtrip-loopback-calibration-measure-latency">Ch. 9: Glossary definition (p. 159)</a> &middot; <a href="#2-3-calibrating-roundtrip-loopback-latency-measure-latency">Ch. 2: Hardware Roundtrip Measurement (p. 27)</a>
 </dd>
 <dt>Low-Latency Monitoring</dt>
 <dd>
-<a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Bypassing lookahead latency during overdubs (p. 92)</a> &middot; <a href="#3-4-1-overdub-tracking-pass-lane-comping-procedure">Ch. 3: Enabling for Overdubs (p. 37)</a> &middot; <a href="#low-latency-monitoring">Ch. 9: Glossary definition (p. 154)</a> &middot; <a href="#1-3-2-top-deck-row-2-workspace-view-tabs-templates-latency-diagnostics">Ch. 1: Top Deck Toggle (p. 15)</a> &middot; <a href="#5-7-6-low-latency-monitoring-during-overdubs">Ch. 5: Top Deck toggle and overdub tracking workflow (p. 98)</a>
+<a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Bypassing lookahead latency during overdubs (p. 93)</a> &middot; <a href="#3-4-1-overdub-tracking-pass-lane-comping-procedure">Ch. 3: Enabling for Overdubs (p. 37)</a> &middot; <a href="#low-latency-monitoring">Ch. 9: Glossary definition (p. 155)</a> &middot; <a href="#1-3-2-top-deck-row-2-workspace-view-tabs-templates-latency-diagnostics">Ch. 1: Top Deck Toggle (p. 15)</a> &middot; <a href="#5-7-6-low-latency-monitoring-during-overdubs">Ch. 5: Top Deck toggle and overdub tracking workflow (p. 99)</a>
 </dd>
 <dt>LUFS</dt>
 <dd>
@@ -4338,15 +4338,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Markers</dt>
 <dd>
-<a href="#6-3-dropping-cue-markers-defining-cycle-loop-ranges-markers-ranges">Ch. 6: Dropping Cue Markers (p. 107)</a> &middot; <a href="#3-1-1-rehearsal-capture-procedure">Ch. 3: Dropping Cue Markers During Recording (M) (p. 32)</a> &middot; <a href="#6-3-1-dropping-navigating-cue-markers-on-the-fly-m">Ch. 6: Jumping Between Markers (p. 107)</a> &middot; <a href="#6-3-1-dropping-navigating-cue-markers-on-the-fly-m">Ch. 6: Keyboard Shortcuts (p. 107)</a> &middot; <a href="#8-1-3-global-undo-snapshots-markers-global-undo-snapshots-markers">Ch. 8: M, K, L, [, ], and . Shortcuts (p. 132)</a> &middot; <a href="#6-3-1-dropping-navigating-cue-markers-on-the-fly-m">Ch. 6: Navigating Previous, Next, First, and Last (p. 107)</a>
+<a href="#6-3-dropping-cue-markers-defining-cycle-loop-ranges-markers-ranges">Ch. 6: Dropping Cue Markers (p. 108)</a> &middot; <a href="#3-1-1-rehearsal-capture-procedure">Ch. 3: Dropping Cue Markers During Recording (M) (p. 32)</a> &middot; <a href="#6-3-1-dropping-navigating-cue-markers-on-the-fly-m">Ch. 6: Jumping Between Markers (p. 108)</a> &middot; <a href="#6-3-1-dropping-navigating-cue-markers-on-the-fly-m">Ch. 6: Keyboard Shortcuts (p. 108)</a> &middot; <a href="#8-1-3-global-undo-snapshots-markers-global-undo-snapshots-markers">Ch. 8: M, K, L, [, ], and . Shortcuts (p. 133)</a> &middot; <a href="#6-3-1-dropping-navigating-cue-markers-on-the-fly-m">Ch. 6: Navigating Previous, Next, First, and Last (p. 108)</a>
 </dd>
 <dt>Markers &amp; Ranges</dt>
 <dd>
-<a href="#6-3-dropping-cue-markers-defining-cycle-loop-ranges-markers-ranges">Ch. 6: 6.3 Dropping Cue Markers &amp; Defining Cycle Loop Ranges (MARKERS &amp; RANGES) (p. 107)</a> &middot; <a href="#6-3-3-managing-renaming-filtering-in-the-markers-ranges-view">Ch. 6: Editing, Filtering, and Highlighting (p. 108)</a> &middot; <a href="#markers-ranges-m001-r001">Ch. 9: Glossary definition (p. 155)</a>
+<a href="#6-3-dropping-cue-markers-defining-cycle-loop-ranges-markers-ranges">Ch. 6: 6.3 Dropping Cue Markers &amp; Defining Cycle Loop Ranges (MARKERS &amp; RANGES) (p. 108)</a> &middot; <a href="#6-3-3-managing-renaming-filtering-in-the-markers-ranges-view">Ch. 6: Editing, Filtering, and Highlighting (p. 109)</a> &middot; <a href="#markers-ranges-m001-r001">Ch. 9: Glossary definition (p. 156)</a>
 </dd>
 <dt>Master Bus</dt>
 <dd>
-<a href="#master-bus-mst-master-bus">Ch. 9: Glossary definition (p. 155)</a> &middot; <a href="#4-3-subgroup-buses-aux-returns-master-bus">Ch. 4: MST MASTER BUS controls (p. 51)</a> &middot; <a href="#4-3-3-the-stereo-master-bus-mst-master-bus">Ch. 4: Tape Drive, Glue Compressor, and Brickwall Limiter (p. 53)</a>
+<a href="#master-bus-mst-master-bus">Ch. 9: Glossary definition (p. 156)</a> &middot; <a href="#4-3-subgroup-buses-aux-returns-master-bus">Ch. 4: MST MASTER BUS controls (p. 51)</a> &middot; <a href="#4-3-3-the-stereo-master-bus-mst-master-bus">Ch. 4: Tape Drive, Glue Compressor, and Brickwall Limiter (p. 53)</a>
 </dd>
 <dt>Measure Latency</dt>
 <dd>
@@ -4370,11 +4370,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Mistake Surgery</dt>
 <dd>
-<a href="#spectral-spot-heal-live-take-mistake-surgery">Ch. 9: Glossary definition (p. 159)</a> &middot; <a href="#1-4-4-pillar-4-non-destructive-live-take-salvage-and-mistake-surgery">Ch. 1: Philosophy (p. 19)</a> &middot; <a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Range Comping, Clip Gain, Source Patching, and Spectral Spot-Heal (p. 110)</a>
+<a href="#spectral-spot-heal-live-take-mistake-surgery">Ch. 9: Glossary definition (p. 160)</a> &middot; <a href="#1-4-4-pillar-4-non-destructive-live-take-salvage-and-mistake-surgery">Ch. 1: Philosophy (p. 19)</a> &middot; <a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Range Comping, Clip Gain, Source Patching, and Spectral Spot-Heal (p. 111)</a>
 </dd>
 <dt>Mix Console</dt>
 <dd>
-<a href="#4-1-console-architecture-end-to-end-signal-flow">Ch. 4: Architecture and layout (p. 42)</a> &middot; <a href="#mix-console-mix-console">Ch. 9: Glossary definition (p. 155)</a> &middot; <a href="#1-1-4-console-first-layout-and-automatic-multi-mic-phase-polarity-alignment">Ch. 1: Hardware-Inspired Layout (p. 6)</a> &middot; <a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: Upper Mini-Timeline Well (p. 100)</a>
+<a href="#4-1-console-architecture-end-to-end-signal-flow">Ch. 4: Architecture and layout (p. 42)</a> &middot; <a href="#mix-console-mix-console">Ch. 9: Glossary definition (p. 156)</a> &middot; <a href="#1-1-4-console-first-layout-and-automatic-multi-mic-phase-polarity-alignment">Ch. 1: Hardware-Inspired Layout (p. 6)</a> &middot; <a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: Upper Mini-Timeline Well (p. 101)</a>
 </dd>
 <dt>Mixdown</dt>
 <dd>
@@ -4382,7 +4382,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Modifier Keys</dt>
 <dd>
-<a href="#8-1-complete-keyboard-shortcut-reference-all-59-actions-by-scope">Ch. 8: Platform Mapping (macOS vs. Windows/Linux) (p. 129)</a>
+<a href="#8-1-complete-keyboard-shortcut-reference-all-59-actions-by-scope">Ch. 8: Platform Mapping (macOS vs. Windows/Linux) (p. 130)</a>
 </dd>
 <dt>Modulation</dt>
 <dd>
@@ -4394,7 +4394,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Mouse Gestures</dt>
 <dd>
-<a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Complete Studio Reference (p. 137)</a>
+<a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Complete Studio Reference (p. 138)</a>
 </dd>
 <dt>Mouse Modifiers</dt>
 <dd>
@@ -4406,7 +4406,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>MP3 Encoding</dt>
 <dd>
-<a href="#7-2-1-comparison-of-export-bounce-outputs">Ch. 7: 7.2.1 Comparison of Export &amp; Bounce Outputs (p. 117)</a>
+<a href="#7-2-1-comparison-of-export-bounce-outputs">Ch. 7: 7.2.1 Comparison of Export &amp; Bounce Outputs (p. 118)</a>
 </dd>
 <dt>Multi-Instance Rack</dt>
 <dd>
@@ -4450,11 +4450,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>Offline Stereo Mixdown</dt>
 <dd>
-<a href="#offline-stereo-mixdown-mix001">Ch. 9: Glossary definition (p. 156)</a> &middot; <a href="#7-2-live-stereo-prints-vs-offline-mixdowns-stem-bounces">Ch. 7: Master Bus FLAC and MP3 Bounce (p. 117)</a> &middot; <a href="#7-2-3-rendering-offline-stereo-mixdowns-stem-bounces">Ch. 7: Step-by-Step Rendering (p. 119)</a>
+<a href="#offline-stereo-mixdown-mix001">Ch. 9: Glossary definition (p. 157)</a> &middot; <a href="#7-2-live-stereo-prints-vs-offline-mixdowns-stem-bounces">Ch. 7: Master Bus FLAC and MP3 Bounce (p. 118)</a> &middot; <a href="#7-2-3-rendering-offline-stereo-mixdowns-stem-bounces">Ch. 7: Step-by-Step Rendering (p. 120)</a>
 </dd>
 <dt>Offscreen Workspace Rendering (--screenshot-dir)</dt>
 <dd>
-<a href="#8-4-command-line-automated-studio-verification-reference">Ch. 8: Studio Documentation Captures (p. 143)</a>
+<a href="#8-4-command-line-automated-studio-verification-reference">Ch. 8: Studio Documentation Captures (p. 144)</a>
 </dd>
 <dt>Optical Phaser</dt>
 <dd>
@@ -4474,11 +4474,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Overdub Mode (OD)</dt>
 <dd>
-<a href="#6-2-recording-overdubs-od-comping-in-expandable-pass-lanes-passes">Ch. 6: 6.2 Recording Overdubs (OD) &amp; Comping in Expandable Pass Lanes (PASSES) (p. 104)</a> &middot; <a href="#6-2-1-step-by-step-recording-multi-pass-overdubs-on-a-track">Ch. 6: Automatic Latency Compensation (p. 105)</a> &middot; <a href="#overdub-mode-od">Ch. 9: Glossary definition (p. 156)</a> &middot; <a href="#2-3-calibrating-roundtrip-loopback-latency-measure-latency">Ch. 2: Latency Offset Alignment (p. 27)</a> &middot; <a href="#8-1-1-global-transport-record-global-transport">Ch. 8: O Shortcut (p. 130)</a> &middot; <a href="#3-4-workflow-4-layered-guitar-vocal-overdubs-with-pass-lane-comping-od">Ch. 3: Step-by-Step Tracking (p. 37)</a>
+<a href="#6-2-recording-overdubs-od-comping-in-expandable-pass-lanes-passes">Ch. 6: 6.2 Recording Overdubs (OD) &amp; Comping in Expandable Pass Lanes (PASSES) (p. 105)</a> &middot; <a href="#6-2-1-step-by-step-recording-multi-pass-overdubs-on-a-track">Ch. 6: Automatic Latency Compensation (p. 106)</a> &middot; <a href="#overdub-mode-od">Ch. 9: Glossary definition (p. 157)</a> &middot; <a href="#2-3-calibrating-roundtrip-loopback-latency-measure-latency">Ch. 2: Latency Offset Alignment (p. 27)</a> &middot; <a href="#8-1-1-global-transport-record-global-transport">Ch. 8: O Shortcut (p. 131)</a> &middot; <a href="#3-4-workflow-4-layered-guitar-vocal-overdubs-with-pass-lane-comping-od">Ch. 3: Step-by-Step Tracking (p. 37)</a>
 </dd>
 <dt>Overdub Pass</dt>
 <dd>
-<a href="#overdub-pass-rec002-od-od-02">Ch. 9: Glossary definition (p. 156)</a>
+<a href="#overdub-pass-rec002-od-od-02">Ch. 9: Glossary definition (p. 157)</a>
 </dd>
 <dt>Overdub Record-Offset</dt>
 <dd>
@@ -4510,11 +4510,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Parametric EQ</dt>
 <dd>
-<a href="#5-3-12-band-parametric-eq-dual-trace-spectrum-analyzer-eq-rta">Ch. 5: 12-Band studio equalizer (p. 68)</a> &middot; <a href="#12-band-parametric-eq-2-12b-eq">Ch. 9: Glossary definition (p. 149)</a>
+<a href="#5-3-12-band-parametric-eq-dual-trace-spectrum-analyzer-eq-rta">Ch. 5: 12-Band studio equalizer (p. 68)</a> &middot; <a href="#12-band-parametric-eq-2-12b-eq">Ch. 9: Glossary definition (p. 150)</a>
 </dd>
 <dt>Pass</dt>
 <dd>
-<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Base vs. Overdub (p. 7)</a> &middot; <a href="#pass">Ch. 9: Glossary definition (p. 156)</a>
+<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Base vs. Overdub (p. 7)</a> &middot; <a href="#pass">Ch. 9: Glossary definition (p. 157)</a>
 </dd>
 <dt>Pass Badge</dt>
 <dd>
@@ -4522,15 +4522,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Pass Lane Disclosure Badge</dt>
 <dd>
-<a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: 6.1.3 Full-Screen WAVEFORM TIMELINE Toolbar &amp; Track Headers (p. 102)</a>
+<a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: 6.1.3 Full-Screen WAVEFORM TIMELINE Toolbar &amp; Track Headers (p. 103)</a>
 </dd>
 <dt>Pass Lanes</dt>
 <dd>
-<a href="#6-2-2-expanding-pass-lanes-auditioning-passes-comping-phrases">Ch. 6: Auditioning and Switching Passes (p. 106)</a> &middot; <a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#8-1-5-waveform-timeline-view-waveform-timeline-view">Ch. 8: E and SHIFT+E Shortcuts (p. 135)</a> &middot; <a href="#6-2-recording-overdubs-od-comping-in-expandable-pass-lanes-passes">Ch. 6: Expanding and Comping (p. 104)</a> &middot; <a href="#3-4-workflow-4-layered-guitar-vocal-overdubs-with-pass-lane-comping-od">Ch. 3: Expanding and Comping (E) (p. 37)</a> &middot; <a href="#pass-lanes-passes">Ch. 9: Glossary definition (p. 156)</a> &middot; <a href="#9-1-take-vs-pass-disambiguation-quick-guide">Ch. 9: Why Never Called Take Lanes (p. 147)</a>
+<a href="#6-2-2-expanding-pass-lanes-auditioning-passes-comping-phrases">Ch. 6: Auditioning and Switching Passes (p. 107)</a> &middot; <a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#8-1-5-waveform-timeline-view-waveform-timeline-view">Ch. 8: E and SHIFT+E Shortcuts (p. 136)</a> &middot; <a href="#6-2-recording-overdubs-od-comping-in-expandable-pass-lanes-passes">Ch. 6: Expanding and Comping (p. 105)</a> &middot; <a href="#3-4-workflow-4-layered-guitar-vocal-overdubs-with-pass-lane-comping-od">Ch. 3: Expanding and Comping (E) (p. 37)</a> &middot; <a href="#pass-lanes-passes">Ch. 9: Glossary definition (p. 157)</a> &middot; <a href="#9-1-take-vs-pass-disambiguation-quick-guide">Ch. 9: Why Never Called Take Lanes (p. 148)</a>
 </dd>
 <dt>PATCH FROM SOURCE</dt>
 <dd>
-<a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Grafting a Clean Bar or Chord (p. 110)</a>
+<a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Grafting a Clean Bar or Chord (p. 111)</a>
 </dd>
 <dt>Patch List</dt>
 <dd>
@@ -4538,7 +4538,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Phase Alignment</dt>
 <dd>
-<a href="#1-1-4-console-first-layout-and-automatic-multi-mic-phase-polarity-alignment">Ch. 1: Automatic Multi-Mic (ALIGN ALL) (p. 6)</a> &middot; <a href="#5-6-automatic-multi-mic-phase-polarity-alignment-align-all">Ch. 5: Automatic multi-mic ALIGN ALL (p. 87)</a> &middot; <a href="#3-3-workflow-3-multi-mic-drum-guitar-cab-phase-alignment-align-all">Ch. 3: Drum Kit and Guitar Cab Procedure (p. 35)</a> &middot; <a href="#multi-mic-phase-alignment-align-all">Ch. 9: Glossary definition (p. 155)</a> &middot; <a href="#8-1-4-mix-console-view-mix-console-view">Ch. 8: Keyboard Shortcuts (p. 134)</a> &middot; <a href="#3-3-1-multi-mic-phase-alignment-procedure">Ch. 3: Reference Channel Selection (p. 35)</a>
+<a href="#1-1-4-console-first-layout-and-automatic-multi-mic-phase-polarity-alignment">Ch. 1: Automatic Multi-Mic (ALIGN ALL) (p. 6)</a> &middot; <a href="#5-6-automatic-multi-mic-phase-polarity-alignment-align-all">Ch. 5: Automatic multi-mic ALIGN ALL (p. 88)</a> &middot; <a href="#3-3-workflow-3-multi-mic-drum-guitar-cab-phase-alignment-align-all">Ch. 3: Drum Kit and Guitar Cab Procedure (p. 35)</a> &middot; <a href="#multi-mic-phase-alignment-align-all">Ch. 9: Glossary definition (p. 156)</a> &middot; <a href="#8-1-4-mix-console-view-mix-console-view">Ch. 8: Keyboard Shortcuts (p. 135)</a> &middot; <a href="#3-3-1-multi-mic-phase-alignment-procedure">Ch. 3: Reference Channel Selection (p. 35)</a>
 </dd>
 <dt>Phase Bypass (PHASE A/B)</dt>
 <dd>
@@ -4546,27 +4546,27 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Phase Dispersion</dt>
 <dd>
-<a href="#5-6-3-why-delay-alone-cannot-fix-ported-cabinets-bass-di-amp-or-dispersive-drum-kits">Ch. 5: Ported Cabinets and Bass DI vs. Amp (p. 89)</a>
+<a href="#5-6-3-why-delay-alone-cannot-fix-ported-cabinets-bass-di-amp-or-dispersive-drum-kits">Ch. 5: Ported Cabinets and Bass DI vs. Amp (p. 90)</a>
 </dd>
 <dt>PHASE: ALIGN</dt>
 <dd>
-<a href="#5-6-automatic-multi-mic-phase-polarity-alignment-align-all">Ch. 5: Instant A/B phase comparison (p. 87)</a>
+<a href="#5-6-automatic-multi-mic-phase-polarity-alignment-align-all">Ch. 5: Instant A/B phase comparison (p. 88)</a>
 </dd>
 <dt>PhaseAlignNetwork</dt>
 <dd>
-<a href="#phasealignnetwork-zero-slot-allpass-rotator">Ch. 9: Glossary definition (p. 156)</a> &middot; <a href="#5-6-4-zero-slot-top-of-strip-phasealignnetwork-mode-1-instant-binary-polarity-maximizer-50-ms">Ch. 5: Zero-Slot 5-Stage Allpass Rotator (p. 89)</a>
+<a href="#phasealignnetwork-zero-slot-allpass-rotator">Ch. 9: Glossary definition (p. 157)</a> &middot; <a href="#5-6-4-zero-slot-top-of-strip-phasealignnetwork-mode-1-instant-binary-polarity-maximizer-50-ms">Ch. 5: Zero-Slot 5-Stage Allpass Rotator (p. 90)</a>
 </dd>
 <dt>Ping-Pong Delay</dt>
 <dd>
-<a href="#5-5-stereo-convolution-reverb-aux-1-reverb-stereo-tape-delay-aux-2-tape-dly">Ch. 5: Stereo bounce mode (p. 83)</a>
+<a href="#5-5-stereo-convolution-reverb-aux-1-reverb-stereo-tape-delay-aux-2-tape-dly">Ch. 5: Stereo bounce mode (p. 84)</a>
 </dd>
 <dt>Playback Read-Ahead</dt>
 <dd>
-<a href="#6-2-1-step-by-step-recording-multi-pass-overdubs-on-a-track">Ch. 6: 6.2.1 Step-by-Step: Recording Multi-Pass Overdubs on a Track (p. 105)</a>
+<a href="#6-2-1-step-by-step-recording-multi-pass-overdubs-on-a-track">Ch. 6: 6.2.1 Step-by-Step: Recording Multi-Pass Overdubs on a Track (p. 106)</a>
 </dd>
 <dt>Playhead Cursor Lock</dt>
 <dd>
-<a href="#6-1-2-upper-mini-timeline-well-controls">Ch. 6: LOCK PH/CUR (p. 101)</a>
+<a href="#6-1-2-upper-mini-timeline-well-controls">Ch. 6: LOCK PH/CUR (p. 102)</a>
 </dd>
 <dt>Plosive Arrestor</dt>
 <dd>
@@ -4574,31 +4574,31 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Plugin Delay Compensation (PDC)</dt>
 <dd>
-<a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Automatic PDC alignment (p. 92)</a> &middot; <a href="#plugin-delay-compensation-pdc">Ch. 9: Glossary definition (p. 157)</a> &middot; <a href="#5-7-5-automatic-plugin-delay-compensation-pdc-transparency-breakdown">Ch. 5: Latency &amp; PDC Transparency Breakdown popover (p. 98)</a> &middot; <a href="#1-3-2-top-deck-row-2-workspace-view-tabs-templates-latency-diagnostics">Ch. 1: Top Deck Readout (p. 15)</a>
+<a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Automatic PDC alignment (p. 93)</a> &middot; <a href="#plugin-delay-compensation-pdc">Ch. 9: Glossary definition (p. 158)</a> &middot; <a href="#5-7-5-automatic-plugin-delay-compensation-pdc-transparency-breakdown">Ch. 5: Latency &amp; PDC Transparency Breakdown popover (p. 98)</a> &middot; <a href="#1-3-2-top-deck-row-2-workspace-view-tabs-templates-latency-diagnostics">Ch. 1: Top Deck Readout (p. 15)</a>
 </dd>
 <dt>PLUGIN GUI</dt>
 <dd>
-<a href="#5-7-3-selecting-loading-opening-plugins-in-the-8-slot-rack-slot-n-processor-plugin-gui">Ch. 5: Floating native plugin editor windows (p. 95)</a>
+<a href="#5-7-3-selecting-loading-opening-plugins-in-the-8-slot-rack-slot-n-processor-plugin-gui">Ch. 5: Floating native plugin editor windows (p. 96)</a>
 </dd>
 <dt>Plugins View</dt>
 <dd>
-<a href="#plugins-view-plugins">Ch. 9: Glossary definition (p. 157)</a>
+<a href="#plugins-view-plugins">Ch. 9: Glossary definition (p. 158)</a>
 </dd>
 <dt>Plugins View (PLUGINS)</dt>
 <dd>
-<a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Catalog and directory manager (p. 92)</a> &middot; <a href="#5-7-2-indexing-managing-plugins-in-the-plugins-workspace-view-cmd-ctrl-7">Ch. 5: CMD/CTRL+7 workspace tab (p. 94)</a> &middot; <a href="#1-3-2-top-deck-row-2-workspace-view-tabs-templates-latency-diagnostics">Ch. 1: Top Deck Tab (p. 15)</a>
+<a href="#5-7-hosting-external-clap-audio-plugins-1-clap-pdc-low-latency-monitoring">Ch. 5: Catalog and directory manager (p. 93)</a> &middot; <a href="#5-7-2-indexing-managing-plugins-in-the-plugins-workspace-view-cmd-ctrl-7">Ch. 5: CMD/CTRL+7 workspace tab (p. 94)</a> &middot; <a href="#1-3-2-top-deck-row-2-workspace-view-tabs-templates-latency-diagnostics">Ch. 1: Top Deck Tab (p. 15)</a>
 </dd>
 <dt>Polarity Invert</dt>
 <dd>
-<a href="#4-2-2-zone-1-zone-2-track-header-input-routing-polarity-phase-trim">Ch. 4: 180-degree phase flip (p. 47)</a> &middot; <a href="#5-6-automatic-multi-mic-phase-polarity-alignment-align-all">Ch. 5: Automatic 180-degree detection (p. 87)</a> &middot; <a href="#3-3-workflow-3-multi-mic-drum-guitar-cab-phase-alignment-align-all">Ch. 3: Automatic Detection (p. 35)</a> &middot; <a href="#polarity-invert">Ch. 9: Glossary definition (p. 158)</a>
+<a href="#4-2-2-zone-1-zone-2-track-header-input-routing-polarity-phase-trim">Ch. 4: 180-degree phase flip (p. 47)</a> &middot; <a href="#5-6-automatic-multi-mic-phase-polarity-alignment-align-all">Ch. 5: Automatic 180-degree detection (p. 88)</a> &middot; <a href="#3-3-workflow-3-multi-mic-drum-guitar-cab-phase-alignment-align-all">Ch. 3: Automatic Detection (p. 35)</a> &middot; <a href="#polarity-invert">Ch. 9: Glossary definition (p. 159)</a>
 </dd>
 <dt>Polarity Maximizer</dt>
 <dd>
-<a href="#polarity-phase-maximizer-mode-1-mode-2">Ch. 9: Glossary definition (p. 157)</a> &middot; <a href="#1-1-4-console-first-layout-and-automatic-multi-mic-phase-polarity-alignment">Ch. 1: Mode 1 and Mode 2 Overview (p. 6)</a> &middot; <a href="#5-6-4-zero-slot-top-of-strip-phasealignnetwork-mode-1-instant-binary-polarity-maximizer-50-ms">Ch. 5: Mode 1 Instant Binary Solver (p. 89)</a> &middot; <a href="#5-6-5-mode-2-deep-multicore-spectral-phase-allpass-solver-anytime-30-s-30-min">Ch. 5: Mode 2 Deep Multicore Spectral Phase and Allpass Solver (p. 91)</a>
+<a href="#polarity-phase-maximizer-mode-1-mode-2">Ch. 9: Glossary definition (p. 158)</a> &middot; <a href="#1-1-4-console-first-layout-and-automatic-multi-mic-phase-polarity-alignment">Ch. 1: Mode 1 and Mode 2 Overview (p. 6)</a> &middot; <a href="#5-6-4-zero-slot-top-of-strip-phasealignnetwork-mode-1-instant-binary-polarity-maximizer-50-ms">Ch. 5: Mode 1 Instant Binary Solver (p. 90)</a> &middot; <a href="#5-6-5-mode-2-deep-multicore-spectral-phase-allpass-solver-anytime-30-s-30-min">Ch. 5: Mode 2 Deep Multicore Spectral Phase and Allpass Solver (p. 91)</a>
 </dd>
 <dt>PolarityAuditionStash</dt>
 <dd>
-<a href="#polarityauditionstash">Ch. 9: Glossary definition (p. 157)</a> &middot; <a href="#5-6-4-zero-slot-top-of-strip-phasealignnetwork-mode-1-instant-binary-polarity-maximizer-50-ms">Ch. 5: Safe Polarity Auditioning (p. 89)</a>
+<a href="#polarityauditionstash">Ch. 9: Glossary definition (p. 158)</a> &middot; <a href="#5-6-4-zero-slot-top-of-strip-phasealignnetwork-mode-1-instant-binary-polarity-maximizer-50-ms">Ch. 5: Safe Polarity Auditioning (p. 90)</a>
 </dd>
 <dt>Pre-Fader Recording</dt>
 <dd>
@@ -4606,7 +4606,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Present Stash</dt>
 <dd>
-<a href="#7-3-non-destructive-console-snapshots-present-stash-snaps">Ch. 7: Auditioning and A/B Comparison (p. 120)</a> &middot; <a href="#8-1-7-session-reel-view-session-reel-view">Ch. 8: BACKSPACE Return Shortcut (p. 136)</a> &middot; <a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#present-stash-a-b-present-stash-return-to-present">Ch. 9: Glossary definition (p. 158)</a> &middot; <a href="#3-5-workflow-5-mixing-non-destructive-snapshots-band-cloud-sharing">Ch. 3: Loss-Free A/B Comparison (p. 38)</a> &middot; <a href="#7-3-2-auditioning-historical-snapshots-with-present-stash-protection">Ch. 7: Zero-Loss Snapshot Auditioning (p. 121)</a>
+<a href="#7-3-non-destructive-console-snapshots-present-stash-snaps">Ch. 7: Auditioning and A/B Comparison (p. 121)</a> &middot; <a href="#8-1-7-session-reel-view-session-reel-view">Ch. 8: BACKSPACE Return Shortcut (p. 137)</a> &middot; <a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#present-stash-a-b-present-stash-return-to-present">Ch. 9: Glossary definition (p. 159)</a> &middot; <a href="#3-5-workflow-5-mixing-non-destructive-snapshots-band-cloud-sharing">Ch. 3: Loss-Free A/B Comparison (p. 38)</a> &middot; <a href="#7-3-2-auditioning-historical-snapshots-with-present-stash-protection">Ch. 7: Zero-Loss Snapshot Auditioning (p. 122)</a>
 </dd>
 <dt>Print</dt>
 <dd>
@@ -4614,11 +4614,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Project</dt>
 <dd>
-<a href="#2-4-2-creating-a-new-project-or-linking-a-bandmates-remote-project">Ch. 2: Creating a New Project (p. 29)</a> &middot; <a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#project-project-tag-project-mixes">Ch. 9: Glossary definition (p. 158)</a>
+<a href="#2-4-2-creating-a-new-project-or-linking-a-bandmates-remote-project">Ch. 2: Creating a New Project (p. 29)</a> &middot; <a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#project-project-tag-project-mixes">Ch. 9: Glossary definition (p. 159)</a>
 </dd>
 <dt>Project Browser Modal (PROJECT)</dt>
 <dd>
-<a href="#8-1-2-global-navigation-modals-global-navigation-modals">Ch. 8: CMD/CTRL + O Shortcut (p. 131)</a> &middot; <a href="#2-4-creating-your-first-project-and-session-project-modal">Ch. 2: Creating Projects and Sessions (p. 29)</a>
+<a href="#8-1-2-global-navigation-modals-global-navigation-modals">Ch. 8: CMD/CTRL + O Shortcut (p. 132)</a> &middot; <a href="#2-4-creating-your-first-project-and-session-project-modal">Ch. 2: Creating Projects and Sessions (p. 29)</a>
 </dd>
 <dt>PSR</dt>
 <dd>
@@ -4646,7 +4646,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Ranges</dt>
 <dd>
-<a href="#6-3-dropping-cue-markers-defining-cycle-loop-ranges-markers-ranges">Ch. 6: Cycle Loop Ranges (p. 107)</a> &middot; <a href="#6-3-2-defining-ranges-k-l-cycle-loop-playback">Ch. 6: Setting Start and End Boundaries (p. 108)</a>
+<a href="#6-3-dropping-cue-markers-defining-cycle-loop-ranges-markers-ranges">Ch. 6: Cycle Loop Ranges (p. 108)</a> &middot; <a href="#6-3-2-defining-ranges-k-l-cycle-loop-playback">Ch. 6: Setting Start and End Boundaries (p. 109)</a>
 </dd>
 <dt>Raw Stem Recording</dt>
 <dd>
@@ -4654,7 +4654,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Read-Only Preview Mode</dt>
 <dd>
-<a href="#7-5-4-exclusive-session-write-locking-read-only-preview-zero-loss-conflict-merging">Ch. 7: 7.5.4 Exclusive Session Write-Locking (Read-Only Preview) &amp; Zero-Loss Conflict Merging (p. 128)</a>
+<a href="#7-5-4-exclusive-session-write-locking-read-only-preview-zero-loss-conflict-merging">Ch. 7: 7.5.4 Exclusive Session Write-Locking (Read-Only Preview) &amp; Zero-Loss Conflict Merging (p. 129)</a>
 </dd>
 <dt>Record (R)</dt>
 <dd>
@@ -4674,7 +4674,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>REPAIR CLIPPING</dt>
 <dd>
-<a href="#5-8-built-in-non-destructive-audio-restoration-adc-de-clipper-12-harmonic-hum-canceller">Ch. 5: Quintic Hermite and Burg AR De-Clipper (p. 99)</a> &middot; <a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Timeline ADC Clip Reconstruction (p. 110)</a>
+<a href="#5-8-built-in-non-destructive-audio-restoration-adc-de-clipper-12-harmonic-hum-canceller">Ch. 5: Quintic Hermite and Burg AR De-Clipper (p. 99)</a> &middot; <a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Timeline ADC Clip Reconstruction (p. 111)</a>
 </dd>
 <dt>RESCAN DIRECTORIES</dt>
 <dd>
@@ -4690,15 +4690,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Retroactive Capture (RETRO)</dt>
 <dd>
-<a href="#1-1-2-30-minute-retroactive-capture-memory-ram-retro">Ch. 1: 30-Minute Memory (p. 5)</a> &middot; <a href="#30-minute-retroactive-capture-ram-retro">Ch. 9: Glossary definition (p. 149)</a> &middot; <a href="#2-2-3-30-minute-retroactive-capture-memory-ram">Ch. 2: Memory Sizing (p. 27)</a> &middot; <a href="#8-1-1-global-transport-record-global-transport">Ch. 8: SHIFT+R Shortcut (p. 130)</a> &middot; <a href="#3-2-workflow-2-rescuing-an-unrecorded-jam-with-30-minute-retroactive-capture-retro">Ch. 3: Step-by-Step Rescue Procedure (p. 34)</a>
+<a href="#1-1-2-30-minute-retroactive-capture-memory-ram-retro">Ch. 1: 30-Minute Memory (p. 5)</a> &middot; <a href="#30-minute-retroactive-capture-ram-retro">Ch. 9: Glossary definition (p. 150)</a> &middot; <a href="#2-2-3-30-minute-retroactive-capture-memory-ram">Ch. 2: Memory Sizing (p. 27)</a> &middot; <a href="#8-1-1-global-transport-record-global-transport">Ch. 8: SHIFT+R Shortcut (p. 131)</a> &middot; <a href="#3-2-workflow-2-rescuing-an-unrecorded-jam-with-30-minute-retroactive-capture-retro">Ch. 3: Step-by-Step Rescue Procedure (p. 34)</a>
 </dd>
 <dt>Return to Present (BACKSPACE)</dt>
 <dd>
-<a href="#7-3-2-auditioning-historical-snapshots-with-present-stash-protection">Ch. 7: 7.3.2 Auditioning Historical Snapshots with Present Stash Protection (p. 121)</a>
+<a href="#7-3-2-auditioning-historical-snapshots-with-present-stash-protection">Ch. 7: 7.3.2 Auditioning Historical Snapshots with Present Stash Protection (p. 122)</a>
 </dd>
 <dt>Reverse Shortcut Search</dt>
 <dd>
-<a href="#8-3-customizing-shortcuts-in-the-keymap-view-cmd-ctrl-6">Ch. 8: FIND BY SHORTCUT (p. 139)</a> &middot; <a href="#8-3-1-searching-by-action-name-reverse-searching-by-key-chord-filtering-by-scope">Ch. 8: Live Modifier and Chord Filtering (p. 140)</a>
+<a href="#8-3-customizing-shortcuts-in-the-keymap-view-cmd-ctrl-6">Ch. 8: FIND BY SHORTCUT (p. 140)</a> &middot; <a href="#8-3-1-searching-by-action-name-reverse-searching-by-key-chord-filtering-by-scope">Ch. 8: Live Modifier and Chord Filtering (p. 141)</a>
 </dd>
 <dt>RTA</dt>
 <dd>
@@ -4714,7 +4714,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Sample-per-Pixel Readout</dt>
 <dd>
-<a href="#6-1-1-three-tier-waveform-detail-3-tier-lod-viewport-readouts">Ch. 6: 6.1.1 Three-Tier Waveform Detail (3-TIER LOD) &amp; Viewport Readouts (p. 101)</a>
+<a href="#6-1-1-three-tier-waveform-detail-3-tier-lod-viewport-readouts">Ch. 6: 6.1.1 Three-Tier Waveform Detail (3-TIER LOD) &amp; Viewport Readouts (p. 102)</a>
 </dd>
 <dt>Scribble Strip</dt>
 <dd>
@@ -4722,19 +4722,19 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Self-Test (--self-test / --stress-test)</dt>
 <dd>
-<a href="#8-4-command-line-automated-studio-verification-reference">Ch. 8: 18-Channel Studio Verification (p. 143)</a>
+<a href="#8-4-command-line-automated-studio-verification-reference">Ch. 8: 18-Channel Studio Verification (p. 144)</a>
 </dd>
 <dt>Session</dt>
 <dd>
-<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#session-08-00-rollover-rule">Ch. 9: Glossary definition (p. 158)</a> &middot; <a href="#2-4-3-selecting-a-session-template-and-starting-a-new-session">Ch. 2: Naming and Folder Preview (p. 30)</a>
+<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#session-08-00-rollover-rule">Ch. 9: Glossary definition (p. 159)</a> &middot; <a href="#2-4-3-selecting-a-session-template-and-starting-a-new-session">Ch. 2: Naming and Folder Preview (p. 30)</a>
 </dd>
 <dt>Session Day Rollover (08:00 Local Time)</dt>
 <dd>
-<a href="#7-4-2-canonical-file-folder-naming-reference">Ch. 7: 7.4.2 Canonical File &amp; Folder Naming Reference (p. 123)</a>
+<a href="#7-4-2-canonical-file-folder-naming-reference">Ch. 7: 7.4.2 Canonical File &amp; Folder Naming Reference (p. 124)</a>
 </dd>
 <dt>Session Locking</dt>
 <dd>
-<a href="#7-5-4-exclusive-session-write-locking-read-only-preview-zero-loss-conflict-merging">Ch. 7: Exclusive Write Lock (p. 128)</a>
+<a href="#7-5-4-exclusive-session-write-locking-read-only-preview-zero-loss-conflict-merging">Ch. 7: Exclusive Write Lock (p. 129)</a>
 </dd>
 <dt>Session Portability</dt>
 <dd>
@@ -4742,19 +4742,19 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Session Reel</dt>
 <dd>
-<a href="#8-1-7-session-reel-view-session-reel-view">Ch. 8: Filter Shortcuts (p. 136)</a> &middot; <a href="#session-reel-session-reel">Ch. 9: Glossary definition (p. 159)</a> &middot; <a href="#7-1-managing-takes-in-the-session-reel-view">Ch. 7: Managing Takes (p. 114)</a> &middot; <a href="#7-1-managing-takes-in-the-session-reel-view">Ch. 7: Overview (p. 114)</a> &middot; <a href="#7-1-1-the-session-header-undo-redo-history-bar">Ch. 7: Session Header Bar (p. 115)</a>
+<a href="#8-1-7-session-reel-view-session-reel-view">Ch. 8: Filter Shortcuts (p. 137)</a> &middot; <a href="#session-reel-session-reel">Ch. 9: Glossary definition (p. 160)</a> &middot; <a href="#7-1-managing-takes-in-the-session-reel-view">Ch. 7: Managing Takes (p. 115)</a> &middot; <a href="#7-1-managing-takes-in-the-session-reel-view">Ch. 7: Overview (p. 115)</a> &middot; <a href="#7-1-1-the-session-header-undo-redo-history-bar">Ch. 7: Session Header Bar (p. 116)</a>
 </dd>
 <dt>Session Templates</dt>
 <dd>
-<a href="#session-template-save-template-micandguitar001">Ch. 9: Glossary definition (p. 159)</a> &middot; <a href="#2-4-creating-your-first-project-and-session-project-modal">Ch. 2: Loading and Saving (p. 29)</a> &middot; <a href="#2-4-3-selecting-a-session-template-and-starting-a-new-session">Ch. 2: Starting a Session from a Template (p. 30)</a>
+<a href="#session-template-save-template-micandguitar001">Ch. 9: Glossary definition (p. 160)</a> &middot; <a href="#2-4-creating-your-first-project-and-session-project-modal">Ch. 2: Loading and Saving (p. 29)</a> &middot; <a href="#2-4-3-selecting-a-session-template-and-starting-a-new-session">Ch. 2: Starting a Session from a Template (p. 30)</a>
 </dd>
 <dt>Share Links</dt>
 <dd>
-<a href="#7-5-3-sharing-a-project-with-bandmates-link-remote-project">Ch. 7: 7.5.3 Sharing a Project with Bandmates (+ Link Remote Project...) (p. 127)</a>
+<a href="#7-5-3-sharing-a-project-with-bandmates-link-remote-project">Ch. 7: 7.5.3 Sharing a Project with Bandmates (+ Link Remote Project...) (p. 128)</a>
 </dd>
 <dt>Sidechain Filter</dt>
 <dd>
-<a href="#5-5-4-4-pole-non-linear-resonant-ladderfilter-with-envelope-follower-sidechain">Ch. 5: Rhythmic Filter Modulation (p. 86)</a>
+<a href="#5-5-4-4-pole-non-linear-resonant-ladderfilter-with-envelope-follower-sidechain">Ch. 5: Rhythmic Filter Modulation (p. 87)</a>
 </dd>
 <dt>Sidechain High-Pass Filter</dt>
 <dd>
@@ -4762,7 +4762,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Sidechain Routing</dt>
 <dd>
-<a href="#5-7-3-selecting-loading-opening-plugins-in-the-8-slot-rack-slot-n-processor-plugin-gui">Ch. 5: External side-chain key source for plugins (p. 95)</a>
+<a href="#5-7-3-selecting-loading-opening-plugins-in-the-8-slot-rack-slot-n-processor-plugin-gui">Ch. 5: External side-chain key source for plugins (p. 96)</a>
 </dd>
 <dt>Sidechain Tilt</dt>
 <dd>
@@ -4778,15 +4778,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>SLOT N PROCESSOR</dt>
 <dd>
-<a href="#5-7-3-selecting-loading-opening-plugins-in-the-8-slot-rack-slot-n-processor-plugin-gui">Ch. 5: Assigning CLAP and Audio Unit plugins (p. 95)</a> &middot; <a href="#5-1-3-multi-instance-8-slot-rack-reordering-swap-eq-cmp-reset">Ch. 5: Rack slot selector overlay (p. 64)</a>
+<a href="#5-7-3-selecting-loading-opening-plugins-in-the-8-slot-rack-slot-n-processor-plugin-gui">Ch. 5: Assigning CLAP and Audio Unit plugins (p. 96)</a> &middot; <a href="#5-1-3-multi-instance-8-slot-rack-reordering-swap-eq-cmp-reset">Ch. 5: Rack slot selector overlay (p. 64)</a>
 </dd>
 <dt>SMOOTH OVER ARTIFACT</dt>
 <dd>
-<a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Spectral Spot-Heal (p. 110)</a>
+<a href="#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Ch. 6: Spectral Spot-Heal (p. 111)</a>
 </dd>
 <dt>Snapshots</dt>
 <dd>
-<a href="#7-3-1-what-a-snapshot-captures-automatic-snapshot-policies">Ch. 7: Auto-Save Policy (p. 120)</a> &middot; <a href="#8-1-3-global-undo-snapshots-markers-global-undo-snapshots-markers">Ch. 8: CMD/CTRL + S Manual Snapshot Shortcut (p. 132)</a> &middot; <a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#snapshot-snaps">Ch. 9: Glossary definition (p. 159)</a> &middot; <a href="#7-3-non-destructive-console-snapshots-present-stash-snaps">Ch. 7: Non-Destructive Console Snapshots (p. 120)</a> &middot; <a href="#3-5-workflow-5-mixing-non-destructive-snapshots-band-cloud-sharing">Ch. 3: Saving and Auditioning Mix Variations (p. 38)</a> &middot; <a href="#7-3-1-what-a-snapshot-captures-automatic-snapshot-policies">Ch. 7: What Is Stored (p. 120)</a>
+<a href="#7-3-1-what-a-snapshot-captures-automatic-snapshot-policies">Ch. 7: Auto-Save Policy (p. 121)</a> &middot; <a href="#8-1-3-global-undo-snapshots-markers-global-undo-snapshots-markers">Ch. 8: CMD/CTRL + S Manual Snapshot Shortcut (p. 133)</a> &middot; <a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#snapshot-snaps">Ch. 9: Glossary definition (p. 160)</a> &middot; <a href="#7-3-non-destructive-console-snapshots-present-stash-snaps">Ch. 7: Non-Destructive Console Snapshots (p. 121)</a> &middot; <a href="#3-5-workflow-5-mixing-non-destructive-snapshots-band-cloud-sharing">Ch. 3: Saving and Auditioning Mix Variations (p. 38)</a> &middot; <a href="#7-3-1-what-a-snapshot-captures-automatic-snapshot-policies">Ch. 7: What Is Stored (p. 121)</a>
 </dd>
 <dt>Solo</dt>
 <dd>
@@ -4802,15 +4802,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>SPLIT TAKE Button</dt>
 <dd>
-<a href="#6-4-1-three-ways-to-split-or-extract-independent-takes">Ch. 6: 6.4.1 Three Ways to Split or Extract Independent Takes (p. 109)</a>
+<a href="#6-4-1-three-ways-to-split-or-extract-independent-takes">Ch. 6: 6.4.1 Three Ways to Split or Extract Independent Takes (p. 110)</a>
 </dd>
 <dt>Standby Comp Lane</dt>
 <dd>
-<a href="#standby-comp-lane-standby-comp-lane">Ch. 9: Glossary definition (p. 159)</a>
+<a href="#standby-comp-lane-standby-comp-lane">Ch. 9: Glossary definition (p. 160)</a>
 </dd>
 <dt>Stem Bounce</dt>
 <dd>
-<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#stem-bounce-bounce001">Ch. 9: Glossary definition (p. 160)</a> &middot; <a href="#7-2-3-rendering-offline-stereo-mixdowns-stem-bounces">Ch. 7: Step-by-Step Export (p. 119)</a> &middot; <a href="#7-2-live-stereo-prints-vs-offline-mixdowns-stem-bounces">Ch. 7: Track and Subgroup Stems (p. 117)</a>
+<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#stem-bounce-bounce001">Ch. 9: Glossary definition (p. 161)</a> &middot; <a href="#7-2-3-rendering-offline-stereo-mixdowns-stem-bounces">Ch. 7: Step-by-Step Export (p. 120)</a> &middot; <a href="#7-2-live-stereo-prints-vs-offline-mixdowns-stem-bounces">Ch. 7: Track and Subgroup Stems (p. 118)</a>
 </dd>
 <dt>Stereo Widening</dt>
 <dd>
@@ -4818,7 +4818,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Studio Glossary</dt>
 <dd>
-<a href="#studio-glossary">Ch. 9: Alphabetical Definitions (p. 149)</a>
+<a href="#studio-glossary">Ch. 9: Alphabetical Definitions (p. 150)</a>
 </dd>
 <dt>StudioPlateReverb</dt>
 <dd>
@@ -4826,7 +4826,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Subgroup Buses</dt>
 <dd>
-<a href="#4-3-1-stereo-subgroup-buses-drum-bus-sub-1-inst-bus-sub-2-sub-16">Ch. 4: 8-slot SUB RACK and SEL inspection (p. 52)</a> &middot; <a href="#4-3-subgroup-buses-aux-returns-master-bus">Ch. 4: DRUM BUS and INST BUS (p. 51)</a> &middot; <a href="#subgroup-bus-sub-1-drum-bus-sub-2-inst-bus">Ch. 9: Glossary definition (p. 160)</a>
+<a href="#4-3-1-stereo-subgroup-buses-drum-bus-sub-1-inst-bus-sub-2-sub-16">Ch. 4: 8-slot SUB RACK and SEL inspection (p. 52)</a> &middot; <a href="#4-3-subgroup-buses-aux-returns-master-bus">Ch. 4: DRUM BUS and INST BUS (p. 51)</a> &middot; <a href="#subgroup-bus-sub-1-drum-bus-sub-2-inst-bus">Ch. 9: Glossary definition (p. 161)</a>
 </dd>
 <dt>SWAP EQ/CMP</dt>
 <dd>
@@ -4842,19 +4842,19 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>Take</dt>
 <dd>
-<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#take-take-001">Ch. 9: Glossary definition (p. 160)</a> &middot; <a href="#1-1-1-independent-zero-based-takes-instead-of-a-3-hour-linear-timeline">Ch. 1: Independent Zero-Based Timeline (p. 5)</a>
+<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Definition (p. 7)</a> &middot; <a href="#take-take-001">Ch. 9: Glossary definition (p. 161)</a> &middot; <a href="#1-1-1-independent-zero-based-takes-instead-of-a-3-hour-linear-timeline">Ch. 1: Independent Zero-Based Timeline (p. 5)</a>
 </dd>
 <dt>Take Splitting</dt>
 <dd>
-<a href="#take-splitting-split-take-new-take">Ch. 9: Glossary definition (p. 160)</a> &middot; <a href="#6-4-non-destructive-take-splitting-split-take-at-playhead-split-by-markers">Ch. 6: Non-Destructive Split at Playhead (p. 109)</a> &middot; <a href="#6-4-non-destructive-take-splitting-split-take-at-playhead-split-by-markers">Ch. 6: Split by Markers and Ranges (p. 109)</a> &middot; <a href="#6-4-2-how-non-destructive-splitting-preserves-stems-passes-phase-offsets">Ch. 6: Stem and Pass Preservation (p. 110)</a> &middot; <a href="#6-4-1-three-ways-to-split-or-extract-independent-takes">Ch. 6: Three Split Workflows (p. 109)</a>
+<a href="#take-splitting-split-take-new-take">Ch. 9: Glossary definition (p. 161)</a> &middot; <a href="#6-4-non-destructive-take-splitting-split-take-at-playhead-split-by-markers">Ch. 6: Non-Destructive Split at Playhead (p. 110)</a> &middot; <a href="#6-4-non-destructive-take-splitting-split-take-at-playhead-split-by-markers">Ch. 6: Split by Markers and Ranges (p. 110)</a> &middot; <a href="#6-4-2-how-non-destructive-splitting-preserves-stems-passes-phase-offsets">Ch. 6: Stem and Pass Preservation (p. 111)</a> &middot; <a href="#6-4-1-three-ways-to-split-or-extract-independent-takes">Ch. 6: Three Split Workflows (p. 110)</a>
 </dd>
 <dt>Take vs. Pass Disambiguation</dt>
 <dd>
-<a href="#9-1-take-vs-pass-disambiguation-quick-guide">Ch. 9: Quick Guide (p. 147)</a>
+<a href="#9-1-take-vs-pass-disambiguation-quick-guide">Ch. 9: Quick Guide (p. 148)</a>
 </dd>
 <dt>Takes Catalog</dt>
 <dd>
-<a href="#7-1-managing-takes-in-the-session-reel-view">Ch. 7: Loading and Tagging Takes (p. 114)</a> &middot; <a href="#7-1-managing-takes-in-the-session-reel-view">Ch. 7: Overview (p. 114)</a> &middot; <a href="#7-1-2-switching-starring-renaming-deleting-takes-in-the-takes-catalog">Ch. 7: Starring, Renaming, and Deleting Takes (p. 115)</a> &middot; <a href="#7-1-2-switching-starring-renaming-deleting-takes-in-the-takes-catalog">Ch. 7: Switching Active Take (p. 115)</a>
+<a href="#7-1-managing-takes-in-the-session-reel-view">Ch. 7: Loading and Tagging Takes (p. 115)</a> &middot; <a href="#7-1-managing-takes-in-the-session-reel-view">Ch. 7: Overview (p. 115)</a> &middot; <a href="#7-1-2-switching-starring-renaming-deleting-takes-in-the-takes-catalog">Ch. 7: Starring, Renaming, and Deleting Takes (p. 116)</a> &middot; <a href="#7-1-2-switching-starring-renaming-deleting-takes-in-the-takes-catalog">Ch. 7: Switching Active Take (p. 116)</a>
 </dd>
 <dt>TAPE</dt>
 <dd>
@@ -4862,15 +4862,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Tape Delay</dt>
 <dd>
-<a href="#5-5-stereo-convolution-reverb-aux-1-reverb-stereo-tape-delay-aux-2-tape-dly">Ch. 5: AUX 2 TAPE DLY capstan echo (p. 83)</a>
+<a href="#5-5-stereo-convolution-reverb-aux-1-reverb-stereo-tape-delay-aux-2-tape-dly">Ch. 5: AUX 2 TAPE DLY capstan echo (p. 84)</a>
 </dd>
 <dt>Tape Saturation</dt>
 <dd>
-<a href="#tape-saturation-tape">Ch. 9: Glossary definition (p. 160)</a> &middot; <a href="#5-2-tape-saturation-input-drive-tape">Ch. 5: Parameters and studio recipes (p. 65)</a> &middot; <a href="#5-2-2-studio-tape-recipes-for-tracking-mixing">Ch. 5: Snare, Bass DI, and Drum Bus recipes (p. 66)</a>
+<a href="#tape-saturation-tape">Ch. 9: Glossary definition (p. 161)</a> &middot; <a href="#5-2-tape-saturation-input-drive-tape">Ch. 5: Parameters and studio recipes (p. 65)</a> &middot; <a href="#5-2-2-studio-tape-recipes-for-tracking-mixing">Ch. 5: Snare, Bass DI, and Drum Bus recipes (p. 66)</a>
 </dd>
 <dt>Three-Tier Waveform Detail</dt>
 <dd>
-<a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: 6.1 Navigating the WAVEFORM TIMELINE View &amp; Upper Mini-Timeline Well (p. 100)</a>
+<a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: 6.1 Navigating the WAVEFORM TIMELINE View &amp; Upper Mini-Timeline Well (p. 101)</a>
 </dd>
 <dt>Through-Zero Flanger</dt>
 <dd>
@@ -4882,19 +4882,19 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Timeline</dt>
 <dd>
-<a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: Isolated Per-Take Zero (p. 100)</a> &middot; <a href="#1-1-1-independent-zero-based-takes-instead-of-a-3-hour-linear-timeline">Ch. 1: Zero-Based Per Take (p. 5)</a>
+<a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: Isolated Per-Take Zero (p. 101)</a> &middot; <a href="#1-1-1-independent-zero-based-takes-instead-of-a-3-hour-linear-timeline">Ch. 1: Zero-Based Per Take (p. 5)</a>
 </dd>
 <dt>Timeline Cursor</dt>
 <dd>
-<a href="#8-1-5-waveform-timeline-view-waveform-timeline-view">Ch. 8: Arrow Key Nudging (p. 135)</a>
+<a href="#8-1-5-waveform-timeline-view-waveform-timeline-view">Ch. 8: Arrow Key Nudging (p. 136)</a>
 </dd>
 <dt>Timeline Navigation Gestures</dt>
 <dd>
-<a href="#6-1-4-complete-reference-of-timeline-navigation-zoom-gestures">Ch. 6: 6.1.4 Complete Reference of Timeline Navigation &amp; Zoom Gestures (p. 103)</a>
+<a href="#6-1-4-complete-reference-of-timeline-navigation-zoom-gestures">Ch. 6: 6.1.4 Complete Reference of Timeline Navigation &amp; Zoom Gestures (p. 104)</a>
 </dd>
 <dt>Top Deck CLOUD Status Badge</dt>
 <dd>
-<a href="#7-5-1-connecting-a-project-to-google-drive-reading-the-cloud-badge">Ch. 7: 7.5.1 Connecting a Project to Google Drive &amp; Reading the CLOUD Badge (p. 125)</a>
+<a href="#7-5-1-connecting-a-project-to-google-drive-reading-the-cloud-badge">Ch. 7: 7.5.1 Connecting a Project to Google Drive &amp; Reading the CLOUD Badge (p. 126)</a>
 </dd>
 <dt>Top Transport Deck</dt>
 <dd>
@@ -4906,11 +4906,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Track Height Presets</dt>
 <dd>
-<a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: 6.1.3 Full-Screen WAVEFORM TIMELINE Toolbar &amp; Track Headers (p. 102)</a>
+<a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: 6.1.3 Full-Screen WAVEFORM TIMELINE Toolbar &amp; Track Headers (p. 103)</a>
 </dd>
 <dt>Trackpad Gestures</dt>
 <dd>
-<a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Timeline and Console (p. 137)</a>
+<a href="#8-2-complete-mouse-trackpad-gesture-reference">Ch. 8: Timeline and Console (p. 138)</a>
 </dd>
 <dt>TransientShaper</dt>
 <dd>
@@ -4918,7 +4918,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Transport Controls</dt>
 <dd>
-<a href="#8-1-1-global-transport-record-global-transport">Ch. 8: Keyboard Shortcuts (p. 130)</a> &middot; <a href="#1-3-1-top-deck-row-1-session-identity-transport-timecode-phase-controls">Ch. 1: Play, Stop, Record, Overdub, Loop (p. 13)</a>
+<a href="#8-1-1-global-transport-record-global-transport">Ch. 8: Keyboard Shortcuts (p. 131)</a> &middot; <a href="#1-3-1-top-deck-row-1-session-identity-transport-timecode-phase-controls">Ch. 1: Play, Stop, Record, Overdub, Loop (p. 13)</a>
 </dd>
 <dt>True Peak (dBTP)</dt>
 <dd>
@@ -4930,15 +4930,15 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>Ubiquitous Language</dt>
 <dd>
-<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Hierarchy Overview (p. 7)</a> &middot; <a href="#9-1-take-vs-pass-disambiguation-quick-guide">Ch. 9: Take vs. Pass Comparison Table (p. 147)</a>
+<a href="#1-2-the-four-tier-recording-hierarchy">Ch. 1: Hierarchy Overview (p. 7)</a> &middot; <a href="#9-1-take-vs-pass-disambiguation-quick-guide">Ch. 9: Take vs. Pass Comparison Table (p. 148)</a>
 </dd>
 <dt>Undo and Redo</dt>
 <dd>
-<a href="#8-1-3-global-undo-snapshots-markers-global-undo-snapshots-markers">Ch. 8: CMD/CTRL + Z Shortcuts (p. 132)</a>
+<a href="#8-1-3-global-undo-snapshots-markers-global-undo-snapshots-markers">Ch. 8: CMD/CTRL + Z Shortcuts (p. 133)</a>
 </dd>
 <dt>Undo and Redo History Bar</dt>
 <dd>
-<a href="#7-1-1-the-session-header-undo-redo-history-bar">Ch. 7: 7.1.1 The Session Header &amp; Undo/Redo History Bar (p. 115)</a>
+<a href="#7-1-1-the-session-header-undo-redo-history-bar">Ch. 7: 7.1.1 The Session Header &amp; Undo/Redo History Bar (p. 116)</a>
 </dd>
 <dt>Untreated Rooms</dt>
 <dd>
@@ -4950,7 +4950,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Upper Mini-Timeline Well</dt>
 <dd>
-<a href="#6-1-2-upper-mini-timeline-well-controls">Ch. 6: Controls (p. 101)</a>
+<a href="#6-1-2-upper-mini-timeline-well-controls">Ch. 6: Controls (p. 102)</a>
 </dd>
 <dt>User Interface</dt>
 <dd>
@@ -4962,11 +4962,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>VCA Compressor</dt>
 <dd>
-<a href="#analog-vca-compressor-3-vca-cmp">Ch. 9: Glossary definition (p. 150)</a> &middot; <a href="#5-4-analog-vca-compressor-gain-reduction-meter-vca-compressor-gr">Ch. 5: Parameters and operation (p. 73)</a> &middot; <a href="#5-4-3-studio-starting-settings-for-common-sources">Ch. 5: Studio starting settings for Kick, Snare, Bass, Vocals, and Drum Bus (p. 75)</a>
+<a href="#analog-vca-compressor-3-vca-cmp">Ch. 9: Glossary definition (p. 151)</a> &middot; <a href="#5-4-analog-vca-compressor-gain-reduction-meter-vca-compressor-gr">Ch. 5: Parameters and operation (p. 73)</a> &middot; <a href="#5-4-3-studio-starting-settings-for-common-sources">Ch. 5: Studio starting settings for Kick, Snare, Bass, Vocals, and Drum Bus (p. 75)</a>
 </dd>
 <dt>VocalRider</dt>
 <dd>
-<a href="#5-3-4-vocalrider-automatic-zero-latency-vocal-leveler-with-breath-bleed-freeze-gate">Ch. 5: Automatic Vocal Leveler (p. 72)</a> &middot; <a href="#vocalrider">Ch. 9: Glossary definition (p. 160)</a>
+<a href="#5-3-4-vocalrider-automatic-zero-latency-vocal-leveler-with-breath-bleed-freeze-gate">Ch. 5: Automatic Vocal Leveler (p. 72)</a> &middot; <a href="#vocalrider">Ch. 9: Glossary definition (p. 161)</a>
 </dd>
 </dl></section>
 <section class="index-letter-section" id="idx-letter-W">
@@ -4974,11 +4974,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>Waveform Display</dt>
 <dd>
-<a href="#6-1-1-three-tier-waveform-detail-3-tier-lod-viewport-readouts">Ch. 6: Three-Tier Detail (3-TIER LOD) (p. 101)</a>
+<a href="#6-1-1-three-tier-waveform-detail-3-tier-lod-viewport-readouts">Ch. 6: Three-Tier Detail (3-TIER LOD) (p. 102)</a>
 </dd>
 <dt>Waveform Timeline</dt>
 <dd>
-<a href="#waveform-timeline-waveform-timeline">Ch. 9: Glossary definition (p. 161)</a> &middot; <a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: Navigating (p. 100)</a> &middot; <a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: Overview (p. 100)</a> &middot; <a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: Toolbar Controls (p. 102)</a> &middot; <a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: Track Headers (p. 102)</a>
+<a href="#waveform-timeline-waveform-timeline">Ch. 9: Glossary definition (p. 162)</a> &middot; <a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: Navigating (p. 101)</a> &middot; <a href="#6-1-navigating-the-waveform-timeline-view-upper-mini-timeline-well">Ch. 6: Overview (p. 101)</a> &middot; <a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: Toolbar Controls (p. 103)</a> &middot; <a href="#6-1-3-full-screen-waveform-timeline-toolbar-track-headers">Ch. 6: Track Headers (p. 103)</a>
 </dd>
 <dt>Wiring Diagram</dt>
 <dd>
@@ -4998,7 +4998,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
 </dd>
 <dt>Workspace Views</dt>
 <dd>
-<a href="#8-1-2-global-navigation-modals-global-navigation-modals">Ch. 8: CMD/CTRL + 1-7 Shortcuts (p. 131)</a> &middot; <a href="#1-3-2-top-deck-row-2-workspace-view-tabs-templates-latency-diagnostics">Ch. 1: CMD/CTRL + 1-7 Tabs (p. 15)</a>
+<a href="#8-1-2-global-navigation-modals-global-navigation-modals">Ch. 8: CMD/CTRL + 1-7 Shortcuts (p. 132)</a> &middot; <a href="#1-3-2-top-deck-row-2-workspace-view-tabs-templates-latency-diagnostics">Ch. 1: CMD/CTRL + 1-7 Tabs (p. 15)</a>
 </dd>
 </dl></section>
 <section class="index-letter-section" id="idx-letter-Z">
@@ -5006,11 +5006,11 @@ caverec --screenshot-dir .tmp/caverec-shots \
 <dl class="index-term-list">
 <dt>Zoom</dt>
 <dd>
-<a href="#8-1-5-waveform-timeline-view-waveform-timeline-view">Ch. 8: =, -, and 0 Shortcuts (p. 135)</a> &middot; <a href="#6-1-4-complete-reference-of-timeline-navigation-zoom-gestures">Ch. 6: Anchor Modes (p. 103)</a>
+<a href="#8-1-5-waveform-timeline-view-waveform-timeline-view">Ch. 8: =, -, and 0 Shortcuts (p. 136)</a> &middot; <a href="#6-1-4-complete-reference-of-timeline-navigation-zoom-gestures">Ch. 6: Anchor Modes (p. 104)</a>
 </dd>
 <dt>Zoom to Range</dt>
 <dd>
-<a href="#6-3-3-managing-renaming-filtering-in-the-markers-ranges-view">Ch. 6: 6.3.3 Managing, Renaming &amp; Filtering in the MARKERS &amp; RANGES View (p. 108)</a>
+<a href="#6-3-3-managing-renaming-filtering-in-the-markers-ranges-view">Ch. 6: 6.3.3 Managing, Renaming &amp; Filtering in the MARKERS &amp; RANGES View (p. 109)</a>
 </dd>
 </dl></section>
 </div></section>
@@ -5165,8 +5165,8 @@ caverec --screenshot-dir .tmp/caverec-shots \
     "chapter": "2: Hardware Setup, Audio Connections & First Session",
     "title": "2.1.4 First-Launch Setup on macOS (Gatekeeper, Quarantine & Microphone Permission)",
     "href": "02-hardware-setup-and-first-session.html#2-1-4-first-launch-setup-on-macos-gatekeeper-quarantine-microphone-permission",
-    "snippet": "The macOS release of Cave Recorder (caverec-v0.3.0-macos-arm64.zip / Cave Recorder.app) is distributed as an ad-hoc signed application bundle. When opening an application downloade...",
-    "body": "The macOS release of Cave Recorder (caverec-v0.3.0-macos-arm64.zip / Cave Recorder.app) is distributed as an ad-hoc signed application bundle. When opening an application downloaded from a web browser on macOS for the first time, macOS Gatekeeper places a quarantine flag on the bundle and displays an unverified developer prompt. After dragging Cave Recorder.app into /Applications, clear the macOS Gatekeeper quarantine flag using either of these two methods before your first studio session: Method A: macOS System Settings (Open Anyway): Double-click Cave Recorder.app in /Applications and click Done (or Cancel) on the initial Gatekeeper prompt. Open System Settings -> Privacy & Security, scroll down to the Security section, and click Open Anyway next to \"Cave Recorder.app\" was blocked from use because it is not from an identified developer. Authenticate with Touch ID or your macOS administrator password and confirm Open. Method B: Terminal Quarantine Removal (xattr -cr): Open the macOS Terminal application and run xattr -cr \"/Applications/Cave Recorder.app\". Launch Cave Recorder.app normally from /Applications or Spotlight, and click Allow when macOS prompts for microphone and audio interface access."
+    "snippet": "The macOS release of Cave Recorder (caverec-v0.3.1-macos-arm64.zip / Cave Recorder.app) is distributed as an ad-hoc signed application bundle. When opening an application downloade...",
+    "body": "The macOS release of Cave Recorder (caverec-v0.3.1-macos-arm64.zip / Cave Recorder.app) is distributed as an ad-hoc signed application bundle. When opening an application downloaded from a web browser on macOS for the first time, macOS Gatekeeper places a quarantine flag on the bundle and displays an unverified developer prompt. After dragging Cave Recorder.app into /Applications, clear the macOS Gatekeeper quarantine flag using either of these two methods before your first studio session: Method A: macOS System Settings (Open Anyway): Double-click Cave Recorder.app in /Applications and click Done (or Cancel) on the initial Gatekeeper prompt. Open System Settings -> Privacy & Security, scroll down to the Security section, and click Open Anyway next to \"Cave Recorder.app\" was blocked from use because it is not from an identified developer. Authenticate with Touch ID or your macOS administrator password and confirm Open. Method B: Terminal Quarantine Removal (xattr -cr): Open the macOS Terminal application and run xattr -cr \"/Applications/Cave Recorder.app\". Launch Cave Recorder.app normally from /Applications or Spotlight, and click Allow when macOS prompts for microphone and audio interface access."
   },
   {
     "chapter": "2: Hardware Setup, Audio Connections & First Session",
@@ -5600,7 +5600,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
     "title": "5.4.6 Guitar & Bass AmpRig ([CIR] Tube Circuit Models, HEAD ON/BYP & [NAM] Neural Amp Capture)",
     "href": "05-processors-phase-and-plugins.html#5-4-6-guitar-bass-amprig-cir-tube-circuit-models-head-on-byp-nam-neural-amp-capture",
     "snippet": "Recording a direct instrument (DI) feed alongside (or instead of) a loud stage amplifier gives a band complete freedom to re-voice guitar and bass tones after rehearsal, track late...",
-    "body": "Recording a direct instrument (DI) feed alongside (or instead of) a loud stage amplifier gives a band complete freedom to re-voice guitar and bass tones after rehearsal, track late at night on headphones, or bring their exact personal tube heads and fuzz pedals inside the console without carrying heavy cabinets to every session. Cave Recorder's AmpRig processor combines an InputCalibrator (dBu-referenced headroom Trim, INST/LINE pad, and one-click AUTO-CAL), an overdrive/fuzz stompbox boost stage (BOOST + DRV), two selectable amplifier engines ([CIR] Physical Tube Circuit Models vs. [NAM] Native .nam Neural Amp Models), a 4-control passive tone stack (BASS, MID, TREBLE, PRESENCE), power-amp transformer SAG, an independent HEAD ON / HEAD BYP amplifier head bypass toggle, and an integrated CabinetMicProcessor (8 modeled speaker cabinets plus external .wav/.nam linear impulse responses, 5 studio microphone capsules, continuous POS and AIR, and a CAB BYP toggle): [CIR] Mode (8 Physical Vacuum-Tube Amplifier Topologies): Models triode/pentode grid conduction, cathode bias shift, power-supply RC sag, and output transformer core hysteresis across 8 classic guitar and bass amplifier voicings: CLN65 (65 CLEAN 2x6L6 VIBRATO), JMP59 (59 JUMPED 4xEL34 LEAD), BRT80 (80 BRIT 3x12AX7 MASTER), CTR100 (CITRUS 4x12AX7 DIRTY), 5STG (5-STAGE 6L6 HIGH-GAIN), D-REC (MODERN OPEN-LOOP 5U4G), DM150 (73 ULTRALINEAR 4x6550), and BS300 (69 BAXANDALL 6x6550 BASS). HEAD ON / HEAD BYP & CAB BYP (Independent Head and Cabinet Bypass): Toggling HEAD BYP bypasses the preamp, overdrive boost, tone stack, and power-amp stages while keeping AmpRig's speaker cabinet and microphone section active (ideal when tracking a physical tube head's load-box line out that only needs speaker cabinet voicing). Conversely, toggling CAB BYP inside AmpRig bypasses its internal speaker cabinet so you can insert stereo rack processors (Modulation, 3-Mode Delay, or StudioPlateReverb) in downstream rack slots and place a standalone CabIr (SPEAKER CABINET & IR LOADER) processor after them (AmpRig [CAB BYP] -> Stereo Chorus/Delay -> CabIr). [NAM] Mode (Native .nam A2 / A1 WaveNet Real-Time Inference & Self-Contained Library): Loads open .nam (Neural Amp Modeler) dilated causal WaveNet files (A2 Nano, A1 Standard, and Slimmable architectures) directly into the channel strip with zero-allocation SIMD real-time inference and automatic sample-rate conversion when running sessions at 44.1 kHz, 48.0 kHz, 88.2 kHz, or 96.0 kHz. Two-Tier Self-Contained .nam Storage: Imported or captured .nam profiles are indexed in your global studio library (<LibraryRoot>/.caverec/amp_captures/, along with optional return_wet.flac archives for later higher-epoch re-training) and are automatically copied into <SessionFolder>/models/ and <TakeFolder>/models/ whenever assigned to a strip. Every Session and Take remains 100% self-contained when synced to Google Drive or opened on a bandmate's laptop without broken external file paths. 3-Step Guided Hardware Amp & Pedal Capture Wizard (CAP): Clicking CAP in the AmpRig inspector deck opens the 3-Step Hardware Neural Capture & Training Modal so you can clone your own physical tube head, preamp, or fuzz/overdrive pedalboard in minutes: Step 1 (Hardware Patch & Loopback Level Check): Select the physical Send Output jack (feeding your amp/pedal input via a re-amp box) and Return Input jack (from your load box, attenuator line out, or cabinet microphone). Click RUN LOOPBACK CHECK to play a test burst through the hardware, verify return peak headroom (-18 to -3 dBFS), and measure preliminary roundtrip latency while the control room monitors automatically dim by -20 dB. Step 2 (Conditioning Sweep & Background Neural Training): Choose your training preset (Quick (~1 min, A2 Nano), Standard (~3 min, A2), or Studio Deep (~10 min, A1)) and click START CAPTURE & TRAIN. Cave Recorder transmits the multi-frequency conditioning stimulus (v1_1_1 sweeps, impulses, and dynamic transient bursts) out the hardware send, captures the wet return, locks sub-sample arrival offset and clock drift via GCC-PHAT cross-correlation, and launches background hardware-accelerated (Apple Silicon AMX / SIMD SGEMM) backpropagation training. A live 60 Hz convergence graph plots the Error-to-Signal Ratio (ESR) across epochs without blocking the console UI. Step 3 (6-Gate Quality Verification, A/B Audition & Save to Library): Upon completion, Cave Recorder validates the trained .nam model against 6 automated studio quality gates (ESR accuracy threshold, DC offset guard, silence/noise-floor stability, overload recovery, phase coherence, and real-time CPU budget), lets you A/B AUDITION the trained neural model against the recorded hardware return, and saves the .nam file directly into your Global Library and active Session/Take models/ folder."
+    "body": "Recording a direct instrument (DI) feed alongside (or instead of) a loud stage amplifier gives a band complete freedom to re-voice guitar and bass tones after rehearsal, track late at night on headphones, or bring their exact personal tube heads and fuzz pedals inside the console without carrying heavy cabinets to every session. Cave Recorder's AmpRig processor combines an InputCalibrator (dBu-referenced headroom Trim, INST/LINE pad, and one-click AUTO-CAL), an overdrive/fuzz stompbox boost stage (BOOST + DRV), two selectable amplifier engines ([CIR] Physical Tube Circuit Models vs. [NAM] Native .nam Neural Amp Models), a 4-control passive tone stack (BASS, MID, TREBLE, PRESENCE), power-amp transformer SAG, an independent HEAD ON / HEAD BYP amplifier head bypass toggle, and an integrated CabinetMicProcessor (8 modeled speaker cabinets plus external .wav/.nam linear impulse responses, 5 studio microphone capsules, continuous POS and AIR, and a CAB BYP toggle): [CIR] Mode (8 Physical Vacuum-Tube Amplifier Topologies with 2x / 4x Polyphase Half-Band Oversampling): Models triode/pentode grid conduction, cathode bias shift, power-supply RC sag, and output transformer core hysteresis across 8 classic guitar and bass amplifier voicings: CLN65 (65 CLEAN 2x6L6 VIBRATO), JMP59 (59 JUMPED 4xEL34 LEAD), BRT80 (80 BRIT 3x12AX7 MASTER), CTR100 (CITRUS 4x12AX7 DIRTY), 5STG (5-STAGE 6L6 HIGH-GAIN), D-REC (MODERN OPEN-LOOP 5U4G), DM150 (73 ULTRALINEAR 4x6550), and BS300 (69 BAXANDALL 6x6550 BASS). Nonlinear tube and overdrive saturation stages run through a zero-allocation 2x / 4x polyphase half-band allpass IIR oversampling cascade (8th-order steep 1x <-> 2x stage cascaded with a 4th-order 2x <-> 4x stage) so high-gain harmonics stay free of aliasing foldback across 44.1 kHz, 48.0 kHz, 88.2 kHz, and 96.0 kHz sessions. HEAD ON / HEAD BYP & CAB BYP (Independent Head and Cabinet Bypass): Toggling HEAD BYP bypasses the preamp, overdrive boost, tone stack, and power-amp stages while keeping AmpRig's speaker cabinet and microphone section active (ideal when tracking a physical tube head's load-box line out that only needs speaker cabinet voicing). Conversely, toggling CAB BYP inside AmpRig bypasses its internal speaker cabinet so you can insert stereo rack processors (Modulation, 3-Mode Delay, or StudioPlateReverb) in downstream rack slots and place a standalone CabIr (SPEAKER CABINET & IR LOADER) processor after them (AmpRig [CAB BYP] -> Stereo Chorus/Delay -> CabIr). [NAM] Mode (Native .nam A2 / A1 WaveNet Real-Time Inference & Self-Contained Library): Loads open .nam (Neural Amp Modeler) dilated causal WaveNet files (A2 23-layer 8-channel, A1 Standard, and Slimmable architectures) directly into the channel strip with zero-allocation SIMD real-time inference, polyphase half-band anti-aliasing oversampling, and automatic sample-rate conversion when running sessions at 44.1 kHz, 48.0 kHz, 88.2 kHz, or 96.0 kHz. Two-Tier Self-Contained .nam Storage: Imported or captured .nam profiles are indexed in your global studio library (<LibraryRoot>/.caverec/amp_captures/, along with optional return_wet.flac archives for later higher-epoch re-training via RE-TRAIN HQ (WET WAV)) and are automatically copied into <SessionFolder>/models/ and <TakeFolder>/models/ whenever assigned to a strip. Every Session and Take remains 100% self-contained when synced to Google Drive or opened on a bandmate's laptop without broken external file paths. 3-Step Guided Hardware Amp & Pedal Capture Wizard (CAP) & World-Class Mastering Trainer: Clicking CAP in the AmpRig inspector deck opens the 3-Step Hardware Neural Capture & Training Modal (STEP 1: I/O & LOOPBACK CHECK -> STEP 2: SWEEP & A2 TRAINER -> STEP 3: SANITY AUDIT & SAVE) so you can clone your own physical tube head, preamp, or fuzz/overdrive pedalboard: Step 1 (Hardware Patch, Preset Selection & Loopback Level Check): Select the physical RE-AMP SEND output jack (OUT 01..18, feeding your amp/pedal input via a re-amp box) and MIC / DI RETURN input jack (IN 01..18, from your load box, attenuator line out, or cabinet microphone). Click the header preset selector button to cycle between the three canonical 23-layer A2 WaveNet training quality modes (Standard -> Mastering -> Turbo -> Standard): Standard A2 (PRESET: STD A2 / STANDARD A2, Default): Full studio capture using the complete 3-minute conditioning sweep (Standard3Min) and 150 cosine-annealed epochs (lr: 3.5e-3 -> 1.0e-4). Mastering A2 (PRESET: MST A2 / MASTERING A2): World-class mastering mode using the full 3-minute conditioning sweep (Standard3Min), up to 1,000 epochs, held-out validation checkpointing (automatically retaining the model weights from the epoch with the lowest held-out validation ESR), ReduceLROnPlateau learning-rate halving (0.5x decay after 8 non-improving validation epochs down to a 1.0e-5 floor), and train-until-convergence automatic early stopping (20 plateau epochs at < 0.2% relative validation ESR improvement). Turbo A2 (PRESET: TRB A2 / TURBO A2): Fast preview capture using the compact conditioning sweep (CompactFast) and 60 cosine-annealed epochs (lr: 3.5e-3 -> 2.0e-4). Click TEST LOOPBACK & LEVEL to play a test burst through the hardware, verify return peak headroom (-18 to -3 dBFS) and signal-to-noise ratio (>= 36 dB), and lock sub-sample roundtrip latency and clock drift (PPM) via 8-tap Blackman-Harris windowed-sinc causal time-warping. Step 2 (Conditioning Sweep, Live Convergence Telemetry & STOP & KEEP BEST): Click START CAPTURE & TRAINING (with optional DIM MONITORS (-20dB)). Cave Recorder transmits the multi-frequency conditioning stimulus (v1_1_1 sweeps, impulses, and dynamic transient bursts) out the hardware send, captures and time-aligns the wet return, and launches background hardware-accelerated (Apple Silicon Accelerate AMX / SIMD SGEMM) analytical backpropagation across all 23 dilated causal WaveNet layers. A live 60 Hz logarithmic convergence graph plots both Training ESR and Held-Out Validation ESR alongside the active learning rate (EP cur/total (MASTERING A2) | TRAIN ESR | VAL ESR | LR). At any point during training, you can click STOP & KEEP BEST to finish immediately while restoring the best validated checkpoint weights and running the post-training sanity audit (or click CANCEL to abort and discard the run). Step 3 (Sanity Audit, Quality Badge, A/B Audition & Save to Library): Upon completion, Cave Recorder validates the trained .nam model against automated studio quality gates (held-out validation ESR badge STUDIO < 1% ESR / GOOD 1-3% ESR, steady-state silence decay <= -70.0 dBFS, full-scale burst stability, and -18 LUFS calibrated output loudness metadata), lets you A/B AUDITION the trained neural model against the recorded hardware return, and saves the .nam file (plus the optional aligned wet .wav archive when KEEP WET WAV is enabled) directly into your Global Library and active Session/Take models/ folder."
   },
   {
     "chapter": "5: Built-In Processors, Phase Alignment & External Plugins (CLAP & AU)",
@@ -6237,7 +6237,7 @@ caverec --screenshot-dir .tmp/caverec-shots \
     "title": "AmpRig & Neural Amp Capture ([CIR] / [NAM] / HEAD ON/BYP / CAP)",
     "href": "09-glossary-and-index.html#amprig-neural-amp-capture-cir-nam-head-on-byp-cap",
     "snippet": "Zero-latency guitar and bass amplifier, cabinet, and neural capture insert processor available in any of the 8 rack slots on Input Tracks and Subgroup Buses. Operates in either [CI...",
-    "body": "Zero-latency guitar and bass amplifier, cabinet, and neural capture insert processor available in any of the 8 rack slots on Input Tracks and Subgroup Buses. Operates in either [CIR] Circuit Mode (modeling 8 vacuum-tube preamp and power-amp topologies with 4x polyphase oversampling) or [NAM] Neural Capture Mode (running open .nam WaveNet, LSTM, and Linear neural network models alongside 8 modeled speaker cabinets and custom .wav/.nam linear impulse responses), with independent HEAD ON/BYP and CAB BYP switches for pairing an amplifier head with downstream stereo effects and a standalone CabIr cabinet slot. Includes a guided 3-step Hardware Amp & Pedal Capture Wizard (CAP) that sweeps a physical amplifier or pedal via hardware loopback, aligns latency via GCC-PHAT cross-correlation, trains an A2 Nano or A1 Standard .nam model with live ESR metering (GREEN < 1%), and copies the trained model into <SessionFolder>/models/ and <TakeFolder>/models/ for portable cloud sync. See Section 5.4.6."
+    "body": "Zero-latency guitar and bass amplifier, cabinet, and neural capture insert processor available in any of the 8 rack slots on Input Tracks and Subgroup Buses. Operates in either [CIR] Circuit Mode (modeling 8 vacuum-tube preamp and power-amp topologies with 2x / 4x polyphase half-band allpass IIR oversampling) or [NAM] Neural Capture Mode (running open .nam WaveNet, LSTM, and Linear neural network models alongside 8 modeled speaker cabinets and custom .wav/.nam linear impulse responses), with independent HEAD ON/BYP and CAB BYP switches for pairing an amplifier head with downstream stereo effects and a standalone CabIr cabinet slot. Includes a guided 3-step Hardware Amp & Pedal Capture Wizard (CAP) supporting three canonical 23-layer A2 WaveNet trainer presets (Standard A2 150 epochs, Mastering A2 up to 1,000 epochs with held-out validation checkpointing, ReduceLROnPlateau learning-rate halving, automatic convergence early stopping, and interactive STOP & KEEP BEST, and Turbo A2 60 epochs), live training and validation ESR metering (STUDIO < 1% ESR), and automatic replication into <SessionFolder>/models/ and <TakeFolder>/models/ for portable cloud sync. See Section 5.4.6."
   },
   {
     "chapter": "9: Studio Glossary & Alphabetical Index",
