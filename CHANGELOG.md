@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-11-02
+
+### Added
+
+- **World-Class Mastering `.nam` (`A2` WaveNet) Hardware Capture Trainer Mode (`dev-nfy`):** Added the `Mastering` (`PRESET: MST A2` / `MASTERING A2`) quality preset to the 3-step Guided Hardware Amp & Pedal Capture Wizard (`CAP`) alongside `Standard` (`PRESET: STD A2`, `150` epochs on the full 3-minute conditioning sweep) and `Turbo` (`PRESET: TRB A2`, `60` epochs on a compact sweep). Mastering mode trains canonical 23-layer `A2` WaveNet models for up to `1,000` epochs on the full 3-minute excitation sweep with held-out validation checkpointing (automatically retaining the lowest validation ESR model weights), adaptive `ReduceLROnPlateau` learning-rate halving (`0.5x` after `8` plateau epochs down to `1.0e-5`), automatic train-until-convergence early stopping (`20` plateau epochs), and an interactive **`[STOP & KEEP BEST]`** button in the live training progress modal.
+- **`2x` / `4x` Polyphase Half-Band IIR Oversampling & `ParamBank<N>` Parameter Smoothing (`dev-zkn`):** Added zero-allocation `HalfBandCascade` `2x`/`4x` polyphase half-band allpass IIR oversampling in `dsp_core` (wired into `AmpRigProcessor` and `NamProcessor` to suppress high-frequency harmonic foldback distortion across non-linear vacuum-tube stages and `.nam` neural amplifier inference), paired with the unified `ParamBank<N>` per-sample linear parameter smoother and encapsulated dual-path `GateProcessor` detector state.
+
+### Changed
+
+- **Cached 60 Hz Static Backdrops Across Large Channel Inspector Views (`dev-ca0`):** Cached static coordinate grids, dB/frequency scales, and diagnostic backdrops via `canvas::Cache` across `AuxReverbLargeView`, `AuxDelayLargeView`, `ModulationLargeView`, `DeEsserLargeView`, `VocalRiderLargeView`, and `InteractiveXYPadCanvas` (`XyPad`), eliminating redundant 60 Hz geometry tessellation while keeping live playheads, transfer curves, and telemetry traces responsive.
+- **Unified `ValueSliderSpec`, `KeycapButtonSpec` & Transactional Recent-Sessions Persistence (`dev-79d`):** Consolidated slider and hardware keycap widget specifications across 51 UI modules, sanitized non-finite widget bounds, and made `WelcomeActionContext` recent-sessions registry updates transactional with rollback on I/O failure.
+
+### Fixed
+
+- **Exhaustive Declarative `ContinuousParam` Sanitization & Surface Routing (`dev-42a`):** Replaced partial parameter clamping with an exhaustive declarative range table covering all 117 `ContinuousParam` variants (guarding against `NaN`, `±Infinity`, and out-of-range persisted or surface values) and wired `ConsoleSurfaceRoute::Param` action dispatch across all console surfaces.
+
 ## [0.3.0] - 2026-11-01
 
 ### Added
