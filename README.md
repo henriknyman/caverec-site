@@ -13,7 +13,7 @@
 ╚═══════════════════════════════════════════════════════════════════════════╝
 ```
 
-A multitrack recording and mixing console built for live rehearsals and tracking rooms. Every song or jam lands in its own `00:00:00.000` **Take** with isolated 32-bit float stems, a live stereo **Print**, sub-sample multi-mic phase alignment (`ALIGN Φ`), and optional two-way **Google Drive** synchronization.
+A multitrack recording, mixing, and sample-locked multi-camera video console built for live rehearsals and tracking rooms. Every song or jam lands in its own `00:00:00.000` **Take** with isolated 32-bit float stems, a live stereo **Print**, crystal-locked `50 fps` multi-camera video with split-screen `.mp4` mixdowns, wireless **Android & iOS Cave Companion** camera nodes and multi-angle take players, sub-sample multi-mic phase alignment (`ALIGN Φ`), and optional two-way **Google Drive** synchronization.
 
 ## Links
 
