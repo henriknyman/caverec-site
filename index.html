@@ -142,7 +142,7 @@
           </div>
         </div>
 
-        <!-- Three Primary Platform Download Cards -->
+        <!-- Four Primary Platform Download Cards -->
         <div class="platform-card-grid">
           <!-- 1. macOS (Apple Silicon arm64) -->
           <article class="platform-card" id="card-macos" data-os-card="macos">
@@ -221,9 +221,35 @@
               <span class="download-cta-ext">.zip</span>
             </a>
           </article>
+
+          <!-- 4. Android Companion (arm64-v8a) -->
+          <article class="platform-card" id="card-android" data-os-card="android">
+            <div class="platform-card-top">
+              <div class="platform-title-row">
+                <h3 class="platform-name">
+                  Android Companion
+                  <span class="platform-arch">arm64-v8a</span>
+                </h3>
+                <span class="detected-pill"><span class="detected-dot" aria-hidden="true"></span>Detected for your phone</span>
+              </div>
+              <p class="platform-subtitle">
+                Android 10+ (API 29+) &bull; Wireless 50 Hz Camera Node, Remote Transport &amp; Take Player
+              </p>
+            </div>
+            <a
+              class="download-cta-btn"
+              id="download-android"
+              data-download-os="android"
+              data-release-asset="caverec-v0.3.1-android-arm64.apk"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.3.1/caverec-v0.3.1-android-arm64.apk"
+            >
+              <span>&darr; Download Android Companion</span>
+              <span class="download-cta-ext">.apk</span>
+            </a>
+          </article>
         </div>
 
-        <!-- Direct Manual & Release Notes Bar right below the 3 cards -->
+        <!-- Direct Manual & Release Notes Bar right below the cards -->
         <div class="manual-quick-bar" aria-label="User Manual and Release Checksums">
           <div class="manual-quick-links">
             <a class="quick-bar-link primary-doc" href="manual/">
@@ -231,6 +257,14 @@
             </a>
             <a class="quick-bar-link" href="manual/Cave_Recorder_User_Manual.pdf" download>
               <span>&darr; Download User Manual (PDF)</span>
+            </a>
+            <a
+              class="quick-bar-link"
+              id="quick-download-android-apk"
+              data-download-os="android"
+              href="https://github.com/henriknyman/caverec-site/releases/latest/download/caverec-android.apk"
+            >
+              <span>&darr; Android Companion (<code>.apk</code>)</span>
             </a>
           </div>
           <a class="quick-bar-checksum" href="https://github.com/henriknyman/caverec-site/releases">
@@ -266,6 +300,10 @@
             <li class="os-tip-item" data-os-tip="linux">
               <span class="os-tip-label">Linux First Launch</span>
               Extract the archive, ensure <code>chmod +x caverec</code>, and launch <code>./caverec</code> with your ALSA interface connected.
+            </li>
+            <li class="os-tip-item" data-os-tip="android">
+              <span class="os-tip-label">Android Companion First Launch</span>
+              Open the downloaded <code>.apk</code> file on your Android phone (allowing installation from your browser if prompted), then open <strong>Pair Mobile Companion</strong> in Cave Recorder Desktop and scan the pairing QR code.
             </li>
           </ul>
           <div class="thank-you-links">
@@ -780,6 +818,9 @@
           ""
         ).toLowerCase();
 
+        if (ua.indexOf("android") !== -1 || platform.indexOf("android") !== -1) {
+          return "android";
+        }
         if (platform.indexOf("mac") !== -1 || ua.indexOf("macintosh") !== -1 || ua.indexOf("mac os") !== -1) {
           return "macos";
         }

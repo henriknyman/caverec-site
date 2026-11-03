@@ -564,10 +564,10 @@ pre.logo {
   color: var(--text-muted);
 }
 
-/* Three Primary Platform Download Cards */
+/* Four Primary Platform Download Cards */
 .platform-card-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.9rem;
   margin-bottom: 0.85rem;
 }
@@ -1531,6 +1531,12 @@ pre.logo {
 /* ==========================================================================
    Responsive Breakpoints (1680px+ Desktop down to 375px Mobile)
    ========================================================================== */
+
+@media (max-width: 1120px) {
+  .platform-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 @media (max-width: 1024px) {
   .hero-top-grid {
