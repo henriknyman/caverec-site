@@ -1,6 +1,6 @@
-6ca4f14451f8c43011528ae0b7545b9ec6f16de0089eb005f37e5b4c95f8912a  caverec-v0.4.0-rc2-linux-x86_64.zip
-9ac3c0db76a128d87b6eead0d12d7d03105dfd0381d378e1e328210ce2e6274f  caverec-v0.4.0-rc2-macos-arm64.zip
-2f4940cdc5dbe9dce182fc5468035fc8529a7a8cae4eb84a526e64e1df67de2e  caverec-v0.4.0-rc2-windows-x86_64.zip
+5bbfb0c593c1e564846d2afb9b80104f2f74db464ee3f54aa566b8f4b9173fce  caverec-v0.4.0-rc2-linux-x86_64.zip
+e5b5a9a9d227dfd7253391fe6898aed9b37300ad8ca28cf38ed4ec4c10969823  caverec-v0.4.0-rc2-macos-arm64.zip
+2875bc6a410c1142f8377834cc314de4b6498dec50226882974cf08c18e63a36  caverec-v0.4.0-rc2-windows-x86_64.zip
 a49b9dfec80d19e0eb86992a7511442a194d30dd87513a939b8b9cc454efc26a  caverec-v0.4.0-rc2-android-arm64.apk
 a49b9dfec80d19e0eb86992a7511442a194d30dd87513a939b8b9cc454efc26a  caverec-v0.4.0-rc2-android-universal.apk
 a49b9dfec80d19e0eb86992a7511442a194d30dd87513a939b8b9cc454efc26a  caverec-android.apk
