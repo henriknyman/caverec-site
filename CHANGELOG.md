@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.1] - 2026-11-08
+
+### Added
+
+- **Full-Window White Flash & Interactive Visual Clapperboard Camera Calibration Modes (`dev-766`):** Added two new calibration modes to the **3-Second Camera Latency Calibration Modal** alongside the 4-pulse Vernier flash:
+  - **Full-Window White Flash (`FULL-WINDOW FLASH`):** Expands the calibration modal into a full-window `#FFFFFF` maximum-luminance white flash during each `80 ms` pulse so built-in laptop webcams (`FaceTime HD Camera`) facing away from the display reliably detect reflected room and face illumination changes.
+  - **Interactive Visual Clapperboard (`CLAPPER / HAND CLAP`):** Captures a 3-second audio-video window while you clap your hands in front of the lens, automatically detects the direct-path acoustic transient peak (`s_audio`), and presents an interactive `-5..+5` frame-stepping filmstrip inspector (`[◀ PREV FRAME]` / `[NEXT FRAME ▶]`) so you can step to the exact video frame of hand contact (`s_video`) and commit `device_calib_micros`.
+- **Direct `VIDEO MIXDOWN / FCP` Entry Point in `SESSION REEL` (`dev-6nb`):** Added a dedicated **`VIDEO MIXDOWN / FCP`** action button in the `SESSION REEL` (`CMD/CTRL+4`) Take detail action bar alongside the Top Deck `CAM SYNC` and `WAVEFORM TIMELINE` entry points, plus sequential `VideoMix<NNN>.mp4` (`VideoMix001`, `VideoMix002`, ...) auto-incrementing mixdown numbering.
+
+### Fixed
+
+- **Camera Video Recording Playback Speed & `30 fps` / `60 fps` Frame-Rate Negotiation (`dev-dko`):** Fixed a bug where `CaveRecApp::step_engine_tick` passed the fixed `512`-sample `ENGINE_TICK_BLOCK_FRAMES` constant instead of actual elapsed `hw_delta_frames` (`~800` samples/tick at `48 kHz` / `60 Hz`) to `record_camera_frames_for_audio_block`, which previously caused recorded local camera video to play back `1.5625x`–`1.667x` too fast, and updated `negotiated_frame_rate_for_uuid` and `VideoMixdownModalState` to honor native `30 fps` / `60 fps` cameras when `50 fps` / `25 fps` modes are unavailable on the hardware sensor.
+- **MP4 Video Mixdown Re-Export `_Mixes/` Symlink Aliasing & Duplicate `START`/`COMMIT` Trigger (`dev-6nb`):** Fixed `VideoMixdownConfig::validate()` (`resolve_comparable_path`) so re-exporting a video mixdown compares the canonicalized parent directory plus leaf filename of `project_mixes_symlink_path` without following an existing relative symlink in `<ProjectTag>/_Mixes/`, and made `COMMIT EXPORT` reuse an already-completed `START EXPORT` render without triggering a redundant second encode.
+- **Non-Blocking Host LAN Sync Background Worker (`dev-1ni`):** Offloaded desktop TCP `:48049` LAN sync file reception, post-`Take` `.flac`/`.mp3` `Print` staging, and mobile camera `.mp4`/`.vididx` ingestion onto a background worker thread so multi-megabyte companion transfers never stall the `60 Hz` desktop UI thread.
+- **Android Google Pixel 9 Companion QR Pairing, Camera Lifecycle & Background LAN Sync (`dev-kdl`):** Fixed `Camera2` QR scanner `PreviewView` surface lifecycle and URI parsing on Google Pixel 9 (`arm64-v8a`), offloaded UDP/TCP companion sync calls off the Android main UI thread, and hardened LAN `Take` list refresh and `Media3 ExoPlayer` playback switching.
+- **iOS Companion Async Network Offloading, QR Autofocus, FFI `RwLock` & Take Player Loading (`dev-fnj`):** Offloaded iOS UDP/TCP sync polls to background queues, enabled continuous autofocus and manual QR/PIN fallback in the iOS pairing camera sheet, replaced contended FFI mutex locks with non-blocking `RwLock` read paths, and wired local `.mp4`/`.flac`/`.mp3` file URL resolution into `AVPlayerLayer` Take Player playback.
+
 ## [0.4.0] - 2026-11-07
 
 ### Added
