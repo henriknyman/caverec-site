@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.3] - 2026-11-09
+
+### Added
+
+- **`COPY PAIRING URL` Clipboard Action in Desktop `Pair Mobile Companion` Modal (`dev-5hh`):** Added a one-click **`COPY PAIRING URL`** button with visual **`COPIED TO CLIPBOARD`** feedback to the desktop **Pair Mobile Companion** modal so the `caverec://pair?...` URI can be copied directly to the system clipboard alongside QR scanning and 6-digit PIN entry.
+
+### Fixed
+
+- **Android Google Pixel 9 Studio Clock Lock & Camera Node Wireless Sync (`dev-enj`):** Aligned operating-system monotonic clock domains between mobile companions and the desktop studio clock server (`CLOCK_MONOTONIC` / `SystemClock.elapsedRealtimeNanos()` / `mach_continuous_time()`), added continuous background UDP `:48048` clock-sync polling on Android so the top-bar **Studio Clock Lock** badge locks reliably on Google Pixel 9 (`arm64-v8a`), and hardened mobile camera node timestamp alignment and post-take `.mp4` / `.vididx` wireless transfer.
+
 ## [0.4.2] - 2026-11-08
 
 ### Added
