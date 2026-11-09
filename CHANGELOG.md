@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.2] - 2026-11-08
+
+### Added
+
+- **Time-Aligned `wgpu` Video Filmstrip Lane, 35 mm Sprocket Tick Rails & Interactive `16:9` Frame Loupe Popover (`dev-mwc.1..2`):**
+  - **Time-Anchored Video Clip Span & Sub-GOP Frame Thumbnails (`dev-mwc.1`):** Replaced full-width keyframe-only thumbnail stretching with time-anchored video clip spans (`clip_start_sample + clip_trim_samples`), sub-GOP frame thumbnail decoding (`decode_thumbnail_strip`), a custom `wgpu` filmstrip texture shader (`video_filmstrip.wgsl`), and top/bottom 35 mm sprocket tick rails marking exact frame boundaries.
+  - **Interactive Pointer Skimming & Floating `16:9` `NV12` Frame Loupe Popover (`dev-mwc.2`):** Moving the pointer across any camera filmstrip lane renders a cyan skimmer hairline, a floating `16:9` `BT.709` high-resolution frame loupe popover (`#F<frame> · <MM:SS.mmm>`), and a vertical transient alignment guide across the audio tracks below for visual drumstick/pick attack alignment.
+- **Cave Companion Mobile UX & Studio Hardware Graphics Redesign (`dev-9cr.1..6`, `dev-o6f`):**
+  - **Anodized Studio Design System, Bundled `Iosevka Term SS14` Fonts, App Icons & `CaveLogoBadge` (`dev-9cr.1`, `dev-o6f`):** Added custom iOS (`AppIcon.appiconset`) and Android adaptive launcher icons (`mipmap-*`), a top-bar `CaveLogoBadge`, bundled `Iosevka Term SS14` (`Regular`, `Medium`, `Bold`) typography, vector hardware icons, and a unified top **Studio Status Bar** across all companion screens.
+  - **Musician-Friendly Onboarding, Segmented QR/PIN Switcher & Paired Connection Sheet (`dev-9cr.2`):** Streamlined the **Pair** tab with a segmented **`SCAN STUDIO QR`** / **`6-DIGIT PIN`** switcher, a quick-launch **`OPEN REMOTE DEMO`** link, and a tap-to-inspect paired studio connection sheet with two-step **`Unpair Device`** confirmation.
+  - **Zero-Scroll Remote Control Console, 16-Channel Segmented LED Meter Bridge & Safe `Discard Take` Confirmation Modal (`dev-9cr.3`):** Redesigned the **Remote** tab so the full transport deck, 16-channel `40`-segment LED meter bridge (`-60..0 dBFS` with peak-hold ticks and clip latches), and scrub timeline fit without vertical scrolling on compact phones, protected by a two-step **`Discard Recording?`** confirmation modal (`CANCEL` / `DISCARD TAKE`).
+  - **`16:9` Cinema HUD Camera Viewfinder, Friendly Angle Labels & FPS Selector (`dev-9cr.4`):** Redesigned the **Camera** tab around an unoccluded `16:9` letterboxed viewfinder with translucent top/bottom HUD rails, friendly camera angle pills (`ULTRA-WIDE`, `WIDE`, `TELEPHOTO`, `FRONT` instead of raw sensor IDs), `24`/`25`/`30`/`50`/`60 FPS` pills, and an expandable 16-channel mini-meter drawer.
+  - **High-Density Session Browser, Video-First Multi-Angle Take Player & Tablet Landscape 2-Pane Split Console (`dev-9cr.5..6`):** Added collapsible Session/Take cards with inline `▶ PLAY` and sync pills, a video-first multi-angle Take Player with pinned transport controls, and an adaptive 2-pane landscape split console for iPad and Android tablets (`>= 700 dp/pt`).
+
+### Changed
+
+- **Desktop DAW UI, Public Website & User Manual Studio Terminology Cleanup (`dev-6na.1..7`):** Replaced internal engineering and DSP implementation jargon across all desktop views, the public website (`site/index.html`), and all 9 chapters of the User Manual (`docs/manual/`) with clear musician-facing studio console language:
+  - Renamed `EPHEMERAL WORKING BUFFER` to **`LIVE MIX`** (`UNSAVED LIVE MIX` / `RETURN TO LIVE MIX`), replaced `monotonic rev` with a compact `#N` revision counter, stripped `'HERO '` and `'(XY)'` spec meta-labels and discretization math acronyms (`TPT SVF`, `4x OVS`, `FIR`/`IIR`) from processor views, and updated `50 FPS` video, mobile pairing, and cloud sync copy (`dev-6na.1..6`).
+  - Regenerated all 20 Retina (`2.0x`) User Manual screenshots with real multi-track BWF drum/bass/guitar/vocal studio waveforms (`dev-6na.7`).
+
+### Fixed
+
+- **Mobile Companion Pairing (`10 px/module` QR), Android `libdl.so` JNI Linker, `Camera2` `60fps` Viewfinder & Desktop Mobile Camera Routing (`dev-hei`):** Enlarged the desktop pairing QR code (`10 px/module` with a `4-module` quiet zone), removed the false-positive desktop self-pair guard so same-subnet devices pair reliably, linked `libdl.so` for Android Bionic symbols alongside a persistent debug keystore, fixed Android `Camera2` `PreviewView` surface mounting and `60 fps` negotiation, routed paired mobile camera angles into the desktop `CAM SYNC` selector, and made `FULL-WINDOW FLASH` calibration paint a full-viewport `#FFFFFF` flash.
+
 ## [0.4.1] - 2026-11-08
 
 ### Added
