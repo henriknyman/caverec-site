@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.4] - 2026-11-10
+
+### Added
+
+- **Camera Angle Removal (`- REM CAM` / `DEL`), Multi-Lane Camera Filmstrips & Auto-Pruned Companion Cameras (`dev-yuw`):** Added `- REM CAM` and per-row `DEL` camera angle removal actions in the desktop camera mapping table, automatic synchronization and pruning of revoked or unassigned mobile companion camera entries from the paired device registry, and dedicated per-camera `wgpu` filmstrip lanes on the Waveform Timeline.
+- **Enlarged Mobile Camera Viewfinder & Take Player Video Viewports (`dev-fdx`):** Enlarged the `16:9` mobile camera viewfinder and multi-angle Take Player video viewports across phone (`~220–340 dp`) and 2-pane tablet/landscape layouts, added sensor aspect-ratio scaling on Android portrait viewfinders, and moved the **Optical Flash Sync Calibration** controls into a collapsible drawer on iOS and Android.
+
+### Fixed
+
+- **End-to-End Mobile Companion 4-Pulse Rear Torch & Audio Camera Latency Calibration (`dev-eew`):** Fixed mobile companion 4-pulse camera latency calibration across Android and iOS by scheduling `80 ms` rear LED torch pulses anchored to `mapCameraFrameToSamplePos(nowNs)`, emitting the `3.0 s` 4-pulse Vernier audio click stimulus, capturing live microphone audio and camera Y-plane luminance ramps, and computing sub-frame calibrated camera latency (`device_calib_micros`).
+- **Android Companion `STOP & PUSH TO DAW` Camera Recording Finalization & LAN Sync Retry (`dev-yuw`):** Synchronized Android `Camera2` / `MediaCodec` recording finalization before triggering wireless LAN upload and added automatic LAN sync retry when pushing recorded `.mp4` / `.vididx` camera angles to the desktop workstation.
+- **Revoked Mobile Companion Re-Enrollment with Rotated Pairing Credentials (`dev-u40`):** Fixed paired device registry credential watermarks so a previously revoked mobile companion (`device_id`) can cleanly re-enroll when scanning a newly rotated desktop pairing QR code or 6-digit PIN.
+
 ## [0.4.3] - 2026-11-09
 
 ### Added
