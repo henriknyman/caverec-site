@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.5] - 2026-11-10
+
+### Changed
+
+- **DAW-Coupled Mobile Camera Recording Workflow (`dev-6v7`):** Replaced the standalone local-only Camera View record button on Android and iOS with a studio-synchronized **Camera Armed** toggle (`CAMERA ARMED FOR DAW RECORD`) plus **`RECORD DAW TAKE`** / **`STOP TAKE & SYNC`** remote transport controls so companion cameras start, finalize, and upload in lockstep with the desktop workstation's `Take` lifecycle.
+- **Direct Clock-Synchronized Mobile Rear Torch Latency Calibration (`dev-sjr`):** Simplified on-phone 4-pulse Rear LED Torch calibration to solve camera sensor/ISP latency directly against UDP-clock-disciplined torch timestamps without requiring an on-phone speaker-to-microphone audio loop, and automatically combined the companion's optical offset with the desktop workstation's studio microphone calibration in the **Camera Calibration & Sync** modal.
+
+### Fixed
+
+- **Mobile Camera Recording Finalization & Streaming `.mp4` / `.vididx` Ingest (`dev-6v7`):** Fixed mobile camera recording finalization across Android (`Camera2` / `MediaCodec`) and iOS (`AVAssetWriter`) by adding streaming file-path finalization (`finish_camera_recording_from_path`, eliminating 64 MiB JNI byte-array limits), enforcing deterministic end-of-stream (`EOS`) encoder drain ordering, hardening teardown against transient clock-lock dips, and preventing re-entrant double-stop races.
+- **Wireless LAN `:48049` Camera Angle Sync & Zero-Take Session Manifests (`dev-6v7`):** Fixed wireless LAN take video-angle transfer and desktop timeline ingestion so `0`-take sessions sync cleanly, `Camera + Player` role devices can push recorded video angles, remote takes are marked verified only after desktop manifest merge confirmation, and companion sync triggers immediately on desktop `Record` start and stop.
+
 ## [0.4.4] - 2026-11-10
 
 ### Added
