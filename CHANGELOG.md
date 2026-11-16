@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-11-16
+
+### Added
+
+- **Wireless Companion `MIXER` Console & Personal `Sends-on-Faders` Cue Mixing (`dev-2ca.3.1..4.5`):**
+  - **6th-Tab Wireless Studio `MIXER` (`PAIRING | REMOTE | MIXER | CAMERA | SESSIONS | PLAYER`):** Added a real-time wireless mixer console for Android tablets (`1920x1200` `1.5x`), iPad Pro 11", and compact phones with `12`/`18`-channel fader banks (`CH 1–12`, `CH 13–18`, `BUS / AUX`, `MAIN`), `60 Hz` vertical drag faders, `40`-segment `50 Hz` LED peak/RMS meters, and a docked `380 dp` **Focus Strip Drawer** (hardware preamp gain, `+48V` phantom, polarity `Ø`, 4-band Parametric EQ + HPF touch curve, VCA Compressor, and 8 Aux sends).
+  - **`Sends-on-Faders` Personal Headphone Cue Mode (`MY MIX: AUX 1..8`):** One-tap amber **`SENDS ON FADERS`** mode flips every channel strip's main fader to control that channel's send level into the musician's personal Aux cue mix (`Aux 1–8`).
+  - **Low-Jitter UDP `:48048` Mixer Protocol (`CVMX` / `CVMT` / `CVMS`):** Added zero-allocation `<= 1400`-byte UDP datagram codecs for `60 Hz` outbound parameter coalescing (`CVMX`), `50 Hz` 40-strip meter broadcast (`CVMT`), and `10 Hz` / on-change chunked mixer state synchronization (`CVMS`) with monotonic `command_seq` echo suppression.
+- **Native `OSC Stagebox` Hardware Preamp & `+48V` Phantom Control (`crates/osc_stagebox`, `dev-2ca.1.1..2.4`):**
+  - **X-Air OSC (`XR18`/`MR18`/`X18`/`XR16`/`XR12`, UDP `:10024`) & X32 OSC (`000..127`, UDP `:10023`) Stagebox Engine:** Added a zero-allocation stack OSC 1.0 codec, `/xremote` subscription renewal, multi-NIC + `169.254.x.x` link-local direct-Ethernet stagebox discovery, and bidirectional hardware head-amp gain (`-12.0..+60.0 dB` in `0.5 dB` steps) and `+48V` phantom power synchronization.
+  - **Desktop Channel Strip Zone-2 Copper `PRE` Gain Slider & Protected `+48V` Hold Interlock:** Added the copper hardware **`PRE`** gain slider and **`+48V`** phantom badge to every desktop channel strip and the Top-Deck **`STAGEBOX`** status pill / configuration modal, protected by a **`600 ms` hold-to-toggle `+48V` safety interlock** and a **`3.0 dB / 25 ms` ramped session gain push** to prevent abrupt preamp jumps.
+
+### Changed
+
+- **Non-Blocking Desktop & Mobile UI Architecture & Zero-ANR I/O Offloading (`dev-y2s.1..10`):** Eliminated synchronous disk, network, and process I/O from `60 Hz` desktop and mobile UI threads via background job runners, lock-free `ArcSwap` / `SeqLock` snapshots, cached Session Reel metadata, non-blocking OS file dialogs, background Google Drive OAuth/sync workers, and asynchronous offline bounce, stem export, and `.mp4` split-screen video mixdown pipelines.
+- **Workspace-Wide Deep-Module Architecture Restructuring (`dev-51h.1.1..6.6`):**
+  - **Extracted `crates/offline_bounce` & `crates/nam_trainer` (`dev-51h.5.1..6`):** Extracted headless offline audio rendering and Neural Amp Modeler (`WaveNet` + multi-resolution STFT loss) training into dedicated crates, unified all 8 RIFF/BWF parsers in `disk_io`, and unified `session_store::export_ir` across all 6 DAW interchange exporters.
+  - **Canonical `dsp_core::ParamSpec` Registry, Shared `TptSvfState` / `TruePeakDetector` Kernels & `PdcDagWorkspace` (`dev-51h.2.1..5`, `dev-51h.4.1..5`):** Unified parameter laws across all 15 built-in processors, upgraded `session_store` undo history to v3 (`SetSlotParam`), deduplicated 13 SVF and 4 true-peak DSP kernels, and extracted `StripWorkBus` and `PdcDagWorkspace` in `engine_graph`.
+  - **Unified `MobileUiAction` / `MobileUiSnapshot` FFI Envelope & Modular Sub-Controllers (`dev-51h.3.1..4`, `dev-51h.6.1..6`):** Consolidated the mobile C-ABI / UniFFI surface into a single action/snapshot envelope with thin SwiftUI and Jetpack Compose shells, decomposed `video_calibration_modal.rs` and `CaveRecApp` into focused sub-controllers (`0` files `> 2,500` lines), and eliminated all `#[allow(clippy::too_many_arguments)]` suppressions across the workspace.
+
 ## [0.4.5] - 2026-11-10
 
 ### Changed
