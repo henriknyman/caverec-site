@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.1] - 2026-11-18
+
+### Added
+
+- **Android Docked `380 dp` Focus Strip Inspector & Dual-Posture Phone `MIXER` Layouts (`dev-2ca.4.3`, `dev-2ca.4.5`):**
+  - Extracted dedicated `MixerFocusInspector.kt` and `MixerPhoneLayouts.kt` modules providing the tablet `380 dp` Docked Focus Strip (hardware `HW GAIN` `-12..+60 dB` with `-18..-12 dBFS` sweet-spot halo, `600 ms` hold-to-toggle `+48V` safety interlock, ramped session gain push confirmation sheet, digital `TRIM`/`Ø`/`Φ`, touch-interactive 4-band Parametric EQ + HPF curve with pinch `Q`, VCA/FET/Opto Compressor curve & GR history, 8 Aux sends, bus routing, and snapshot recall/save) plus phone portrait 4-channel bank / swipeable **Line-Check Focus Mode** (`< PREV | CH xx | NEXT >`) and landscape 8-channel pocket bridge.
+- **Full iOS SwiftUI `MixerConsoleView` Parity (`dev-2ca.4.4`, `dev-2ca.4.5`):**
+  - Added full iPad Pro 11" (`12-Ch` Precision / `18-Ch` Overview bay, `Sends-on-Faders`, `360 pt` Docked Focus Strip with touch-interactive EQ/HPF, Compressor, Preamp/`+48V` `600 ms` hold, and Snapshots) and iPhone 16 Pro / SE Portrait & Landscape layouts in `MixerConsoleViews.swift` wired to `60 fps` zero-allocation `caverec_mobile_engine_read_mixer_meters` polling.
+
+### Changed
+
+- **Desktop Async Camera Capture/Encode Worker, Filmstrip Thumbnail Loader, Cold-Boot Hydration & Out-of-Process Plugin Scanner (`dev-y2s.6`, `dev-y2s.10`):**
+  - Moved live desktop camera H.264 encoding (`VTCompressionSession` / V4L2 / MediaFoundation), camera hardware stream open/close with latched busy-camera backoff, timeline filmstrip GOP thumbnail decoding (`VideoThumbnailBackgroundLoader`), cold-startup hydration, and out-of-process CLAP/AU plugin bundle scanning off the `60 Hz` UI thread, enforced by automated static UI-thread non-blocking lint checks.
+
+### Fixed
+
+- **Dynamic Window-Resize Timeline Viewport Bounds & Active-Surface `1:1 ZOOM` (`dev-5ye`):**
+  - Subscribed `CaveRecApp` to `iced::window::resize_events()` (`CaveRecMessage::WindowResized`) to synchronize live canvas widths across `multitrack_timeline`, `channel_inspector.timeline_editor`, and `console.timeline_editor` while preserving `visible_samples`, and routed `1:1 ZOOM`, `ZoomIn`, `ZoomOut`, and `StepCursor` through the active workspace tab bounds so `smp/px` readouts match the live rendered canvas (`256.0 smp/px` at `1:1 ZOOM`).
+
 ## [0.5.0] - 2026-11-16
 
 ### Added
