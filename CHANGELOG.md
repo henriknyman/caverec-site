@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.2] - 2026-11-20
+
+### Fixed
+
+- **Live Wireless `MIXER` Auto-Subscription, Hardware Gain Capture & Honest Pre-Sync State (`dev-3fe`):**
+  - Fixed automatic `CVMX` `MixerSubscribe` lease activation (`5.0 s` renewal, `1.0 s` pre-sync retry, superseding subscribe eviction, desktop restart recovery, and clean tab-exit unsubscribe), unified monotonic gesture-override timing, wired `CAPTURE HW` (`0x0604`) end-to-end into desktop `session.json`, added `0..31` + Subgroup/Aux channel selection and per-routing scribble-strip colors, and removed pre-seeded placeholder strips and meters from production builds in favor of an explicit `"SYNCING CONSOLE OVER UDP :48048..."` pre-sync state.
+- **Android Tablet Taskbar Full-Screen Dual Fix & Multi-View Post-Inset Layout Adaptation (`dev-3r1`):**
+  - Added sticky immersive fullscreen (`BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE` with `[FULL]` toggle), `WindowInsets` (`navigationBars ∪ tappableElement ∪ captionBar`) safe bottom padding on `ConsoleBottomNavigationBar`, `adjustResize` window handling, and post-inset viewport scaling across all 6 Cave Companion views (`PAIR`, `REMOTE`, `MIXER`, `CAMERA`, `TAKES`, `PLAYER`) so bottom navigation tabs and transport controls stay clear of persistent tablet taskbars and system navigation bars.
+
 ## [0.5.1] - 2026-11-18
 
 ### Added
