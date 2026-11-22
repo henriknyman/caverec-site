@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-11-22
+
+### Added
+
+- **5th Virtual Analog Drum Machine Voice Archetype: `ANALOG BASS` Monophonic Synthesizer (`dev-6q3`):**
+  - **Hybrid Virtual Analog Monophonic Bass Engine:** Added `ANALOG BASS` (`BASS` / `BAS`, Analog Violet) as the fifth voice synthesis archetype in the 16-voice Drum Machine kit pool, combining a continuously variable sawtooth-to-pulse primary oscillator, phase-locked `-1 oct` flip-flop sub-oscillator with dual-oscillator beat warmth, a resonant 4-pole transistor ladder and passband-compensated OTA filter (`Topology` morph with `24 Hz` sub-coupling weight), exponential RC filter and amplifier envelopes (`Retrig`, `Legato`, and `Gate Sustain`), analog accent punch, pre/post-filter harmonic drive and feedback, portamento/slide (`Slide Only` or `Always`), and choke-group support across 8 standardized sweet-spot macros (`Waveform`, `Sub / Beat`, `Cutoff`, `Resonance`, `Env Mod`, `Decay`, `Drive / Fdbk`, `Topology`).
+  - **Live Chromatic MIDI Keyboard Play & Triggered Storage-CRT Scope:** Play focused `ANALOG BASS` voices chromatically across an 8-note last-note-priority key stack from an external MIDI keyboard (`MIDI: CHRM` suppresses drum-pad slot triggers on overlapping keys, while `MIDI: PAD` restores single-note pad triggering), inspect waveform, filter resonance, and asymmetric drive live on the Triggered Storage-CRT oscilloscope with dual `Cutoff x Resonance` and `Env Mod x Drive / Fdbk` XY reticles, and route any bass lane out to its own Console channel strip for EQ, compression, and sidechain processing.
+- **Melodic `[2D | NOTE | VEL]` Groove Sequencer & Bass Voice Setup Strip (`dev-6q3`):**
+  - **Desktop Melodic Step Grid, Tie Bridges & Step-Drag Modes:** Extended `ANALOG BASS` sequencer rows with centered chromatic 12-TET note readouts (`C2`, `Eb2`, `F#1`), horizontal Tie Bridge bars across swung and micro-nudged steps, step-level `TIE` and `NOTE` inspector controls (vertical drag plus right-click note-name or MIDI-number entry), and a **`[2D | NOTE | VEL]`** step-drag mode selector (`2D` for axis-locked vertical chromatic pitch drag with `Shift` octave jumps, horizontal sustained Tie-chain painting, and `Alt/Cmd` velocity, `NOTE` for pure vertical pitch drag with Tie painting locked off, and `VEL` for pure vertical velocity sculpting).
+  - **Contextual Bass Voice Setup Strip:** Added a dedicated `ROOT`, `FINE` (`-100..+100 ct`), `GLIDE` (`0..500 ms`), `G-MODE` (`G: SLIDE` / `G: ALWAYS`), `ENV` (`RETRG` / `LEGTO` / `GATE`), and `MIDI` (`CHRM` / `PAD`) setup strip inside both the `SEQUENCER` Quick Synth bay and `SYNTH & SCOPE` view whenever an `ANALOG BASS` slot is selected, enabling direct live bassline sequencing alongside polymetric drum patterns.
+- **Cave Companion Mobile Melodic UI, `ACID & FUNK` Factory Kit & Bass Starter Grooves (`dev-6q3`):**
+  - **Zero-Scroll Android & iOS Melodic Bass Controls:** Extended the wireless Cave Companion `DRUMS` tab over studio Wi-Fi with chromatic note readouts, horizontal Tie Bridge bars, touch `[2D | NOTE | VEL]` step drag, chromatic note/octave touch picker and numeric keypad entry in the step articulation bar, and in-dock archetype switching plus Bass Setup controls across all phone and tablet layouts without vertical scrolling.
+  - **13th Factory Kit (`ACID & FUNK`) & 21 Starter Grooves (`ACID SQUELCH` & `FUNK POCKET`):** Completed the symmetric `[METRONOME] + [POCKET (6) | CLUB (6)]` factory suite with the 6th `CLUB` kit **`ACID & FUNK`** featuring dual pre-voiced `ANALOG BASS` lanes (`LADDER FUNK` and `ACID SQUELCH`), upgraded `STUDIO ANALOG` and `SOUL POCKET` with ready-to-play `ANALOG BASS` lanes, and added the **`ACID SQUELCH`** (`CLUB`) and **`FUNK POCKET`** (`POCKET`) melodic bassline starter grooves showcasing chromatic pitch, ties, slides, and accents.
+
 ## [0.6.0] - 2026-11-22
 
 ### Added
