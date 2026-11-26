@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.1] - 2026-11-26
+
+### Changed
+
+- **Non-Blocking Desktop & Cave Companion Responsiveness:**
+  - Moved heavy audio restoration, `Take` splitting, Studio Sampler file loading and waveform decoding, plugin scanning, and Google Drive sync operations onto background workers off the main UI thread so faders, meters, and transport remain responsive at `60 Hz` across Desktop and Cave Companion (iOS, iPadOS, and Android).
+  - Hardened live `caverec-cli` and Studio Sampler remote operations to execute asynchronously without pausing console metering or playback controls.
+- **Hard Real-Time Audio & Hardware Controller Reliability:**
+  - Replaced blocking synchronization along the hardware pad controller transport with non-blocking real-time message passing and hardened underrun telemetry reporting.
+  - Reclaimed retired audio buffers and stopped voices off the real-time audio path to eliminate dropout hazards during long multitrack tracking and overdub sessions.
+
+### Fixed
+
+- **Offline `SAMPLE STUDIO SESSION` Stagebox Hydration in Cave Companion:**
+  - Hydrated the full wireless `STAGEBOX` mixer (`MY MONITOR` and `FULL MIXER`) inside Cave Companion's built-in unpaired `SAMPLE STUDIO SESSION` so musicians and engineers can explore all stagebox faders, monitor sends, EQ, and dynamics controls before pairing with a studio desk.
+- **Transactional `Take` Repair, Session Switching & Cloud Sync Resilience:**
+  - Strengthened atomic save and rollback safeguards across non-destructive `Take` repair, `Take` splitting, session switching, and Google Drive write-lease recovery so interrupted operations leave active sessions and `Take` manifests intact.
+
 ## [0.7.0] - 2026-11-26
 
 ### Added
