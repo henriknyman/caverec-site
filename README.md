@@ -9,11 +9,11 @@
 ║  ╚██████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║███████╗╚██████╗   32-BIT FLOAT ║
 ║   ╚═════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝ ╚═════╝                ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
-║  CH 01-18  [████████████████████░░░░░] -3.2 dBFS  │  PHASE: Δ 0.02 ms Ø   ║
+║  CH 01-32  [████████████████████░░░░░] -3.2 dBFS  │  PHASE: Δ 0.02 ms Ø   ║
 ╚═══════════════════════════════════════════════════════════════════════════╝
 ```
 
-A multitrack recording, mixing, and sample-locked multi-camera video console built for live rehearsals and tracking rooms. Every song or jam lands in its own `00:00:00.000` **Take** with isolated 32-bit float stems, a live stereo **Print**, crystal-locked `50 fps` multi-camera video with split-screen `.mp4` mixdowns, wireless **Android & iOS Cave Companion** camera nodes and multi-angle take players, sub-sample multi-mic phase alignment (`ALIGN Φ`), and optional two-way **Google Drive** synchronization.
+A 32-track recording, mixing, 6-engine Groovebox (13-kit virtual analog drums, monophonic Analog Bass, and Studio Sampler), full X-Air/X32 Stagebox Mixer, and sample-locked multi-camera video console built for live rehearsals and tracking rooms. Every song or jam lands in its own `00:00:00.000` **Take** with isolated 32-bit float stems, a live stereo **Print**, stereo 30-minute rolling RAM capture, sample-locked MIDI Clock / floor-looper sync and pre-tape CLAP / Audio Unit virtual instruments, crystal-locked `50 fps` multi-camera video with split-screen `.mp4` mixdowns, dual-screen hardware pad and console controller integration, scriptable `caverec-cli` and `caverec-headless` studio automation, unified plain-language console controls with `[?]` Studio Coach, wireless **Android & iOS Cave Companion** with automatic Bonjour Wi-Fi discovery, bundled Sample Studio Session, `MY MONITOR` stagebox mixes, 32-channel mixer, Groovebox & Sampler remote, synchronized camera capture, and multi-angle take playback, sub-sample multi-mic phase alignment (`ALIGN Φ`), and optional two-way **Google Drive** synchronization.
 
 ## Links
 
@@ -25,7 +25,7 @@ A multitrack recording, mixing, and sample-locked multi-camera video console bui
 
 ## Feedback, Bug Reports & Voluntary Support
 
-Cave Recorder is **100% free to download and use in full** with no trial timers, no locked features, no telemetry, and no nag screens.
+Cave Recorder is **free to download and use with all features included**, with no trial timers, no locked features, no telemetry, and no nag screens.
 
 - **Feedback, Bug Reports & Feature Requests (No Donation Expected):**
   Notes from your rehearsal room, bug reports, and feature ideas are always welcome, completely unattached to any donation:

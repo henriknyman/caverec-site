@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cave Recorder (caverec) &middot; Multitrack Studio &amp; Rehearsal Console</title>
-  <meta name="description" content="Cave Recorder (caverec) is a multitrack recorder and mixing console built for band rehearsals and live studio sessions. Independent zero-based Takes, 30-minute rolling RAM capture, Virtual Analog Drum Machine and Analog Bass Synth, sample-locked MIDI sync and pre-tape virtual instruments, automatic multi-mic phase alignment, and optional Google Drive sync." />
+  <meta name="description" content="Cave Recorder (caverec) is a multitrack recorder and mixing console built for band rehearsals and live studio sessions. Independent zero-based Takes, 30-minute rolling RAM capture, full X-Air/X32 Stagebox Mixer, Groovebox with Drum Machine, Analog Bass, and Studio Sampler, tactile hardware controller integration, caverec-cli automation, Studio Coach, automatic multi-mic phase alignment, and optional Google Drive sync." />
   <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon-64.png" />
   <link rel="apple-touch-icon" sizes="128x128" href="assets/icons/caverec_128.png" />
   <link rel="stylesheet" href="assets/site.css" />
@@ -21,7 +21,7 @@
     </div>
     <nav class="deck-actions" aria-label="Primary Navigation">
       <a class="deck-btn deck-btn-primary" href="#download">Download</a>
-      <a class="deck-btn" href="#manifesto">Manifesto</a>
+      <a class="deck-btn" href="#manifesto">Philosophy</a>
       <a class="deck-btn" href="#features">Studio Tour</a>
       <a class="deck-btn" href="#console-suite">Console Suite</a>
       <a class="deck-btn" href="manual/">User Manual</a>
@@ -37,14 +37,14 @@
         <div class="silk-cluster">
           <span class="rec-tally"><span class="rec-tally-dot" aria-hidden="true"></span>[● REC]</span>
           <span class="ram-tally">30-MIN RAM RING</span>
-          <span class="silk-spec">18-CH ADAT / USB</span>
+          <span class="silk-spec">32-CH ADAT / USB</span>
           <span class="silk-sep" aria-hidden="true">│</span>
           <span class="silk-spec">SUB-SAMPLE ALIGN Φ</span>
           <span class="silk-sep" aria-hidden="true">│</span>
           <span class="silk-spec">ZERO TELEMETRY</span>
         </div>
         <div class="silk-cluster">
-          <span>CH 01–18</span>
+          <span>CH 01–32</span>
           <span class="led-meter-strip" aria-hidden="true" title="Master Bus Peak Meter -3.2 dBFS">
             <span class="led-seg g"></span>
             <span class="led-seg g"></span>
@@ -71,7 +71,7 @@
           <div class="hero-visual-well">
             <img
               src="assets/icons/caverec_512.png"
-              alt="Cave Recorder (caverec) Dark Heritage Console Application Icon"
+              alt="Cave Recorder (caverec) Multitrack Studio and Rehearsal Console Application Icon"
               class="hero-app-icon"
               width="82"
               height="82"
@@ -84,30 +84,30 @@
 ║  ╚██████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║███████╗╚██████╗   32-BIT FLOAT ║
 ║   ╚═════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝ ╚═════╝                ║
 ╠═══════════════════════════════════════════════════════════════════════════╣
-║  CH 01-18  [████████████████████░░░░░] -3.2 dBFS  │  PHASE: Δ 0.02 ms Ø   ║
+║  CH 01-32  [████████████████████░░░░░] -3.2 dBFS  │  PHASE: Δ 0.02 ms Ø   ║
 ╚═══════════════════════════════════════════════════════════════════════════╝</pre>
           </div>
 
           <div class="hero-copy">
             <div class="hero-eyebrow">
-              <span>Dark Heritage Studio Console</span>
+              <span>Multitrack Studio &amp; Rehearsal Console</span>
               <span>&middot;</span>
-              <span>macOS &bull; Windows &bull; Linux &bull; Android &amp; iOS Companion</span>
+              <span>macOS &bull; Windows &bull; Linux &bull; iOS &amp; Android Companion</span>
             </div>
             <h1 id="hero-heading">Cave Recorder (<code>caverec</code>)</h1>
             <p class="hero-lead">
-              A multitrack recorder, curated analog-inspired mixing console, virtual analog drum machine &amp; monophonic bass synth, sample-locked multi-camera video studio, and automatic phase-alignment workstation built for real bands playing together in one room. Every song or jam gets its own independent <code>00:00:00.000</code> <strong>Take</strong>, simultaneous 32-bit float stems + live stereo <strong>Print</strong>, sample-locked <strong>MIDI Clock / Floor-Looper Sync</strong> &amp; pre-tape <strong>CLAP / Audio Unit Virtual Instruments</strong>, sample-locked <code>50 FPS</code> multi-camera video with split-screen <code>.mp4</code> mixdowns, wireless <strong>Android &amp; iOS Cave Companion</strong> mixer, melodic drum &amp; bass remote, camera nodes, and multi-angle take players, native <strong>Amp Rig</strong> tube &amp; <code>.nam</code> neural amplifier capture, bleed- &amp; harmonicity-aware dynamics, non-destructive live-take mistake surgery, and unified <strong>Google Drive</strong> session, video &amp; mixdown sync.
+              A multitrack recorder and mixing console for bands, self-recording musicians, and studio engineers playing together in one room. One evening <strong>Session</strong> holds your mic patching and console mix while every song or jam saves as its own <code>00:00:00.000</code> <strong>Take</strong> with isolated 32-bit float WAV stems, a live stereo <strong>Print</strong>, and synchronized <code>50 fps</code> multi-camera video. Includes a full <strong>Stagebox Mixer</strong> for X-Air and X32 hardware, multi-mic phase alignment, a built-in channel-strip and amp suite with <code>.nam</code> support, a 6-engine <strong>Groovebox</strong> (drums, monophonic bass, and <strong>Studio Sampler</strong>), dual-screen hardware pad controller support, scriptable <code>caverec-cli</code> automation, contextual <strong>Studio Coach</strong> guidance, wireless <strong>Cave Companion</strong> room control on iOS and Android, and open DAW and video exports.
             </p>
             <p class="hero-cave-note">
-              <strong>Rehearsal-Cave Insurance:</strong> The drummer inevitably plays the best groove of the year five minutes before anyone remembers to press Record. Cave Recorder keeps a continuous <strong>30-minute rolling RAM ring</strong> ready to save the jam after the last cymbal fades.
+              <strong>30-Minute Rolling Memory Buffer:</strong> While stopped, Cave Recorder continuously buffers armed inputs in RAM, ready to save the jam that starts five minutes before anyone remembers to press Record.
             </p>
           </div>
         </div>
       </section>
 
       <!-- Obvious Above-the-Fold Download Deck (#download) -->
-      <!-- RELEASE_VERSION_MARKER: v0.6.1 -->
-      <section class="download-deck" id="download" data-release-version="v0.6.1" aria-labelledby="download-heading">
+      <!-- RELEASE_VERSION_MARKER: v0.7.0 -->
+      <section class="download-deck" id="download" data-release-version="v0.7.0" aria-labelledby="download-heading">
         <!-- Static Latest Release Banner -->
         <div class="release-update-banner" id="release-update-banner" role="region" aria-label="Latest Release Update">
           <div class="release-update-main">
@@ -115,9 +115,9 @@
               <span class="detected-dot" aria-hidden="true"></span>
               <span>LATEST RELEASE</span>
             </span>
-            <strong class="release-update-version" id="release-banner-version">v0.6.1</strong>
+            <strong class="release-update-version" id="release-banner-version">v0.7.0</strong>
             <span class="release-update-summary">
-              New in 0.6.1: <strong>5th Virtual Analog Drum Machine Voice Archetype: <code>ANALOG BASS</code> Monophonic Synthesizer</strong> (resonant 4-pole transistor ladder &amp; passband-compensated OTA filter, <code>-1 oct</code> flip-flop sub, portamento/slide, accent punch, harmonic drive, chromatic MIDI keyboard play &amp; Triggered Storage-CRT oscilloscope), <strong>Melodic <code>[2D | NOTE | VEL]</code> Groove Sequencer</strong> (desktop chromatic step grid, horizontal Tie Bridges &amp; contextual Bass Setup strip alongside polymetric drums), plus <strong>Cave Companion Mobile Melodic UI &amp; <code>ACID &amp; FUNK</code> Factory Suite</strong> (zero-scroll Android &amp; iOS bass controls, 13 factory kits in <code>[METRONOME] + [POCKET (6) | CLUB (6)]</code>, and 21 starter grooves including <code>ACID SQUELCH</code> &amp; <code>FUNK POCKET</code>).
+              New in 0.7.0: Full <strong>Stagebox Mixer</strong> for X-Air and X32 hardware (55 FX, 31-band GEQ with live RTA, 4-domain routing, and Cave Companion <strong>My Monitor</strong>), built-in <strong>Studio Sampler</strong> with automatic transient slicing and console resampling, and dual-screen hardware pad controller integration. Also adds <strong>caverec-cli</strong> and headless studio automation, unified plain-language controls with <strong>Studio Coach</strong> across all four surfaces, automatic Bonjour Wi-Fi discovery, and a bundled Sample Studio Session in Cave Companion.
             </span>
           </div>
           <div class="release-update-actions">
@@ -125,7 +125,7 @@
             <a
               class="release-update-link"
               id="release-notes-link"
-              href="https://github.com/henriknyman/caverec-site/releases/tag/v0.6.1"
+              href="https://github.com/henriknyman/caverec-site/releases/tag/v0.7.0"
             >
               Release Notes &rarr;
             </a>
@@ -135,10 +135,10 @@
         <div class="download-deck-header">
           <div class="download-deck-title-group">
             <h2 class="download-deck-title" id="download-heading">Download Cave Recorder</h2>
-            <span class="version-badge" id="release-version-badge" data-version="v0.6.1">v0.6.1</span>
+            <span class="version-badge" id="release-version-badge" data-version="v0.7.0">v0.7.0</span>
           </div>
           <div class="download-deck-meta">
-            100% Free &amp; Uncrippled &bull; Portable Archive &bull; <a href="privacy/">Privacy Policy</a>
+            Free, All Features Included &bull; Offline-Ready &bull; <a href="privacy/">Privacy Policy</a>
           </div>
         </div>
 
@@ -155,15 +155,15 @@
                 <span class="detected-pill"><span class="detected-dot" aria-hidden="true"></span>Detected for your system</span>
               </div>
               <p class="platform-subtitle">
-                macOS 13+ (M1/M2/M3/M4) &bull; CoreAudio &bull; Includes Cave Recorder.app, CLI &amp; PDF Manual
+                macOS 13+ (M1/M2/M3/M4) &bull; CoreAudio &bull; Includes Cave Recorder.app, caverec-cli, Studio Skills &amp; PDF Manual
               </p>
             </div>
             <a
               class="download-cta-btn"
               id="download-macos"
               data-download-os="macos"
-              data-release-asset="caverec-v0.6.1-macos-arm64.zip"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.6.1/caverec-v0.6.1-macos-arm64.zip"
+              data-release-asset="caverec-v0.7.0-macos-arm64.zip"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.7.0/caverec-v0.7.0-macos-arm64.zip"
             >
               <span>&darr; Download macOS (arm64)</span>
               <span class="download-cta-ext">.zip</span>
@@ -181,15 +181,15 @@
                 <span class="detected-pill"><span class="detected-dot" aria-hidden="true"></span>Detected for your system</span>
               </div>
               <p class="platform-subtitle">
-                Windows 10/11 (64-bit) &bull; WASAPI Exclusive/Shared &bull; Includes caverec.exe &amp; PDF Manual
+                Windows 10/11 (64-bit) &bull; WASAPI Exclusive/Shared &bull; Includes caverec.exe, caverec-cli &amp; PDF Manual
               </p>
             </div>
             <a
               class="download-cta-btn"
               id="download-windows"
               data-download-os="windows"
-              data-release-asset="caverec-v0.6.1-windows-x86_64.zip"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.6.1/caverec-v0.6.1-windows-x86_64.zip"
+              data-release-asset="caverec-v0.7.0-windows-x86_64.zip"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.7.0/caverec-v0.7.0-windows-x86_64.zip"
             >
               <span>&darr; Download Windows (x86_64)</span>
               <span class="download-cta-ext">.zip</span>
@@ -207,15 +207,15 @@
                 <span class="detected-pill"><span class="detected-dot" aria-hidden="true"></span>Detected for your system</span>
               </div>
               <p class="platform-subtitle">
-                Linux x86_64 (glibc 2.27+) &bull; ALSA Direct Hardware &bull; Includes caverec &amp; PDF Manual
+                Linux x86_64 (glibc 2.27+) &bull; ALSA Direct Hardware &bull; Includes caverec, caverec-cli &amp; PDF Manual
               </p>
             </div>
             <a
               class="download-cta-btn"
               id="download-linux"
               data-download-os="linux"
-              data-release-asset="caverec-v0.6.1-linux-x86_64.zip"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.6.1/caverec-v0.6.1-linux-x86_64.zip"
+              data-release-asset="caverec-v0.7.0-linux-x86_64.zip"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.7.0/caverec-v0.7.0-linux-x86_64.zip"
             >
               <span>&darr; Download Linux (x86_64)</span>
               <span class="download-cta-ext">.zip</span>
@@ -233,15 +233,15 @@
                 <span class="detected-pill"><span class="detected-dot" aria-hidden="true"></span>Detected for your device</span>
               </div>
               <p class="platform-subtitle">
-                Android 10+ (API 29+) &bull; 1-Tap LAN Pairing, MIXER + Transport, Melodic DRUMS Remote &amp; 50 FPS Camera Node
+                Android 10+ (API 29+) &bull; Bonjour Wi-Fi Pairing, 32-Ch Mixer, My Monitor Stagebox, Groovebox &amp; Sampler &amp; 50 fps Camera
               </p>
             </div>
             <a
               class="download-cta-btn"
               id="download-android"
               data-download-os="android"
-              data-release-asset="caverec-v0.6.1-android-arm64.apk"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.6.1/caverec-v0.6.1-android-arm64.apk"
+              data-release-asset="caverec-v0.7.0-android-arm64.apk"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.7.0/caverec-v0.7.0-android-arm64.apk"
             >
               <span>&darr; Download Android Companion</span>
               <span class="download-cta-ext">.apk</span>
@@ -270,8 +270,8 @@
               class="quick-bar-link"
               id="quick-download-ios-ipa"
               data-download-os="ios"
-              data-release-asset="caverec-v0.6.1-ios-arm64.ipa"
-              href="https://github.com/henriknyman/caverec-site/releases/download/v0.6.1/caverec-v0.6.1-ios-arm64.ipa"
+              data-release-asset="caverec-v0.7.0-ios-arm64.ipa"
+              href="https://github.com/henriknyman/caverec-site/releases/download/v0.7.0/caverec-v0.7.0-ios-arm64.ipa"
             >
               <span>&darr; iOS Companion (<code>.ipa</code>)</span>
             </a>
@@ -312,11 +312,11 @@
             </li>
             <li class="os-tip-item" data-os-tip="android">
               <span class="os-tip-label">Android Companion First Launch</span>
-              Open the downloaded <code>.apk</code> file on your Android device (allowing installation from your browser if prompted), then open the Top-Deck <strong>COMPANION</strong> workspace in Cave Recorder Desktop for 1-Tap LAN Approval (6-digit Match Code) or QR code pairing.
+              Open the downloaded <code>.apk</code> file on your Android device (allowing installation from your browser if prompted). Explore immediately with the built-in <strong>Sample Studio Session</strong>, or open the <strong>Remote</strong> workspace in Cave Recorder on desktop to discover and pair automatically over local Wi-Fi using a 6-digit match code or QR scan.
             </li>
             <li class="os-tip-item" data-os-tip="ios">
               <span class="os-tip-label">iOS Companion First Launch</span>
-              Install the <code>.ipa</code> bundle on your iPhone or iPad, launch <strong>Cave Companion</strong>, and connect via 1-Tap LAN Approval or QR code in the desktop <strong>COMPANION</strong> workspace to link wireless mixing, drum sequencing, <code>1080p50</code> camera capture, remote transport, and multi-angle playback.
+              Install the <code>.ipa</code> bundle on your iPhone or iPad, launch <strong>Cave Companion</strong>, and explore immediately with the built-in <strong>Sample Studio Session</strong> or connect automatically over local Bonjour Wi-Fi using a 6-digit match code or QR scan in the desktop <strong>Remote</strong> workspace for wireless mixing, Stagebox <strong>My Monitor</strong>, Groovebox and Sampler control, <code>1080p50</code> camera recording, transport, and multi-angle playback.
             </li>
           </ul>
           <div class="thank-you-links">
@@ -328,27 +328,27 @@
       </section>
     </div>
 
-    <!-- Why Cave Recorder?: The Human Musicianship Manifesto (#manifesto) -->
+    <!-- Studio Philosophy (#manifesto) -->
     <section class="studio-section" id="manifesto" aria-labelledby="manifesto-heading">
       <div class="section-header-bar">
         <div>
-          <span class="section-eyebrow">Why Cave Recorder? &middot; The Human Musicianship Manifesto</span>
-          <h2 class="section-title" id="manifesto-heading">Capturing Real Human Moments in the Age of AI &amp; Grid-Locked Pop</h2>
+          <span class="section-eyebrow">Studio Philosophy</span>
+          <h2 class="section-title" id="manifesto-heading">Built for Musicians Playing in the Same Room</h2>
         </div>
         <p class="section-subtitle">
-          Technology as an invisible studio engineer &bull; Zero beat-grid or pitch-correction bloat.
+          An extra pair of hands at the desk &bull; No beat grids, pitch correction, or AI generation.
         </p>
       </div>
 
       <div class="manifesto-lead-box">
         <p>
-          Modern music production has drifted toward sterile isolation: musicians recorded one at a time to a rigid click track, snapped to a mathematical bar/beat grid, and scrubbed of every pitch and timing micro-variation. That pipeline serves synthetic programmed pop, but it destroys the soul of music that lives in <strong>shared eye contact, collective improvisation, natural tempo push-and-pull, and loud amplifiers breathing in the same room</strong>.
+          Most studio software assumes one project file equals one pre-planned song built on a beat grid, recorded one overdub at a time with someone sitting at the computer. Recording a band live in a rehearsal room or project studio looks very different: microphones bleed into one another, tempo breathes with the room, loud amplifiers interact, and the person engineering the session is usually holding a guitar or sitting behind the drums.
         </p>
         <p>
-          Historically, capturing a full band live in one room with the punch, separation, and warmth of classic analog records required an isolated control room, a dedicated recording engineer, and two days spent moving microphone stands by millimeters to fight phase cancellation and amplifier buzz. <strong>Cave Recorder democratizes that analog-era studio quality for self-recording bands in rehearsal caves, basements, and project studios</strong> who want to plug in, play together, and capture lightning in a bottle without technical friction.
+          Cave Recorder handles the repetitive desk work quietly in the background (rolling 30-minute memory capture, input trim calibration, multi-microphone polarity and sub-sample phase alignment, bleed-safe dynamics, and instant rough-mix <strong>Prints</strong>) so you can spend the evening on mic placement and playing rather than file management.
         </p>
         <div class="manifesto-genre-bar" aria-label="Musical Genres Built for Live-Room Capture">
-          <span class="manifesto-genre-label">Built For Live-Room Energy:</span>
+          <span class="manifesto-genre-label">At Home With:</span>
           <span class="genre-pill">Stoner &amp; Doom</span>
           <span class="genre-pill">Psychedelic &amp; Space Rock</span>
           <span class="genre-pill">Krautrock</span>
@@ -362,10 +362,10 @@
       <div class="manifesto-grid-3col">
         <article class="manifesto-pillar">
           <div>
-            <span class="manifesto-pillar-tag">Pillar I &middot; Human Time</span>
-            <h3>1. Zero Beat Grids, Zero Pitch Correction</h3>
+            <span class="manifesto-pillar-tag">01 &middot; Human Time</span>
+            <h3>1. Minutes &amp; Seconds, Not Beat Grids</h3>
             <p>
-              Cave Recorder intentionally omits timeline piano rolls, MIDI clip grids, elastic tempo-warping, and robotic vocal tuning. Time is measured in real physical seconds, milliseconds, and samples (<code>00:00:00.000</code>) inside independent <strong>Takes</strong> so your rhythm section's natural tempo fluctuations and live groove breathe unquantized.
+              Cave Recorder omits timeline piano rolls, MIDI clip grids, tempo-warping, and automatic pitch correction. Time runs in physical seconds, milliseconds, and samples (<code>00:00:00.000</code>) inside independent <strong>Takes</strong> so live tempo push-and-pull stays intact.
             </p>
           </div>
           <div class="suite-card-footer">
@@ -375,10 +375,10 @@
 
         <article class="manifesto-pillar">
           <div>
-            <span class="manifesto-pillar-tag">Pillar II &middot; Invisible Assistant</span>
-            <h3>2. The Invisible Studio Engineer</h3>
+            <span class="manifesto-pillar-tag">02 &middot; Shared Rooms</span>
+            <h3>2. An Extra Pair of Hands at the Desk</h3>
             <p>
-              When all four band members are holding instruments, nobody is sitting at the desk riding faders. Cave Recorder handles rolling <strong>30-minute RAM capture</strong>, one-click <code>-18 dBFS</code> <strong>CALIBRATE ALL TRIMS</strong>, automatic <strong>Polarity &amp; Allpass Phase Maximization</strong>, and bleed-frozen <strong>Vocal Rider</strong> leveling automatically.
+              When everyone in the room is playing an instrument, nobody is free to ride vocal faders or check 16 preamps. Rolling <strong>30-minute RAM capture</strong>, <code>-18 dBFS</code> <strong>CALIBRATE ALL TRIMS</strong>, <strong>Polarity &amp; Allpass Phase Alignment</strong>, and bleed-frozen <strong>Vocal Rider</strong> leveling keep the signal path clean without getting in the way.
             </p>
           </div>
           <div class="suite-card-footer">
@@ -388,14 +388,14 @@
 
         <article class="manifesto-pillar">
           <div>
-            <span class="manifesto-pillar-tag">Pillar III &middot; Anti-Bloat Design</span>
-            <h3>3. Curated Console vs. 90 Confusing Plugins</h3>
+            <span class="manifesto-pillar-tag">03 &middot; Self-Contained Console</span>
+            <h3>3. Built-In Console, Open File Formats</h3>
             <p>
-              Instead of overwhelming you with 90 overlapping legacy plugins and floating window mazes, Cave Recorder integrates a complete, zero-compromise <strong>Native Console &amp; Rack Suite</strong>. Every processor opens on an immediate musical sweet spot while exposing deep surgical controls underneath.
+              Every strip and bus includes 12-band dynamic EQ, VCA/FET/Opto compression, amp modeling with <code>.nam</code> capture, and LUFS metering with musical starting points and full parameter access. Sessions run offline without subscriptions or license checks, open cleanly years later, host external Audio Unit or CLAP plugins when wanted, and store plain 32-bit float WAV stems on disk.
             </p>
           </div>
           <div class="suite-card-footer">
-            <a href="#console-suite">Explore the Native Console Suite &darr;</a>
+            <a href="#console-suite">Explore the Console Suite &darr;</a>
           </div>
         </article>
       </div>
@@ -425,11 +425,11 @@
             aria-controls="tour-stage-panel"
             tabindex="0"
             data-tour-img="manual/assets/images/mix-console.png"
-            data-tour-alt="Cave Recorder Mix Console view with 18 input strips, Upper Inspector Wells, Subgroup Buses, Aux Returns, and Master Bus"
-            data-tour-caption="MIX CONSOLE (CMD+1 / CTRL+1): 8-slot processor rack, 12-band EQ + Dual-Trace RTA, VCA Compressor, Subgroup Buses, and Master Bus 2-TRK Print."
+            data-tour-alt="Cave Recorder Mixer view with input strips, Upper Inspector Wells, Subgroup Buses, Aux Returns, and pinned Master Bus"
+            data-tour-caption="MIXER (CMD+2 / CTRL+2): 8-slot processor rack, 12-band EQ + Dual-Trace RTA, VCA Compressor, Subgroup Buses, Studio Coach guidance, and Master Bus 2-TRK Print."
             data-tour-link="manual/04-mix-console-and-channel-strips.html"
           >
-            1. MIX CONSOLE
+            1. MIXER
           </button>
           <button
             type="button"
@@ -440,11 +440,11 @@
             aria-controls="tour-stage-panel"
             tabindex="-1"
             data-tour-img="manual/assets/images/waveform-timeline-expanded.png"
-            data-tour-alt="Cave Recorder Waveform Timeline view showing independent Take 001 timeline and expanded Pass Lanes (PASS 01 and OD 02)"
-            data-tour-caption="WAVEFORM TIMELINE (CMD+2 / CTRL+2): Independent t=0 Take timeline with expandable Pass Lanes (PASS 01 Base Pass, OD 02 Overdub Pass) and markers."
+            data-tour-alt="Cave Recorder Timeline view showing independent Take 001 timeline and expanded Pass Lanes (PASS 01 and OD 02)"
+            data-tour-caption="TIMELINE (CMD+1 / CTRL+1): Independent t=0 Take timeline with expandable Pass Lanes (PASS 01 Base Pass, OD 02 Overdub Pass), direct Range-to-Sampler import, and markers."
             data-tour-link="manual/06-waveform-timeline-and-markers.html"
           >
-            2. WAVEFORM TIMELINE &amp; PASS LANES
+            2. TIMELINE &amp; PASS LANES
           </button>
           <button
             type="button"
@@ -455,11 +455,11 @@
             aria-controls="tour-stage-panel"
             tabindex="-1"
             data-tour-img="manual/assets/images/channel-inspector-track.png"
-            data-tour-alt="Cave Recorder Channel Inspector view showing Dual-Trace RTA, 12-band Parametric EQ, VCA Compressor transfer curve, and Phase Align controls"
-            data-tour-caption="CHANNEL INSPECTOR (CMD+3 / CTRL+3): Full-screen 12-band Parametric EQ with Dual-Trace RTA, VCA Compressor transfer curve, and ALIGN Φ."
+            data-tour-alt="Cave Recorder Channel Strip view showing Dual-Trace RTA, 12-band Parametric EQ, VCA Compressor transfer curve, and Phase Align controls"
+            data-tour-caption="CHANNEL STRIP (CMD+3 / CTRL+3): Full-screen 12-band Parametric EQ with Dual-Trace RTA, VCA Compressor transfer curve, plain-English Add Processor picker, and ALIGN Φ."
             data-tour-link="manual/05-processors-phase-and-plugins.html"
           >
-            3. CHANNEL INSPECTOR &amp; ALIGN Φ
+            3. CHANNEL STRIP &amp; ALIGN Φ
           </button>
           <button
             type="button"
@@ -470,11 +470,11 @@
             aria-controls="tour-stage-panel"
             tabindex="-1"
             data-tour-img="manual/assets/images/session-reel.png"
-            data-tour-alt="Cave Recorder Session Reel showing Takes Catalog, one-click FLAC and MP3 Print conversion, Snapshots & Live Mix A/B comparison, and Google Drive sync controls"
-            data-tour-caption="SESSION REEL (CMD+4 / CTRL+4): Takes Catalog, one-click 24-bit FLAC & 320 kbps MP3 Print conversion, Snapshots with Live Mix A/B recall, and Google Drive sync."
+            data-tour-alt="Cave Recorder Takes view showing Takes Catalog, inline rename, one-click FLAC and MP3 Print conversion, Snapshots & Live Mix A/B comparison, and Google Drive sync controls"
+            data-tour-caption="TAKES (CMD+5 / CTRL+5): Takes Catalog with inline rename and archive actions, one-click 24-bit FLAC & 320 kbps MP3 Print conversion, Snapshots with Live Mix A/B recall, and Google Drive sync."
             data-tour-link="manual/07-session-reel-snapshots-and-cloud.html"
           >
-            4. SESSION REEL &amp; SNAPSHOTS
+            4. TAKES &amp; SNAPSHOTS
           </button>
         </div>
 
@@ -482,13 +482,13 @@
           <img
             id="tour-stage-img"
             src="manual/assets/images/mix-console.png"
-            alt="Cave Recorder Mix Console view with 18 input strips, Upper Inspector Wells, Subgroup Buses, Aux Returns, and Master Bus"
+            alt="Cave Recorder Mixer view with input strips, Upper Inspector Wells, Subgroup Buses, Aux Returns, and pinned Master Bus"
             width="1680"
             height="960"
           />
           <figcaption class="tour-stage-caption">
             <span id="tour-stage-text">
-              MIX CONSOLE (CMD+1 / CTRL+1): 8-slot processor rack, 12-band EQ + Dual-Trace RTA, VCA Compressor, Subgroup Buses, and Master Bus 2-TRK Print.
+              MIXER (CMD+2 / CTRL+2): 8-slot processor rack, 12-band EQ + Dual-Trace RTA, VCA Compressor, Subgroup Buses, Studio Coach guidance, and Master Bus 2-TRK Print.
             </span>
             <a id="tour-stage-link" href="manual/04-mix-console-and-channel-strips.html">Explore in User Manual &rarr;</a>
           </figcaption>
@@ -497,36 +497,36 @@
 
       <!-- 2x2 Feature Grid (Aligned 1..4 with the Studio Stage Tabs above) -->
       <div class="feature-grid-2x2">
-        <!-- Feature 1 (Matches Tab 1: Mix Console) -->
+        <!-- Feature 1 (Matches Tab 1: Mixer) -->
         <article class="feature-card is-active-tour" data-feature-card="0">
           <div>
             <div class="feature-card-eyebrow">
-              <span>DYNAMIC 32-TRK / 16-SUB / 8-AUX &bull; 8-SLOT RACK &bull; PRE-TAPE [INST]</span>
+              <span>32 TRACKS &bull; 16 SUBGROUPS &bull; 8 AUX RETURNS &bull; STAGEBOX MIXER</span>
               <span>REAL-TIME DSP</span>
             </div>
-            <h3>1. Dynamic Mix Console, 8-Slot Rack &amp; Pre-Tape Virtual Instruments</h3>
+            <h3>1. Dynamic Mixer, Stagebox Workspace &amp; 6-Engine Groovebox</h3>
             <p>
-              Scale your console on the fly from a 2-channel acoustic duo up to 32 mono or stereo-linked tracks, 16 stereo <strong>Subgroup Buses</strong>, and 8 stereo <strong>Aux Returns</strong>. Host the built-in <strong>Virtual Analog Drum Machine &amp; <code>ANALOG BASS</code> Synth</strong> or external <code>.clap</code> and macOS Audio Unit (<code>AU</code>) virtual instruments directly in Strip Zone 2 (<code>[INST]</code> &amp; <code>[GUI]</code>) printed straight to 32-bit float <strong>Pass</strong> stems, alongside a reorderable 8-slot processor rack (12-band dynamic EQ + Dual-Trace RTA, VCA/FET/Opto compressor, analog tape saturation, Guitar &amp; Bass <strong>Amp Rig</strong>, standalone &amp; integrated <strong>Speaker Cabinet &amp; IR Loader</strong>, and format-agnostic external <strong>PLUGIN</strong> slots with Ghost Slot recovery), <strong>Master Bus</strong> brickwall limiter, and automatic <strong>PDC</strong>.
+              Scale from a 2-channel acoustic duo up to 32 mono or stereo-linked tracks, 16 stereo <strong>Subgroup Buses</strong>, and 8 stereo <strong>Aux Returns</strong>, plus a full <strong>Stagebox</strong> mixer for X-Air and X32 hardware. Load the 6-engine <strong>Groovebox</strong> (drums, <strong>Analog Bass</strong>, and <strong>Studio Sampler</strong>) or external <code>.clap</code> and Audio Unit instruments straight to 32-bit float <strong>Pass</strong> stems, with <strong>Studio Coach</strong> contextual help and plain-English controls across all four surfaces.
             </p>
           </div>
           <div class="feature-card-footer">
             <button type="button" class="stage-preview-btn" data-select-tour="0">
-              &#x2197; Show Mix Console in Stage
+              &#x2197; Show Mixer in Stage
             </button>
             <a href="manual/04-mix-console-and-channel-strips.html">Chapter 4: Mix Console &rarr;</a>
           </div>
         </article>
 
-        <!-- Feature 2 (Matches Tab 2: Waveform Timeline, Retroactive Capture & Multi-Cam Video) -->
+        <!-- Feature 2 (Matches Tab 2: Timeline, Retroactive Capture & Multi-Cam Video) -->
         <article class="feature-card" data-feature-card="1">
           <div>
             <div class="feature-card-eyebrow">
-              <span>STEREO 30-MIN RAM &bull; 50 FPS MULTI-CAM VIDEO &bull; SPLIT-SCREEN .MP4</span>
+              <span>30-MIN MEMORY BUFFER &bull; 50 FPS VIDEO &bull; SPLIT-SCREEN .MP4</span>
               <span>CH 01–32 + CAM</span>
             </div>
-            <h3>2. Stereo 30-Minute Retroactive RAM, 50 FPS Video &amp; Split-Screen Prints</h3>
+            <h3>2. 30-Minute Rolling Memory Buffer, 50 fps Video &amp; Split-Screen Prints</h3>
             <p>
-              A continuous <strong>stereo 30-minute rolling RAM ring</strong> buffers armed hardware inputs, stereo virtual instruments, and live drum machine jams while stopped so you can save a great performance <em>after</em> it happens. Every <strong>Take</strong> simultaneously records 32-bit float multitrack stems, a live stereo Master Bus <strong>Print</strong>, and sample-locked <code>50 FPS</code>/<code>25 FPS</code> multi-camera video (<code>.mp4</code>) with unarmed camera hardware power-off, live <code>CAM ARMED</code> privacy status, 3-second optical/audio flash calibration, and split-screen video mixdowns (Single Angle, 2-Camera Split, 3-Camera Band, and 4-Camera 2&times;2 Grid).
+              A continuous <strong>30-minute rolling memory buffer</strong> captures armed hardware inputs, virtual instruments, and Groovebox jams while stopped so you can save a performance <em>after</em> it happens. Every <strong>Take</strong> records 32-bit float multitrack stems, a live stereo <strong>Print</strong>, and synchronized <code>50 fps</code> or <code>25 fps</code> multi-camera video with flash calibration and 2-, 3-, or 4-camera split-screen mixdowns.
             </p>
           </div>
           <div class="feature-card-footer">
@@ -537,7 +537,7 @@
           </div>
         </article>
 
-        <!-- Feature 3 (Matches Tab 3: Channel Inspector & Phase Alignment) -->
+        <!-- Feature 3 (Matches Tab 3: Channel Strip & Phase Alignment) -->
         <article class="feature-card" data-feature-card="2">
           <div>
             <div class="feature-card-eyebrow">
@@ -551,39 +551,39 @@
           </div>
           <div class="feature-card-footer">
             <button type="button" class="stage-preview-btn" data-select-tour="2">
-              &#x2197; Show Inspector in Stage
+              &#x2197; Show Channel Strip in Stage
             </button>
             <a href="manual/05-processors-phase-and-plugins.html">Chapter 5: Phase &amp; DSP &rarr;</a>
           </div>
         </article>
 
-        <!-- Feature 4 (Matches Tab 4: Session Reel, Mobile Companion, Pass Comping & Cloud Sync) -->
+        <!-- Feature 4 (Matches Tab 4: Takes, Cave Companion Remote, Pass Comping & Cloud Sync) -->
         <article class="feature-card" data-feature-card="3">
           <div>
             <div class="feature-card-eyebrow">
-              <span>[COMPANION] 1-TAP LAN &bull; MIXER + TRANSPORT &bull; DRUMS &amp; CAM &bull; GOOGLE DRIVE</span>
-              <span>SESSION REEL</span>
+              <span>BONJOUR WI-FI &bull; MY MONITOR &bull; SAMPLE SESSION &bull; GOOGLE DRIVE</span>
+              <span>TAKES &amp; REMOTE</span>
             </div>
-            <h3>4. Session Reel, Cave Companion Mobile Suite, Multicam Export &amp; Cloud Sync</h3>
+            <h3>4. Takes Catalog, Cave Companion Remote, Multicam Export &amp; Cloud Sync</h3>
             <p>
-              Connect multiple <strong>Android (<code>.apk</code>) &amp; iOS (<code>.ipa</code>) Cave Companion</strong> tablets and phones from the dedicated Top-Deck <strong>[COMPANION]</strong> workspace via automatic studio LAN discovery with <strong>1-Tap LAN Approval</strong> (6-digit Match Code) or Side-by-Side QR auto-zoom for wireless <strong>MIXER</strong> control (32-channel faders, pinned <code>RTZ</code>/<code>PLAY</code>/<code>STOP</code>/<code>REC</code> studio transport strip, Sends-on-Faders cue mixes, and OSC stagebox preamps), zero-scroll <strong>DRUMS</strong> melodic bass, step/pad &amp; synth control, wireless <code>1080p50</code> camera nodes, and multi-angle take players. Every <strong>Take</strong> starts at <code>00:00:00.000</code> with expandable <strong>Pass</strong> lanes (<code>Rec001</code> Base Pass, <code>Rec002-OD</code> Overdub Pass), <strong>Live Mix</strong> A/B <strong>Snapshot</strong> recall, one-click <strong>EXPORT TAKE</strong> interchange (<code>.rpp</code>, <code>.als</code>, Session XML, <code>.dawproject</code>, <code>.fcpxml</code> synchronized multicam timelines, and BWF/iXML/MIDI/IR bundles), and <strong>Resumable Google Drive Sync</strong>.
+              Pair multiple <strong>iOS and Android Cave Companion</strong> phones or tablets automatically over Bonjour Wi-Fi (or explore immediately with the built-in <strong>Sample Studio Session</strong>) for wireless 32-channel mixing, Stagebox <strong>My Monitor</strong>, Groovebox and Sampler control, <code>1080p50</code> camera recording, and multi-angle playback. Every <strong>Take</strong> starts at <code>00:00:00.000</code> with inline rename, expandable <strong>Pass</strong> lanes, <strong>Snapshot</strong> A/B recall, open <code>.dawproject</code> and <code>.fcpxml</code> exports, and optional <strong>Google Drive</strong> sync.
             </p>
           </div>
           <div class="feature-card-footer">
             <button type="button" class="stage-preview-btn" data-select-tour="3">
-              &#x2197; Show Session Reel in Stage
+              &#x2197; Show Takes in Stage
             </button>
-            <a href="manual/07-session-reel-snapshots-and-cloud.html">Chapter 7: Session Reel &rarr;</a>
+            <a href="manual/07-session-reel-snapshots-and-cloud.html">Chapter 7: Takes &amp; Cloud &rarr;</a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Curated Native Console & Live-Room Mixing Suite (#console-suite) -->
+    <!-- Built-In Console & Live-Room Mixing Suite (#console-suite) -->
     <section class="studio-section" id="console-suite" aria-labelledby="suite-heading">
       <div class="section-header-bar">
         <div>
-          <span class="section-eyebrow">Curated Native Console &amp; Live-Room Mixing Suite</span>
+          <span class="section-eyebrow">Built-In Console &amp; Live-Room Mixing Suite</span>
           <h2 class="section-title" id="suite-heading">Engineered for Untreated Rooms, Bleed, High-Gain Sustain &amp; Live Takes</h2>
         </div>
         <p class="section-subtitle">
@@ -605,7 +605,7 @@
             </p>
             <ul class="suite-spec-list">
               <li><strong>Mode 1: Instant Polarity Maximizer (&lt;50 ms):</strong> Evaluates every polarity (<code>Ø</code>) combination across related multi-mic channel groups to maximize constructive punch across <em>Low-End Weight (30&ndash;200 Hz Punch)</em>, <em>Broadband Loudness (ITU-R BS.1770-4 K-Weighted LUFS)</em>, <em>Transient Crest &amp; Impact (60 Hz&ndash;6 kHz)</em>, and <em>Anti-Comb Spectral Smoothness</em> criteria with automatic live phase-audition backup.</li>
-              <li><strong>Mode 2: Deep Spectral Phase &amp; Allpass Optimizer (30 s .. 30 min):</strong> Analyzes cross-channel phase interactions across the full <code>20 Hz&ndash;20 kHz</code> spectrum using all CPU cores to solve optimal sub-sample arrival delays and 5-stage allpass phase rotation filters (with live <em>Coherence Efficiency %</em> metering), populating four loudness-matched profiles (<strong>Candidates A, B, C, D</strong>: <code>A: Pure &Oslash; Zero Dispersion</code>, <code>B: Tight Low-End Lock</code>, <code>C: Deep Multi-Band Allpass</code>, <code>D: Full Wavefront + Allpass</code>) with <code>[GAIN-MATCH AUDITION]</code>.</li>
+              <li><strong>Mode 2: Deep Spectral Phase &amp; Allpass Optimizer (30 s to 30 min):</strong> Analyzes cross-channel phase interactions across the full <code>20 Hz&ndash;20 kHz</code> spectrum using all CPU cores to solve optimal sub-sample arrival delays and 5-stage allpass phase rotation filters (with live <em>Coherence Efficiency %</em> metering), populating four loudness-matched profiles (<strong>Candidates A, B, C, D</strong>: Pure &Oslash; Zero Dispersion, Tight Low-End Lock, Deep Multi-Band Allpass, and Full Wavefront + Allpass) with gain-matched audition.</li>
             </ul>
           </div>
           <div class="suite-card-footer">
@@ -618,43 +618,43 @@
         <article class="suite-card">
           <div>
             <div class="suite-card-eyebrow">
-              <span>[CIR] TUBE + [NAM] NEURAL &bull; 8 CABS + IR &bull; XY VIEWS</span>
+              <span>TUBE MODELS + .NAM CAPTURE &bull; 8 CABS + IR &bull; XY VIEWS</span>
               <span class="suite-card-badge">AMP RIG, CAB IR &amp; GATES</span>
             </div>
             <h3>2. Guitar &amp; Bass Amp Rig, Speaker Cabinet IR &amp; Context Gates</h3>
             <p>
-              Track direct guitar/bass, load custom speaker impulse responses, or clone your own tube heads and fuzz pedals in the room with full-height interactive processor views:
+              Track direct guitar or bass, load custom speaker impulse responses, or clone your own tube heads and fuzz pedals in the room with full-height interactive processor views:
             </p>
             <ul class="suite-spec-list">
-              <li><strong>Amp Rig (<code>[CIR]</code> Tube &amp; <code>[NAM]</code> Neural Capture) + Standalone &amp; Integrated Cabinet IR:</strong> Switch between <code>2x</code>/<code>4x</code> oversampled physical tube preamp/power-amp circuits and <code>.nam</code> Neural Amp Modeler captures (with a guided 3-step <strong>Hardware Amp &amp; Pedal Capture Wizard (<code>CAP</code>)</strong> featuring <code>Turbo</code>, <code>Standard</code>, and <code>Mastering</code> training presets with automatic best-fit convergence, <code>[STOP &amp; KEEP BEST]</code>, and <code>HEAD ON/BYP</code> toggle), paired with an integrated or standalone reorderable <strong>Speaker Cabinet &amp; IR Loader</strong> featuring 8 modeled guitar/bass cabinets, zero-latency <code>.wav</code> &amp; linear <code>.nam</code> IR convolution, a 3-tier self-contained IR library, and dual <code>Drive &times; Presence</code> and <code>Mic Position &times; Air</code> XY pads.</li>
-              <li><strong>Amp Dynamic &amp; Drum Bleed Context Gates + Interactive Inspector Views:</strong> Pitch stability and harmonic sustain tracking keeps <code>-34 dBFS</code> fingerpicking (<em>Whisper Clean Lock</em>) and <code>1.5&ndash;5.0 s</code> harmonic feedback swells (<em>Feedback Bloom Lock</em>) open while clamping palm-mute hum in <code>18&ndash;22 ms</code>, alongside differential <strong>Drum Bleed</strong> tom isolation with <strong>[LRN]</strong> fundamental lock and dedicated full-height <code>Channel Inspector</code> graphical views across all 15 built-in processors.</li>
+              <li><strong>Amp Rig (Tube Circuit Models &amp; <code>.nam</code> Neural Capture) + Cabinet IR Loader:</strong> Switch between <code>2x</code>/<code>4x</code> oversampled physical tube preamp/power-amp circuits and <code>.nam</code> Neural Amp Modeler captures (with a guided 3-step hardware capture wizard offering <code>Turbo</code>, <code>Standard</code>, and <code>Mastering</code> presets and best-fit early stop), paired with an integrated or standalone <strong>Speaker Cabinet &amp; IR Loader</strong> featuring 8 modeled guitar/bass cabinets, zero-latency <code>.wav</code> and linear <code>.nam</code> IR convolution, a self-contained IR library, and dual <code>Drive &times; Presence</code> and <code>Mic Position &times; Air</code> XY pads.</li>
+              <li><strong>Amp Dynamic &amp; Drum Bleed Context Gates:</strong> Pitch stability and harmonic sustain tracking keeps <code>-34 dBFS</code> fingerpicking and <code>1.5&ndash;5.0 s</code> harmonic feedback swells open while clamping palm-mute hum in <code>18&ndash;22 ms</code>, alongside differential <strong>Drum Bleed</strong> tom isolation with fundamental lock and dedicated full-height inspector views across all 15 built-in processors.</li>
             </ul>
           </div>
           <div class="suite-card-footer">
-            <span>Amp Rig ([CIR] + [NAM]) &bull; Cabinet IR (8 Cabs + IR) &bull; Context Gates</span>
+            <span>Amp Rig (Tube + .nam) &bull; Cabinet IR (8 Cabs + IR) &bull; Context Gates</span>
             <a href="manual/05-processors-phase-and-plugins.html#5-4-6-guitar-bass-amp-rig-cir-tube-circuit-models-head-on-byp-nam-neural-amp-capture">Chapter 5.4.5 &amp; 5.4.6: Gates &amp; Amp Rig &rarr;</a>
           </div>
         </article>
 
-        <!-- Module 3: Non-Destructive Live-Take Salvage & Mistake Surgery -->
+        <!-- Module 3: Non-Destructive Live-Take Repair & Overdub Comping -->
         <article class="suite-card">
           <div>
             <div class="suite-card-eyebrow">
               <span>CLIP REPAIR &bull; 12-H HUM CANCELLER &bull; BAR GRAFT &bull; SPOT-HEAL</span>
-              <span class="suite-card-badge">TAKE SALVAGE</span>
+              <span class="suite-card-badge">TAKE REPAIR</span>
             </div>
-            <h3>3. Non-Destructive Live-Take Salvage &amp; Mistake Surgery</h3>
+            <h3>3. Non-Destructive Live-Take Repair &amp; Overdub Comping</h3>
             <p>
-              When a band captures an unrepeatable live groove in <code>Take 001</code>, you should never have to scrap it because one snare hit clipped the preamp ADC, an old amp buzzed at <code>60 Hz</code>, or someone flubbed a chord in bar 42:
+              When a band captures a strong live groove in <code>Take 001</code>, you should not have to scrap it because one snare hit clipped the preamp, an old amp buzzed at <code>60 Hz</code>, or someone missed a chord in bar 42:
             </p>
             <ul class="suite-spec-list">
-              <li><strong><code>[REPAIR CLIPPING]</code> &amp; 12-Harmonic Hum Canceller:</strong> Reconstructs flat-topped ADC converter clips (<code>1&ndash;256 smp</code>) smoothly from the surrounding harmonic waveform, while a 12-harmonic <em>Q</em> = 20&ndash;100 (default 60) comb notch array strips <code>45&ndash;65 Hz</code> mains buzz without dulling guitar tone.</li>
-              <li><strong>Range Comping, Pre-Insert Clip Gain, <code>[PATCH FROM SOURCE...]</code> &amp; <code>[SMOOTH OVER ARTIFACT]</code>:</strong> Punch an Overdub Pass into a single phrase (<code>[USE OD 02 IN RANGE]</code>), level a hot solo before the rack with <strong>Clip Gain</strong>, graft a clean chord from another bar with <code>&plusmn;50 ms</code> phase-locked crossfades, or erase a mic stand bump (<code>5&ndash;150 ms</code>) via spectral and harmonic spot-healing.</li>
+              <li><strong>Clip Repair &amp; 12-Harmonic Hum Canceller:</strong> Reconstructs flat-topped ADC converter clips (<code>1&ndash;256 smp</code>) smoothly from the surrounding harmonic waveform, while a 12-harmonic <em>Q</em> = 20&ndash;100 (default 60) comb notch array strips <code>45&ndash;65 Hz</code> mains buzz without dulling guitar tone.</li>
+              <li><strong>Range Comping, Pre-Insert Clip Gain, Bar Grafting &amp; Spot-Healing:</strong> Punch an Overdub Pass into a single phrase, level a hot solo before the rack with <strong>Clip Gain</strong>, graft a clean chord from another bar with <code>&plusmn;50 ms</code> phase-locked crossfades, or remove a mic stand bump (<code>5&ndash;150 ms</code>) via spectral and harmonic spot-healing.</li>
             </ul>
           </div>
           <div class="suite-card-footer">
-            <span>100% non-destructive on 32-bit float stems</span>
-            <a href="manual/06-waveform-timeline-and-markers.html#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Chapter 6.5: Mistake Surgery &rarr;</a>
+            <span>Non-destructive on 32-bit float stems</span>
+            <a href="manual/06-waveform-timeline-and-markers.html#6-5-non-destructive-live-take-salvage-timeline-mistake-surgery">Chapter 6.5: Take Repair &amp; Overdub Comping &rarr;</a>
           </div>
         </article>
 
@@ -671,7 +671,7 @@
             </p>
             <ul class="suite-spec-list">
               <li><strong>12-Band Parametric Dynamic EQ &amp; Dual-Trace RTA:</strong> Any band (<code>B1&ndash;B12</code>) activates threshold-driven dynamic attenuation or boost to clamp <code>165 Hz</code> palm-mute cabinet boom or <code>3.2 kHz</code> vocal harshness only when it pokes out.</li>
-              <li><strong>3-Topology Compressor (<code>VCA</code> / <code>FET</code> / <code>Opto</code>) &amp; Differential Transient Shaper:</strong> Switch between feed-forward RMS bus glue (<code>VCA</code>), ultra-fast <code>0.02 ms</code> discrete transistor snap (<code>FET</code>), and program-dependent optical leveling (<code>Opto</code>), plus level-independent attack/sustain transient shaping.</li>
+              <li><strong>3-Topology Compressor (<code>VCA</code> / <code>FET</code> / <code>Opto</code>) &amp; Differential Transient Shaper:</strong> Switch between feed-forward RMS bus glue (<code>VCA</code>), <code>0.02 ms</code> discrete transistor snap (<code>FET</code>), and program-dependent optical leveling (<code>Opto</code>), plus level-independent attack/sustain transient shaping.</li>
               <li><strong>Vocal Rider (with Bleed Freeze), De-Esser &amp; Micro-Pitch Doubler:</strong> Zero-latency <code>&plusmn;6 dB</code> vocal leveler that freezes during pauses so drum bleed is never boosted, paired with a <code>120 Hz</code> dynamic low-shelf Plosive Arrestor, split-band sibilance compressor, and Haas-free stereo pitch doubler.</li>
             </ul>
           </div>
@@ -685,17 +685,17 @@
         <article class="suite-card">
           <div>
             <div class="suite-card-eyebrow">
-              <span>TEMPO-SYNCED DELAY &amp; MOD [SYNC] [LCK] &bull; 24 dB/OCT LADDER &bull; EMT 140 PLATE</span>
+              <span>TEMPO-SYNCED DELAY &amp; MOD &bull; 24 dB/OCT LADDER &bull; EMT 140 PLATE</span>
               <span class="suite-card-badge">SPACE &amp; TONE</span>
             </div>
             <h3>5. Tempo-Synced 3-Mode Delay, 4-Pole Ladder, Plate Reverb &amp; Modulation</h3>
             <p>
-              Authentic analog-modeled space, echo, and resonant filter movement built directly into the console and locked to live studio tempo without hunting for external stompbox plugins:
+              Analog-modeled space, echo, and resonant filter movement built directly into the console and locked to live studio tempo without hunting for external stompbox plugins:
             </p>
             <ul class="suite-spec-list">
-              <li><strong>Tempo-Synced 3-Mode <code>Aux 2</code> Delay (<code>Capstan Tape</code>, <code>BBD Analog</code>, <code>Pristine Digital</code>):</strong> Lock echoes to <strong>18 musical note subdivisions</strong> (<code>1/64</code> to <code>4BAR</code>, straight, dotted, and triplet) with smooth capstan/analog pitch glide on live tempo shifts, independent Right-channel subdivision (<code>R.DV</code>) in Digital mode for polyrhythmic stereo echoes, <code>600 ms</code> BBD horizon readout, and built-in <strong>Dynamic Ducking</strong>.</li>
-              <li><strong>4-Pole Non-Linear Resonant Ladder Filter &amp; Studio Plate Reverb:</strong> Classic <code>12 dB/oct</code> (<code>2P</code>) and <code>24 dB/oct</code> (<code>4P</code>) transistor ladder (<code>20 Hz&ndash;16 kHz</code>) with Class-A drive, sub-bass resonance compensation (<code>Bass Comp</code>), bi-directional envelope follower, and zero-latency <code>EMT 140</code> convolution + algorithmic studio plate reverb.</li>
-              <li><strong>Tempo-Synced 4-Mode Modulation with Clickless Phase-Lock (<code>[LCK]</code>):</strong> <strong>Through-Zero Flanger</strong>, motionless 3D <strong>Dimension Chorus</strong>, 4/6/8/12-stage <strong>Optical Phaser</strong>, and dual-band crossover <strong>Harmonic Tremolo</strong> with <code>[SYNC]</code> LFO note subdivisions and clickless proportional downbeat phase-locking.</li>
+              <li><strong>Tempo-Synced 3-Mode <code>Aux 2</code> Delay (<code>Capstan Tape</code>, <code>BBD Analog</code>, <code>Pristine Digital</code>):</strong> Lock echoes to <strong>18 musical note subdivisions</strong> (<code>1/64</code> to <code>4BAR</code>, straight, dotted, and triplet) with capstan/analog pitch glide on live tempo shifts, independent Right-channel subdivision in Digital mode for polyrhythmic stereo echoes, <code>600 ms</code> BBD horizon readout, and built-in <strong>Dynamic Ducking</strong>.</li>
+              <li><strong>4-Pole Non-Linear Resonant Ladder Filter &amp; Studio Plate Reverb:</strong> Classic <code>12 dB/oct</code> (<code>2P</code>) and <code>24 dB/oct</code> (<code>4P</code>) transistor ladder (<code>20 Hz&ndash;16 kHz</code>) with Class-A drive, sub-bass resonance compensation, bi-directional envelope follower, and zero-latency <code>EMT 140</code> convolution + algorithmic studio plate reverb.</li>
+              <li><strong>Tempo-Synced 4-Mode Modulation with Clickless Phase-Lock:</strong> <strong>Through-Zero Flanger</strong>, motionless 3D <strong>Dimension Chorus</strong>, 4/6/8/12-stage <strong>Optical Phaser</strong>, and dual-band crossover <strong>Harmonic Tremolo</strong> with LFO note subdivisions and clickless proportional downbeat phase-locking.</li>
             </ul>
           </div>
           <div class="suite-card-footer">
@@ -713,7 +713,7 @@
             </div>
             <h3>6. Control Room Monitor Bar, <code>AUTO-LVL</code> &amp; Broadcast Metering</h3>
             <p>
-              Verify mix translation across any speaker system and hit exact streaming/mastering targets while keeping your live Master Bus <code>2-TRK Print</code> 100% untouched:
+              Verify mix translation across any speaker system and hit exact streaming/mastering targets while keeping your live Master Bus <code>2-TRK Print</code> untouched:
             </p>
             <ul class="suite-spec-list">
               <li><strong>One-Click <code>CALIBRATE ALL TRIMS</code> &amp; Elliptical Bass-Mono:</strong> Normalizes all active channels to <code>-18 dBFS</code> RMS (<code>-6 dBFS</code> ceiling) in one click and folds stereo sub-bass (<code>20&ndash;500 Hz</code>) to phase-solid center mono.</li>
@@ -727,21 +727,21 @@
           </div>
         </article>
 
-        <!-- Module 7: Virtual Analog Drum Machine, ANALOG BASS Synth, Melodic Sequencer & Companion DRUMS Remote -->
+        <!-- Module 7: Groovebox: Virtual Analog Drums, Analog Bass Synth & Companion Remote -->
         <article class="suite-card">
           <div>
             <div class="suite-card-eyebrow">
-              <span>13 KITS: METRONOME + [POCKET | CLUB] &bull; ANALOG BASS &bull; [2D | NOTE | VEL] SEQ</span>
-              <span class="suite-card-badge">DRUMS &amp; BASS</span>
+              <span>13 FACTORY KITS &bull; 6 VOICE ENGINES &bull; ANALOG BASS &bull; POLYMETRIC SEQ</span>
+              <span class="suite-card-badge">GROOVEBOX</span>
             </div>
-            <h3>7. Virtual Analog Drum Machine, <code>ANALOG BASS</code> Synth &amp; <code>DRUMS</code> Remote</h3>
+            <h3>7. Groovebox: Virtual Analog Drums, Analog Bass &amp; Companion Remote</h3>
             <p>
-              Build punchy analog percussion grooves, sequence chromatic monophonic basslines, or count off rehearsals directly inside your console with five physical synthesis engines, a logarithmic Triggered Storage-CRT oscilloscope, and zero-scroll wireless tablet and phone control:
+              Build analog percussion grooves, sequence chromatic monophonic basslines, or count off rehearsals directly inside your console across six voice engines (five synth models plus the Studio Sampler), a Triggered Storage-CRT oscilloscope, and wireless phone and tablet control:
             </p>
             <ul class="suite-spec-list">
-              <li><strong>5 Voice Archetypes (4 Drum Engines + <code>ANALOG BASS</code>), 13-Kit <code>[METRONOME] + [POCKET (6) | CLUB (6)]</code> Suite &amp; Storage-CRT Scope:</strong> 16-voice kit pool spanning <strong>Membrane &amp; Sub</strong> (Bridged-T kicks and toms), <strong>Snare &amp; Clap</strong> (dual-shell resonator + 1&ndash;5 pulse burst clap), <strong>Metallic Matrix</strong> (6-oscillator inharmonic hats, cymbals, and cowbells with <code>24 dB/oct</code> sizzle HPF), <strong>Modal &amp; Impact</strong> percussion, and the 5th <strong><code>ANALOG BASS</code></strong> monophonic synthesizer (sawtooth-to-pulse VCO, <code>-1 oct</code> flip-flop sub + dual-oscillator beat, resonant 4-pole transistor ladder / passband-compensated OTA filter, portamento/slide, accent punch, harmonic drive, chromatic MIDI keyboard input, and contextual Bass Setup strip). Includes a pinned 4-track woody studio <code>METRONOME</code> (7 meters) plus 12 genre kits and 14 grooves across <code>POCKET</code> (<code>STUDIO ANALOG</code>, <code>DESERT ROCK</code>, <code>SOUL POCKET</code>, <code>BOOM BAP</code>, <code>MOTORIK DRY</code>, <code>MODAL METALLURGY</code> with <code>FUNK POCKET</code>) and <code>CLUB</code> (<code>TECHNO PUNCH</code>, <code>DEEP SUB ELECTRO</code>, <code>BREAKS 174</code>, <code>HALFTIME SUB</code>, <code>PSY MATRIX</code>, and <code>ACID &amp; FUNK</code> with <code>ACID SQUELCH</code>), a 3-hit phosphor CRT scope, shared VCA Glue Compressor, and <code>4x</code> oversampled soft clipper.</li>
-              <li><strong>Melodic <code>[2D | NOTE | VEL]</code> &amp; Polymetric Step Sequencer + Performance Deck:</strong> Sequence chromatic 12-TET bass notes, horizontal Tie Bridges, pitch slides, and accents alongside polymetric drum lanes using axis-locked <code>[2D | NOTE | VEL]</code> drag modes (<code>2D</code> vertical pitch with <code>Shift</code> octave jumps and horizontal Tie chains, <code>NOTE</code> pitch-only, <code>VEL</code> velocity), 64 pattern slots, 16 chained Scenes with phase-locked jumping, <code>0.1%</code> Swing, per-step Parameter Locks (<code>P-Locks</code>), Triggerless Locks, Flam/Sub-Retrig ratchets, <code>[STASH KIT]</code> / <code>[RELOAD KIT]</code>, <code>[CTRL ALL]</code>, 4-scene <code>MORPH</code> crossfader, coupled <code>STOP</code>/<code>RTZ</code> transport, and Slip-Mode Beat-Repeat.</li>
-              <li><strong>Individual Voice Console Breakouts &amp; Zero-Scroll Wireless <code>DRUMS</code> Melodic Remote:</strong> Break individual drum and <code>ANALOG BASS</code> voices out onto console strips for EQ, compression, and sidechain, record pre-tape into <code>Pass</code> stems and 30-minute rolling RAM capture, and control melodic bass notes, ties, Bass Setup, <code>SEQ + SYNTH</code>, <code>16 PADS</code>, and <code>ARRANGER</code> fullscreen (<code>[IMMERSV]</code>) with exact-fit zero-scroll viewport banking on Android and iOS over studio Wi-Fi.</li>
+              <li><strong>4 Drum Engines &amp; Monophonic Analog Bass Synth:</strong> 16-voice kit pool covering Bridged-T kicks and toms (<strong>Membrane &amp; Sub</strong>), dual-shell snare and multi-burst clap (<strong>Snare &amp; Clap</strong>), 6-oscillator inharmonic hats and cymbals with <code>24 dB/oct</code> sizzle HPF (<strong>Metallic Matrix</strong>), <strong>Modal &amp; Impact</strong> percussion, and the <strong>Analog Bass</strong> synthesizer (sawtooth-to-pulse VCO, <code>-1 oct</code> flip-flop sub, resonant 4-pole ladder and passband-compensated OTA filter, portamento glide, accent punch, harmonic drive, and chromatic MIDI keyboard play).</li>
+              <li><strong>13 Factory Kits, 21 Starter Grooves &amp; Master Bus Glue:</strong> Includes a pinned 4-track studio metronome (7 meters) plus 12 Pocket and Club kits, 21 starter patterns, a 3-hit phosphor CRT oscilloscope, shared VCA Glue Compressor, and <code>4x</code> oversampled soft clipper.</li>
+              <li><strong>Polymetric &amp; Melodic Sequencer + Console Breakouts:</strong> Program chromatic 12-TET basslines with ties, slides, and accents alongside polymetric drum lanes across 64 pattern slots, 16 chained Scenes, <code>0.1%</code> Swing, per-step parameter locks, and a 4-scene morph crossfader. Route individual voices onto console strips for pre-tape <code>Pass</code> stems and control pads, steps, and synth parameters from Cave Companion over Wi-Fi.</li>
             </ul>
           </div>
           <div class="suite-card-footer">
@@ -754,22 +754,114 @@
         <article class="suite-card">
           <div>
             <div class="suite-card-eyebrow">
-              <span>24 PPQN MIDI CLOCK &bull; 4-TAP LOOPER BRIDGE &bull; CLAP &amp; AU [INST] &bull; AUTO-REC</span>
-              <span class="suite-card-badge">MIDI &amp; [INST]</span>
+              <span>24 PPQN MIDI CLOCK &bull; 4-TAP LOOPER BRIDGE &bull; CLAP &amp; AU INSTRUMENTS</span>
+              <span class="suite-card-badge">MIDI &amp; SYNTHS</span>
             </div>
             <h3>8. Sample-Locked MIDI Sync, Gridless Looper Bridge &amp; Pre-Tape Instruments</h3>
             <p>
               Keep hardware floor loopers, external drum machines, hardware synthesizers, and live-played virtual instruments locked tightly to your linear <code>Take</code> recordings without forcing a timeline beat grid:
             </p>
             <ul class="suite-spec-list">
-              <li><strong>Bidirectional MIDI Clock &amp; Transport Sync (<code>[MIDI SYNC]</code>):</strong> Sample-locked <code>24 PPQN</code> MIDI Clock and Transport (<code>Start</code> / <code>Continue</code> / <code>Stop</code>) with 5-pin DIN wire protection, automatic pre-roll so Beat 1 lands cleanly on sample <code>0</code>, <code>[MIDI LEARN]</code> footswitch mapping, and 1-click microsecond hardware synth/looper delay compensation.</li>
-              <li><strong>Gridless 4-Tap Tap-Tempo, Floor-Looper Bridge &amp; <code>AUTO-REC ON BEAT 1</code>:</strong> Lock drift-free rational tempo spans straight from live floor-looper stomps or a 4-tap count-in (muting outbound clock during freeform loop capture to avoid pitch warble), scale tempo cleanly with <code>[0.5x]</code> / <code>[2.0x]</code>, and punch straight into recording on Beat 1.</li>
-              <li><strong>Pre-Tape CLAP &amp; macOS Audio Unit (<code>AU</code>) Virtual Instruments:</strong> Route any strip to <code>[INSTRUMENT]</code> for direct Zone-2 <code>[INST]</code> / <code>[GUI]</code> control, MIDI port/channel filtering, automatic <code>0%</code>-CPU idle sleep after note tails fade, stereo 30-minute rolling RAM capture, and automatic <code>Pass</code> playback isolation.</li>
+              <li><strong>Bidirectional MIDI Clock &amp; Transport Sync:</strong> Sample-locked <code>24 PPQN</code> MIDI Clock and Transport (<code>Start</code> / <code>Continue</code> / <code>Stop</code>) with 5-pin DIN wire protection, automatic pre-roll so Beat 1 lands on sample <code>0</code>, MIDI footswitch learn mapping, and 1-click microsecond hardware synth/looper delay compensation.</li>
+              <li><strong>Gridless 4-Tap Tap-Tempo, Floor-Looper Bridge &amp; Auto-Rec on Beat 1:</strong> Lock drift-free rational tempo spans straight from live floor-looper stomps or a 4-tap count-in (muting outbound clock during freeform loop capture to avoid pitch warble), halve or double tempo on the fly, and punch straight into recording on Beat 1.</li>
+              <li><strong>Pre-Tape CLAP &amp; macOS Audio Unit (<code>AU</code>) Virtual Instruments:</strong> Route any channel strip to host an external virtual instrument with MIDI port/channel filtering, automatic <code>0%</code>-CPU idle sleep after note tails fade, stereo 30-minute rolling RAM capture, and automatic <code>Pass</code> playback isolation.</li>
             </ul>
           </div>
           <div class="suite-card-footer">
             <span>Zero Timeline Grid Lock &bull; Microsecond Ping Calibration</span>
             <a href="manual/04-mix-console-and-channel-strips.html">Chapter 4: Mix Console &amp; Strips &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Module 9: Studio Sampler, Automatic Transient Slicing & Direct Console Resampling -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>AUTO-SLICER (64 SLICES) &bull; DIRECT RESAMPLING &bull; DJ/COMB FILTER &bull; LFO</span>
+              <span class="suite-card-badge">STUDIO SAMPLER</span>
+            </div>
+            <h3>9. Studio Sampler, Automatic Slicing &amp; Direct Console Resampling</h3>
+            <p>
+              Slice spontaneous rehearsal grooves, single drum hits, or live console channels into playable kits and mangled loops without cluttering your linear <code>Take</code> timelines, synchronized across Desktop, Cave Companion, and hardware controllers:
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong>Noise-Robust Transient Auto-Slicer &amp; Live Pad Chopping:</strong> Slice bleeding room stems automatically with interactive <code>Sensitivity</code> and zero-crossing snap, divide evenly by <code>Grid</code>, or tap slice markers live on pads. Apply up to 64 slices in one undoable action across 16 choke-grouped pads (with optional micro-nudged pattern placement) or into a single <code>Slice-Lock</code> sequencer lane with linear or randomized slice locks.</li>
+              <li><strong>Direct Timeline Import, Live Bus Resampling &amp; Reversible Sample History:</strong> Pull any active <code>Take</code> range straight from the Timeline (dry <code>Pass</code> stem or post-FX bounce) or resample live from any Track, Subgroup, Aux Return, Master Bus, or input via threshold pre-roll (<code>10 ms</code>), bar-synced loops, or manual trigger. Offline crop, fade, normalize, reverse, transient-preserving BPM time-stretch/pitch-shift, and FX bounce keep active WAVs clean while retaining prior generations in reversible <strong>Sample History</strong>.</li>
+              <li><strong>Creative Playback, Shaping &amp; Multi-Surface Control:</strong> Five playback modes (<code>One-Shot</code>, <code>Gate Hold</code>, <code>Loop Forward</code>, <code>Ping-Pong</code>, and <code>Slice-Lock</code>), equal-power loop crossfades down to micro-grain lengths, per-step reverse locks, bipolar <code>DJ Filter</code> or tuned <code>Comb Resonator</code>, preamp drive and bit/rate grit, and a tempo-synced assignable LFO.</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>Desktop Sampler &bull; Cave Companion Tablet &amp; Phone &bull; Hardware Sampling</span>
+            <a href="manual/05-processors-phase-and-plugins.html">Chapter 5: Groovebox &amp; Sampler &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Module 10: Full-Featured Stagebox Mixer, 4-Domain Routing & Companion My Monitor -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>X-AIR / XR18V2 / X32 &bull; 55 FX &bull; 31-BAND GEQ + RTA &bull; MY MONITOR</span>
+              <span class="suite-card-badge">STAGEBOX MIXER</span>
+            </div>
+            <h3>10. Full-Featured Stagebox Mixer, 4-Domain Routing &amp; My Monitor</h3>
+            <p>
+              Run complete zero-latency hardware monitor mixes, PA/wedge EQ, vocal tracking reverb, and live routing for <code>X-Air</code> (including revision-suffixed <code>XR18V2</code> / <code>V2</code> models) and <code>X32</code> stageboxes right inside Cave Recorder without external mixer apps:
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong>Dedicated 4-Tab Stagebox Workspace &amp; 55-FX Rack:</strong> Mix 16 channels, 6 stereo-linkable monitor buses, 4 Mute Groups, Auto-Mix, Sends on Faders, channel/bus PEQ, 31-band GEQ overlaid with a live 100-bin RTA, and 4 hardware FX slots covering 55 studio algorithms, plus speaker-safe preamps with a <code>600 ms</code> hold-to-toggle <code>+48V</code> interlock.</li>
+              <li><strong>4-Domain 2D Routing Matrix, Virtual Soundcheck &amp; Dual Scene Sync:</strong> Patch <code>USB Sends (1-18)</code>, <code>Channel Inputs &amp; Virtual Soundcheck</code>, <code>Analog Outputs</code> (with one-click <code>USB &rarr; Aux &rarr; Main L/R</code> return routing and Master Bus hardware output faders), and <code>Ultranet P16</code> while verifying raw USB recording taps and syncing per-session Stagebox Scenes.</li>
+              <li><strong>Cave Companion My Monitor &amp; PIN-Lockable Full Mixer:</strong> Musicians adjust their own stagebox monitor bus (<code>My Monitor</code> with <code>More Me</code> and bus master) from iOS or Android while the engineer runs full stagebox DSP with optional single-device <code>Mixer Lock</code>.</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>Speaker-Safe Hardware Connect &bull; Zero External Mixer Apps</span>
+            <a href="manual/02-hardware-setup-and-first-session.html">Chapter 2: Hardware &amp; Stagebox Setup &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Module 11: Tactile Dual-Screen Hardware Pad & Console Controller -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>SUB-4 MS PADS &bull; DUAL 480x272 SCREENS &bull; 1:1 ENCODER ALIGNMENT</span>
+              <span class="suite-card-badge">HARDWARE SURFACE</span>
+            </div>
+            <h3>11. Tactile Dual-Screen Hardware Pad &amp; Console Controller</h3>
+            <p>
+              Play beats, slice samples, and mix your console directly from dual-screen 16-pad USB hardware controllers via a standalone companion surface daemon with automatic local discovery and clean unplug recovery:
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong>Dual-Personality Workflow (<code>DRUM STUDIO</code> &amp; <code>CONSOLE DAW REMOTE</code>):</strong> Switch between sub-4 ms velocity and pressure pads (<code>Note Repeat</code>, melodic arpeggiator, Beat-Repeat pads, bottom-to-top step sequencing, pattern overdub, and 4-tab <code>SAMPLING</code>) and an 8-channel banked console mixer with strict Cyan vs. Crimson recording separation.</li>
+              <li><strong>1:1 Dual-Screen Encoder Alignment &amp; Unified <code>[M] [S] [R]</code> Controls:</strong> Each <code>480x272</code> screen aligns 4 visual strips directly above its 4 physical touch encoders across Tracks <code>1&ndash;32</code>, Subgroups, <code>Aux Sends</code> (<code>E1&ndash;E8</code>), Stagebox preamps with <code>600 ms</code> <code>+48V</code> hold interlock, and Solo Gold <code>[M] [S] [R]</code> strip states.</li>
+              <li><strong>Live Processor Curves, Hosted Plugin Banks &amp; 16-Pad Comping:</strong> Shape built-in <code>Processor</code> curves and hosted <code>CLAP</code> / <code>AU</code> <code>Plugin</code> banks from capacitive touch encoders, trigger 16-pad Ranges, Cue Markers, and <code>PassLane</code> comping, scrub at <code>60 Hz</code> with the Jog wheel, or capture the 30-minute rolling RAM buffer in one press.</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>Standalone Surface Daemon &bull; Sub-4 ms Pad Pipeline</span>
+            <a href="manual/02-hardware-setup-and-first-session.html">Chapter 2: Hardware Controller Setup &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Module 12: caverec-cli, Headless Studio Automation & Studio Coach UX -->
+        <article class="suite-card">
+          <div>
+            <div class="suite-card-eyebrow">
+              <span>CAVEREC-CLI &bull; HEADLESS RPC &bull; 4-POINT PROBES &bull; STUDIO COACH</span>
+              <span class="suite-card-badge">CLI &amp; STUDIO UX</span>
+            </div>
+            <h3>12. Studio CLI, Headless Automation &amp; Unified 4-Surface UX</h3>
+            <p>
+              Script repeatable studio sessions, inspect audio signals quantitatively, and work faster across Desktop, Phone, Tablet, and Hardware surfaces with consistent plain studio terminology:
+            </p>
+            <ul class="suite-spec-list">
+              <li><strong><code>caverec-cli</code>, <code>caverec-headless</code> &amp; Python Client:</strong> Control live Cave Recorder sessions or render offline faster than real time across strips, racks, phase alignment, audio repair, Groovebox, Sampler, Stagebox, and exports, backed by 4-point sample-clocked signal probes (LUFS, crest, spectral, and dual-probe phase metrics), a zero-dependency Python client, and 6 installable Studio Engineering Skills.</li>
+              <li><strong>Plain Studio Language &amp; Toggleable Studio Coach (<code>[?]</code>):</strong> Replaces cryptic abbreviations across all four surfaces with clear studio labels (<code>Timeline</code>, <code>Mixer</code>, <code>Channel Strip</code>, <code>Markers</code>, <code>Takes</code>, <code>Groovebox</code>, <code>Plugins</code>, <code>Stagebox</code>, <code>Remote</code>), backed by a toggleable <strong>Studio Coach</strong> guidance bar (<code>?</code>) and <code>450 ms</code> hover tooltips.</li>
+              <li><strong>Inline Renaming, Global Clear Solo &amp; Async Job Progress:</strong> Click to rename Takes, Sessions, Snapshots, Markers, Ranges, and Strips directly in place, clear active solos globally in one click, monitor bounces and exports from the Top-Deck progress bar with cancel support, and persist live monitoring latency preferences across restarts.</li>
+            </ul>
+          </div>
+          <div class="suite-card-footer">
+            <span>Scriptable Local CLI + 4-Surface Design System Parity</span>
+            <a href="manual/08-action-and-shortcut-reference.html">Chapter 8: Actions, CLI &amp; Shortcuts &rarr;</a>
           </div>
         </article>
       </div>
@@ -786,7 +878,7 @@
 
       <div class="free-uncrippled-banner">
         <p>
-          <strong>100% Free &amp; Uncrippled.</strong> Cave Recorder is free to download and use in full: no trial timers, no locked tracks, no feature paywalls, no telemetry, and no nag screens inside the app.
+          <strong>Free, Offline-Ready &amp; All Features Included.</strong> Cave Recorder and Cave Companion are free to download and use: all 32 tracks and processors included, offline operation with no accounts or license checks, plain WAV stems on your own drives, and zero tracking or ads.
         </p>
       </div>
 
@@ -879,6 +971,14 @@
 
         if (ua.indexOf("android") !== -1 || platform.indexOf("android") !== -1) {
           return "android";
+        }
+        if (
+          ua.indexOf("iphone") !== -1 ||
+          ua.indexOf("ipad") !== -1 ||
+          ua.indexOf("ipod") !== -1 ||
+          (platform.indexOf("mac") !== -1 && (navigator.maxTouchPoints || 0) > 1)
+        ) {
+          return "ios";
         }
         if (platform.indexOf("mac") !== -1 || ua.indexOf("macintosh") !== -1 || ua.indexOf("mac os") !== -1) {
           return "macos";

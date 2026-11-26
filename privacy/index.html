@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy &middot; Cave Recorder (caverec)</title>
-  <meta name="description" content="Privacy Policy for Cave Recorder (caverec). Zero telemetry, zero data collection, and Google API Services User Data Policy (Limited Use) compliance." />
+  <title>Privacy Policy &middot; Cave Recorder &amp; Cave Companion</title>
+  <meta name="description" content="Privacy Policy for Cave Recorder (caverec) and Cave Companion (iOS, iPadOS, and Android). Zero telemetry, zero data collection, local Wi-Fi operation, and Google API Services User Data Policy (Limited Use) compliance." />
   <link rel="icon" type="image/png" sizes="64x64" href="../assets/icons/favicon-64.png" />
   <link rel="apple-touch-icon" sizes="128x128" href="../assets/icons/caverec_128.png" />
   <link rel="stylesheet" href="../assets/site.css" />
@@ -20,7 +20,7 @@
     </div>
     <nav class="deck-actions" aria-label="Primary Navigation">
       <a class="deck-btn deck-btn-primary" href="../#download">Download</a>
-      <a class="deck-btn" href="../#manifesto">Manifesto</a>
+      <a class="deck-btn" href="../#manifesto">Philosophy</a>
       <a class="deck-btn" href="../#features">Studio Tour</a>
       <a class="deck-btn" href="../#console-suite">Console Suite</a>
       <a class="deck-btn" href="../manual/">User Manual</a>
@@ -32,31 +32,41 @@
     <article class="prose-panel">
       <span class="section-eyebrow">Zero Telemetry &amp; Local Studio Ownership</span>
       <h1>Privacy Policy</h1>
-      <div class="prose-updated">Last updated: October 20, 2026</div>
+      <div class="prose-updated">Last updated: November 26, 2026</div>
 
       <p>
-        <strong>Cave Recorder (<code>caverec</code>) runs locally on your machine. We operate no backend servers and do not collect, receive, store, process, or share any personal information or user data of any kind.</strong>
+        <strong>Cave Recorder (<code>caverec</code>) and Cave Companion (iOS, iPadOS, and Android) run locally on your devices. We operate no backend servers and do not collect, receive, store, process, or share any personal information or user data of any kind.</strong>
       </p>
 
       <h2>No Data Collection</h2>
       <p>
-        We do not collect personal identifiers, account credentials, usage analytics, crash reports, telemetry, cookies, or tracking information. Neither the Cave Recorder desktop application nor this website uses any analytics services, advertising trackers, or third-party data processors.
+        We do not collect personal identifiers, account credentials, usage analytics, crash reports, telemetry, cookies, or tracking information. Neither the Cave Recorder desktop application, the Cave Companion mobile application, nor this website uses any analytics services, advertising trackers, or third-party data processors.
       </p>
 
       <h2>Local Operation &amp; User Files</h2>
       <p>
-        All audio recordings, Projects, Sessions, Takes, Passes, live Prints, Mixdowns, and configuration files created in Cave Recorder are processed and stored locally on your device. If you explicitly configure optional cloud synchronization to your own Google Drive, all credentials, tokens, and audio files remain strictly on your device and are transferred directly between your machine and Google's API servers without passing through any servers operated by us.
+        All audio recordings, video captures, Projects, Sessions, Takes, Passes, live Prints, Mixdowns, and configuration files created in Cave Recorder and Cave Companion are processed and stored locally on your devices. In the Mac App Store edition, access to custom Session Library folders outside the app container is granted strictly through standard macOS file pickers and stored locally by macOS as security-scoped bookmarks. Local command-line control (<code>caverec-cli</code>) communicates strictly over owner-only local inter-process channels on the same computer. If you explicitly configure optional cloud synchronization to your own Google Drive, all credentials, tokens, and media files remain strictly on your devices and are transferred directly between your devices and Google's API servers without passing through any servers operated by us.
       </p>
+
+      <h2>Cave Companion (iOS, iPadOS &amp; Android) Permissions</h2>
+      <p>
+        The Cave Companion mobile application connects directly over your local Wi-Fi network to Cave Recorder on your studio computer (or runs completely offline in its bundled Sample Studio Session) and collects no personal data, analytics, or crash telemetry:
+      </p>
+      <ul>
+        <li><strong>Camera:</strong> Used only when you scan a studio pairing QR code, record synchronized local studio video angles, or run optical flash sync calibration. Video files remain on your device and your paired local studio computer (or your own optional Google Drive).</li>
+        <li><strong>Local Network (Wi-Fi):</strong> Used solely for local Bonjour (<code>_caverec._udp</code>) and LAN discovery, pairing, and exchanging live transport, console, stagebox monitor, metering, audio, and video streams directly with Cave Recorder on your local network without external relay servers.</li>
+        <li><strong>On-Device Credential Storage:</strong> Studio pairing keys and optional Google OAuth tokens are stored exclusively in your device's operating-system secure credential storage (iOS Keychain or Android Keystore) and are never transmitted to us.</li>
+      </ul>
 
       <h2 id="google-drive-limited-use">Google Drive Integration &amp; Google API Services User Data Policy (Limited Use)</h2>
       <p>
-        When you optionally connect your Google Drive account inside the Cave Recorder desktop application, the local application requests Google Drive API access (<code>https://www.googleapis.com/auth/drive.file</code> or, when configured for cross-account linked remote project folders, <code>https://www.googleapis.com/auth/drive</code>) solely to read, write, and synchronize the Projects, Sessions, Takes, Passes, live Prints, and Mixdowns you explicitly create, link, or configure, and reads your Google account email address solely to display the connected account badge in your local interface.
+        When you optionally connect your Google Drive account inside Cave Recorder or Cave Companion, the local application requests Google Drive API access (<code>https://www.googleapis.com/auth/drive.file</code> or, when configured for cross-account linked remote project folders, <code>https://www.googleapis.com/auth/drive</code>) solely to read, write, and synchronize the Projects, Sessions, Takes, Passes, live Prints, and Mixdowns you explicitly create, link, or configure, and reads your Google account email address solely to display the connected account badge in your local interface.
       </p>
       <p>
-        OAuth 2.0 tokens and credentials are stored exclusively on your local computer (<code>~/Library/Application Support/caverec/gdrive_oauth_tokens.json</code> on macOS, <code>~/.config/caverec/gdrive_oauth_tokens.json</code> on Linux, with owner-only file permissions on macOS and Linux, or <code>%APPDATA%\caverec\gdrive_oauth_tokens.json</code> on Windows) and communicate directly between your machine and Google's API servers (<code>googleapis.com</code>) over HTTPS. We (the developer of Cave Recorder) operate no intermediary servers and never receive, store, view, or transmit your Google account data, OAuth tokens, or audio files.
+        OAuth 2.0 tokens and credentials are stored exclusively on your local computer (<code>~/Library/Application Support/caverec/gdrive_oauth_tokens.json</code> on macOS, <code>~/.config/caverec/gdrive_oauth_tokens.json</code> on Linux, with owner-only file permissions on macOS and Linux, or <code>%APPDATA%\caverec\gdrive_oauth_tokens.json</code> on Windows) or in your mobile device's secure credential storage, and communicate directly between your device and Google's API servers (<code>googleapis.com</code>) over HTTPS. We (the developer of Cave Recorder and Cave Companion) operate no intermediary servers and never receive, store, view, or transmit your Google account data, OAuth tokens, or audio and video files.
       </p>
       <p>
-        Cave Recorder's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.
+        Cave Recorder's and Cave Companion's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.
       </p>
 
       <h2>Third-Party Sharing</h2>
@@ -87,7 +97,7 @@
         <a href="index.html">Privacy Policy</a>
       </div>
       <div class="footer-meta">
-        Cave Recorder (<code>caverec</code>) &bull; Zero Cookies &bull; Zero Analytics
+        Cave Recorder (<code>caverec</code>) &amp; Cave Companion &bull; Zero Cookies &bull; Zero Analytics
       </div>
     </div>
   </footer>
